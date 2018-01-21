@@ -31,7 +31,6 @@ con el texto del atributo `alt` de la imagen.
 > archivo `README.md` :smiley:.
 
 ***
-
 ## Instalación
 
 ### Global (navegador)
