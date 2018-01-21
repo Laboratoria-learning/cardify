@@ -27,7 +27,6 @@ El proyecto fue realizado con las siguientes dependencias NPM:
   - JQuery ~v. 3.2.1
   - Bootstrap ~v. 3.3.7
 
-
 ### Levantamiento ambiente de desarrollo
 
 + Clonar repositorio.
@@ -35,4 +34,4 @@ El proyecto fue realizado con las siguientes dependencias NPM:
 
 ### Licencia
 + [ISC License](https://opensource.org/licenses/ISC)
-
+   
