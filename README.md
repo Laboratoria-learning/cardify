@@ -29,7 +29,7 @@ con el texto del atributo `alt` de la imagen.
 
 > Nota: No olvides que es una buena práctica describir tu proyecto en este
 > archivo `README.md` :smiley:.
-
+  
 ***
 ## Instalación
 
