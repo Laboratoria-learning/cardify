@@ -11,11 +11,11 @@ imágenes que encuentra dentro del _contenedor_ y las reemplaza por un nuevo
 elemento `<figure>` que contiene la imagen (`<img>`) además  un `<figcaption>`
 con el texto del atributo `alt` de la imagen.
 Además al pasar el mouse sobre la imagen lograremos ver el contenido del `<figcaption>`.
-
 ***
 ### Metodología de Tabajo
 
 + Se utiliza la herramienta trello para la organización de actividades, propuestas y recursos.
+
 + Herramientas para comunicación grupal, slack para trabajo en forma remota y no perder comunicación de todos los pasos de los intengrantes.
 
 
