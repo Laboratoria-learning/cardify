@@ -1,0 +1,26 @@
+{
+  "name": "cardify",
+  "version": "1.0.0",
+  "description": "* **Track:** _Common Core_ * **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_ * **Unidad:** _Producto final_",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Niennis/cardify.git"
+  },
+  "author": "Carolina Silva, Estefania Osses",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Niennis/cardify/issues"
+  },
+  "homepage": "https://github.com/Niennis/cardify#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
