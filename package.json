@@ -1,0 +1,22 @@
+{
+  "name": "cardify",
+  "version": "1.0.0",
+  "description": "Proyecto cardify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AriellaRogueN/cardify.git"
+  },
+  "keywords": [
+    "proyecto"
+  ],
+  "author": "Teresita Cañete - Ariella Rodriguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AriellaRogueN/cardify/issues"
+  },
+  "homepage": "https://github.com/AriellaRogueN/cardify#readme"
+}
