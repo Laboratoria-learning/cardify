@@ -1,0 +1,27 @@
+{
+  "name": "cardify",
+  "version": "1.0.0",
+  "description": "proyecto cardify, librería de jquery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NatyNatur/cardify.git"
+  },
+  "author": "Natalia Castro, Pamela Inalef, Lorena Palominos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NatyNatur/cardify/issues"
+  },
+  "homepage": "https://github.com/NatyNatur/cardify#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "materialize-css": "^0.100.2"
+  }
+}
