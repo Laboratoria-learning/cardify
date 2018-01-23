@@ -1,54 +1,90 @@
-# Cardify
 
-* **Track:** _Common Core_
-* **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_
-* **Unidad:** _Producto final_
+Super-Pictures
+==============
 
 ***
 
-Implementar un plugin de jQuery que dado un _contenedor_ debe buscar todas las
-imágenes que encuentre dentro del _contenedor_ y reemplazarlas por un nuevo
-elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>`
-con el texto del atributo `alt` de la imagen.
+Introducción
+------------
 
-## Flujo de trabajo
+<p>Super-Pictures es un Plugin de jQuery que permite darle a las imagenes de tu proyecto diversos estilos que ayudarán a que se vea visualmente atractivo e interactivo.</p>
 
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
 
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
+Descripcion del reto
+--------------------
 
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/cardify.git
-   ```
+<p>El objetivo central de este curso es construir una librería (library) que responda a los requisitos de los retos modelos entregados por Laboratoria o bien se puede proponer un reto propio.</p>
 
-3. Cuando hayas terminado tu producto, envía un Pull Request a la rama que tus
-   instructorxs este repositorio
-   (puedes solicitar apoyo de tus profes para este paso).
+<p>El reto modelo seleccionado fue el n°2; CARDIFY (muestra alt en vez de imagen en hover).</p>
 
-> Nota: No olvides que es una buena práctica describir tu proyecto en este
-> archivo `README.md` :smiley:.
+<p>El reto se hará en grupos de dos alumnas y será presentado al final del curso en una demo al resto de la clase.</p>
 
-***
 
-## Instalación
+Flujo de trabajo
+----------------
 
-### Global (navegador)
+###Semana 1
 
-```html
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="path-to-cardify.js"></script>
-```
+1. Se forma equipo y selecciona reto.
 
-## Uso
+2. Se hace [**fork**](https://github.com/Laboratoria-learning/cardify) desde el repositorio de Laboratoria por una de las integrantes del equipo. Se crea rama para trabajar y se configura el ambiente de desarrollo (NPM).
 
-```js
-// `container` es el selector del contenedor donde se buscarán todas las
-// imágenes a ser procesadas.
-$(container).cardify({});
-```
+3. La segunda integrande realiza un fork del repositorio de la primera integrante para luego posicionarse en la rama creada, clonar el repositorio de la companera y comenzar a trabajar. 
 
-## Ejemplos
+4. Se escribe una primera version de README, este posee una descripcion general del proyecto. 
 
-...
+5. Se crean issue y milestone.
+
+###Semana 2
+
+1.
+
+###Semana 3
+
+1.
+
+
+Instrucciones de instalación
+----------------------------
+
+<p></p>
+
+
+Uso
+-----
+
+<p></p>
+
+
+Ejemplos
+---------
+
+<p></p>
+
+
+Dependencias
+------------
+
+>### Desarrollo
+>
+>* Eslint v4.15.0
+>* JQuery 
+
+>### Producción 
+>
+>* Bootstrap 
+
+
+Autoras
+-------
+ 
+[*Carol Sepúlveda*](https://github.com/carol-solivos) & [*Vanessa Martínez*](https://github.com/vanemarnava)
+
+
+Licencia
+--------
+
+*The --- License (---)*
+
+*Copyright (C) 2018 ~ Super-Pictures*
+
