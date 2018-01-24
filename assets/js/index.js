@@ -8,5 +8,5 @@ $(document).ready(()=>{
     }
     const alt = $('#images').attr('alt');
     console.log(alt);
-  });
+  }); 
 });
