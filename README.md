@@ -1,6 +1,30 @@
 introducciòn:
-  
-  Se realizara una biblioteca de js, mediante la cual se implementara una funcion de hover al hacer click en una determinada imagen.
-  Cardify.
+  Desarrollo de proyecto librería Cardify
 
-  Primero se hacer fork en el repositorio de laboratoria
+  FLUJO DE TRABAJO:
+
+  -Clonar repositorio
+  -Crear carpetas y archivos
+  -Crear rama 
+  -Carpeta de test
+
+
+  DESCRIPCION:
+
+  Elegimos el proyecto sugerido por Laboratoria Cardify, mediante el cual se realizara una biblioteca
+  que le permita al usuario obtener un metodo para que sobre sus imagenes aparezca untexto descriptivo.
+
+  AUTORES:  Ariella Rodriguez
+            Teresita Cañete  
+
+
+ AVANCES:
+
+ -Ramas
+ -Readme
+ -Eleccion de proyecto
+ -Ambiente de trabajo
+ -Distribucion de tareas
+ -Issus
+ -
+

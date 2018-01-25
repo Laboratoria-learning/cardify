@@ -1,4 +1,4 @@
-$(document).ready(()=>{
+$(document).ready(()=>
   $('img').mouseover(() =>{
     $('img').wrap('<figure id="fig"></figure>');
     $('img').css('opacity', '0.5');
