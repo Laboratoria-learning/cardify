@@ -1,5 +1,5 @@
 $(document).ready(()=>{
-  $('img').mouseover(() =>{
+  $('img').mouseover(() => {
     $('img').wrap('<figure id="fig"></figure>');
     $('img').css('opacity', '0.5');
     $('#fig').append('<figcaption id="caption">' + $('img').attr('alt') + '</figcaption>');
@@ -11,3 +11,5 @@ $(document).ready(()=>{
     $('#caption').empty();
   });
 });
+
+
