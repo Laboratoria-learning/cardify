@@ -1,12 +1,13 @@
 $(document).ready(()=>{
-  $('#images').mouseover(() =>{
-    if ($('#images').hasClass('img-selected')) {
-      /* en el caso que exista ya una imagen seleccionada la eliminamos para que únicamente solo se tenga una imagen seleccionada*/
-      $('#images').removeClass('img-selected');
-      // añadimos la clase de la imagen seleccionada
-      $('#images').addClass('img-selected');
-    }
-    const alt = $('#images').attr('alt');
-    console.log(alt);
+  $('img').mouseover(() =>{
+    $('img').wrap('<figure id="fig"></figure>');
+    $('img').css('opacity', '0.5');
+    $('#fig').append('<figcaption id="caption">' + $('img').attr('alt') + '</figcaption>');
+  });
+
+  $('img').mouseout(() => {
+    $('img').unwrap();
+    $('img').css('opacity', '1');
+    $('#caption').empty();
   });
 });
