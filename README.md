@@ -1,55 +1,38 @@
 # Cardify
 
-* **Track:** _Common Core_
-* **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_
-* **Unidad:** _Producto final_
+Cardify es un proyecto  que se nos pidio implementar como parte de la creacion de una librería (library), teniendo como objetivo responder a la necesidad de hacer mas legible o evitar estar repitiendo codigo para paginas web o aplicaciones moviles.
 
-***
+## Equipo Conformado
+
+> Jennifer Carmen
+
+> Valeria Valles 
+
+## Requisitos del Proyecto
 
 Implementar un plugin de jQuery que dado un _contenedor_ debe buscar todas las
 imágenes que encuentre dentro del _contenedor_ y reemplazarlas por un nuevo
 elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>`
 con el texto del atributo `alt` de la imagen.
 
-## Flujo de trabajo
+## Pruebas
 
-0. crear issues 
+Las pruebas se pueden encontrar en la test/test.js para las pruebas de versión de jQuery . Simplemente abra su index.htmlarchivo en su navegador y todas las pruebas se deben ejecutar con éxito.
 
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
-
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
-
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/cardify.git
-   ```
-
-3. Cuando hayas terminado tu producto, envía un Pull Request a la rama que tus
-   instructorxs este repositorio
-   (puedes solicitar apoyo de tus profes para este paso).
-
-> Nota: No olvides que es una buena práctica describir tu proyecto en este
-> archivo `README.md` :smiley:.
-
-***
-
-## Instalación
-
-### Global (navegador)
+## Como usar cardefy
 
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="path-to-cardify.js"></script>
 ```
 
-## Uso
 
-```js
-// `container` es el selector del contenedor donde se buscarán todas las
-// imágenes a ser procesadas.
-$(container).cardify({});
-```
+## Documentacion
+
+### Introduccion 
+
+Cardify es un complemento que le proporciona una mejor manera de mantener a desarrolladores o diseñadores de implementar funcionalidades mas rapidas y accesibles.
+
 
 ## Ejemplos
 
