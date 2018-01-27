@@ -1,0 +1,22 @@
+{
+  "name": "cardify",
+  "version": "1.0.0",
+  "description": "Desarrollo plugin jquery cardify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords":[
+    "cardify"
+    ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jennifercarmen/cardify.git"
+  },
+  "author": "Jennifer Carmen, Valeria valles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jennifercarmen/cardify/issues"
+  },
+  "homepage": "https://github.com/Jennifercarmen/cardify#readme"
+}
