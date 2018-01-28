@@ -1,0 +1,67 @@
+/* Helpers */
+.bold{
+    font-weight: bold;
+}
+/* .container {
+    outline: 1px solid black;
+    overflow: hidden;
+}
+.item-img {
+    outline: 1px solid blue;
+    float: left;
+    margin: 5%;
+    
+}
+.cont-img {
+    outline: 1px solid red;
+    float: left;
+} */
+/*  hover
+.product-photo {
+    background-color: #CCCCCC;
+    float: left;
+    position:relative;
+    height: 285px;
+    margin-bottom: 5px;
+    width: 181px;
+}
+
+.img1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+}
+
+.img2 {
+    position:absolute;
+    top:0px;
+    left:0px;
+} */
+
+pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.428571429;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: relative;
+}
+span {
+    margin-left: 0px;
+    padding-left: 0px;
+    position: absolute;
+    left: 10px;
+}
+.texto-azul {
+    border: 1px solid red;
+}
+figure.horizontal {
+    float: left;
+}

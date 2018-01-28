@@ -1,35 +1,47 @@
 
-$(document).ready(function() {
-  // .fn te (plugin) permite ejecutar tu codigo desde otra extension js
-  $.fn.pluss = function() {
-    this.each(function(index) {
+(function($) {
+
+
+
+  // Declaración del plugin.
+  $.fn.pluss = function(options) {
+    // Obtenemos los parámetros.
+    options = $.extend({}, $.fn.pluss.defaultOptions, options);
+ 
+     this.each(function(index) {
       $('.container').append(
         '<figure>' +
             '<figcaption>' + $(this).attr('alt') + '</figcaption>' +
             '</figure>'
       );
       $('figure')[index].prepend($(this)[0]);
+            var element = $('figure');
+      element.addClass(options.align);
 
-      $(this).on('mouseover', function() {
-        // var images = $('img');
-        /* for (var i = 0;i < images.length;i++) {*/
-        $('.container').append(
-          '<figure class="cont-img">' +
-         '<img src=' + $(this).attr('src') + ' width="200px"> </img>' +
-         '<figcaption>' + $(this).attr('alt') + '</figcaption>' +
-         '</figure>'
-        );
-      });
+    //   Aplicando Hover
+    //   $(this).on('mouseover', function() {
+    //     $('.container').append(
+    //       '<figure class="cont-img">' +
+    //      '<img src=' + $(this).attr('src') + ' width="200px">' +
+    //      '<figcaption>' + $(this).attr('alt') + '</figcaption>' +
+    //      '</figure>'
+    //     );
+    //   });
         
-      $(this).on('mouseover', function() {
-        // var images = $('img');
-        /* for (var i = 0;i < images.length;i++) {*/
-        // var newImg = 'assets/img/libros.jpg';
-        $(this).hide();
-        // $(this).attr('src', newImg);
-      });
-      
+    //   $(this).on('mouseover', function() {
+    //     $(this).hide();
+    //   });
+    //   $('.desaparece').hover(function(){
+    //     $(this).animate({opacity:0});
+    // },function(){
+    //     $(this).animate({opacity:1});
+    // });
     });
- 
+
   };  
-});
+     // Parametros del plugin.
+
+     $.fn.pluss.defaultOptions = {
+      align: 'vertical'
+    }
+})(jQuery);
