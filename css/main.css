@@ -1,5 +1,4 @@
 .container {
-    outline: 1px solid black;
     overflow: hidden;
 }
 .content-body {
@@ -46,4 +45,11 @@
 .opacity{
     background: rgba(0, 0, 0, 0.5);
     height: 100%;
+}
+.descarga {
+    text-align: center;
+    /*margin: 2%;*/
+}
+.descarga a {
+    margin: 2%;
 }
