@@ -1,0 +1,14 @@
+.container {
+    outline: 1px solid black;
+    overflow: hidden;
+}
+.item-img {
+    outline: 1px solid blue;
+    float: left;
+    margin: 5%;
+    
+}
+.cont-img {
+    outline: 1px solid red;
+    float: left;
+}
