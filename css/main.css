@@ -2,20 +2,29 @@
 .bold{
     font-weight: bold;
 }
-/* .container {
-    outline: 1px solid black;
-    overflow: hidden;
+.content-body {
+    background: rgb(247, 245, 245);
+    font-family:'Raleway', sans-serif;
 }
+
 .item-img {
     outline: 1px solid blue;
     float: left;
     margin: 5%;
     
 }
+.fixed-cont{
+    position: fixed;
+}
 .cont-img {
     outline: 1px solid red;
     float: left;
-} */
+}
+.container {
+    overflow: hidden;
+}
+/* 
+ */
 /*  hover
 .product-photo {
     background-color: #CCCCCC;
@@ -81,4 +90,38 @@ figure.horizontal {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+}
+
+.nav-wrapper {
+   /* background: #3f51b5;*/
+   background: rgb(126, 125, 125);
+}
+.cont-section {
+    margin-top: 2%;
+    padding: 2%;
+    background: #fff;
+}
+.back-img {
+    background: url('../assets/img/programa-cod.jpg')
+            center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    color: white;        
+}
+.text {
+    text-align: center;
+    padding-top: 15%;
+    font-family: 'Stint Ultra Condensed', cursive;
+}
+.opacity{
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+.descarga {
+    text-align: center;
+    /*margin: 2%;*/
+}
+.descarga a {
+    margin: 2%;
 }
