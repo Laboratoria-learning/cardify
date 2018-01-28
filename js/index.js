@@ -1,10 +1,12 @@
 var images = $('.container img');
 for (var i = 0;i < images.length;i++) {
+  console.log(images[i]);
+  console.log(images[i].alt);
   $('.container').append(
     '<figure>' +
-    '<img src='+images[i].src +' width="200px"> </img>'+
-    '<figcaption>'+images[i].alt +'</figcaption>' +
+    '<figcaption>' + images[i].alt + '<figcaption>' +
     '</figure>'
   );
-  $(images[i]).remove();
-}
+  $('figure')[i].prepend(images[i]);
+
+};
