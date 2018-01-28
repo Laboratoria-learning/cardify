@@ -4,7 +4,6 @@
   $.fn.pluss = function(options) {
     // Obtenemos los parámetros.
     options = $.extend({}, $.fn.pluss.defaultOptions, options);
- 
      this.each(function(index) {
       $('.container').append(
         '<figure>' +
@@ -13,7 +12,7 @@
       );
       $('figure')[index].prepend($(this)[0]);
       var element = $('figure');
-      var container=$('container');
+      var container=$('.container');
       container.addClass(options.direction);
       element.addClass(options.align);
 
@@ -42,6 +41,6 @@
 
      $.fn.pluss.defaultOptions = {
       align: 'vertical',
-      direction: 'container'
+      direction: ''
     }
 })(jQuery);

@@ -54,8 +54,6 @@ pre {
     position: relative;
 }
 span {
-    margin-left: 0px;
-    padding-left: 0px;
     position: absolute;
     left: 10px;
 }
