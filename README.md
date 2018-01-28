@@ -26,6 +26,8 @@ El proyecto fue realizado con las siguientes dependencias NPM:
 + Dependencias de Producción
   - JQuery ~v. 3.2.1
   - Bootstrap ~v. 3.3.7
+  - Chai ^4.1.2
+  - Mocha ^5.0.0
 
 ### Levantamiento ambiente de desarrollo
 
