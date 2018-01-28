@@ -1,8 +1,5 @@
 
 (function($) {
-
-
-
   // Declaración del plugin.
   $.fn.pluss = function(options) {
     // Obtenemos los parámetros.
@@ -15,7 +12,9 @@
             '</figure>'
       );
       $('figure')[index].prepend($(this)[0]);
-            var element = $('figure');
+      var element = $('figure');
+      var container=$('container');
+      container.addClass(options.direction);
       element.addClass(options.align);
 
     //   Aplicando Hover
@@ -42,6 +41,7 @@
      // Parametros del plugin.
 
      $.fn.pluss.defaultOptions = {
-      align: 'vertical'
+      align: 'vertical',
+      direction: 'container'
     }
 })(jQuery);

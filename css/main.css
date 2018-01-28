@@ -62,6 +62,25 @@ span {
 .texto-azul {
     border: 1px solid red;
 }
+
 figure.horizontal {
-    float: left;
+    height: 200px;
+    width: 200px;
+    /* line-height: 80px; */
+    /* font-size: 20px; */
+    /* background-color: steelblue; */
+    /* color: #fff; */
+    text-align: center;
+    margin: 5px 2px;
+}
+.tb {
+    width: 70%;
+    max-width: 960px;
+    width: 90%;
+    list-style-type: none;
+    margin: 20px auto;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
