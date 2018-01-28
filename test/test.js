@@ -28,4 +28,10 @@ it('passes cuando el atributo src no esta vacio ', function() {
 it('passes cuando el atributo alt no esta vacio', function() {
  $('img').attr('alt') !== '';
   })
+it("passes cuando la class es igual a container", () => {
+  $('img').class === 'container'
+   })
+it("passes cuando la imagen es png o jpg", () => {
+  $('img').attr('src').substring(('img').lastIndexOf('.')) === ".jpg" && ".png" 
+   })
 })
