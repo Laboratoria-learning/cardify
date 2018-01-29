@@ -1,9 +1,12 @@
+const $ = require('jquery');
+const cardify = {};
 $(document).ready(() => {
   $('.contain').cardify(); // sirve para cualquier clase de container.
 });
+
 (function($) {
-  $.fn.extend({
-    cardify: function() { 
+  
+    $.fn.cardify = function() { 
       this.find('img').wrap('<figure></figure>'); // Encuentra las imagenes dentro de la class y las envuelve en <figure>
       this.find('figure').map(function() {
         $(this).append(`<figcaption><h3 class="text-caption">${$(this).children('img').attr('alt')}</h3></figcaption>`);
@@ -50,5 +53,5 @@ $(document).ready(() => {
       }
       );
     }
-  });
 })($);
+module.exports = cardify;
