@@ -1,10 +1,10 @@
 $(document).ready(() => {
   let containerA = $('.container');
-  
+
   let pluginImage = (containerX) => {
     let searchImage = containerX.find('img');
     console.log(searchImage);
-  
+
 
     for (let i = 0; i < searchImage.length; i++) {
       console.log(searchImage[i]);
@@ -15,7 +15,7 @@ $(document).ready(() => {
       figure.append(searchImage[i]);
       let altImage = $(searchImage[i]).attr('alt');
       figure.append('<figcaption class="figcaption-image" style="font-size: 30px">' + altImage + '</figcaption>');
-     
+
       containerX.append(figure);
       figure.hover(() => {
         $(searchImage[i]).css({'visibility': 'hidden'});
@@ -26,8 +26,7 @@ $(document).ready(() => {
         $(searchImage[i]).animate(4000);
         $(figure).css({'color': 'transparent'});
       });
-    } 
+    }
   };
   pluginImage(containerA);
 });
-
