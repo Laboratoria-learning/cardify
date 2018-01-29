@@ -38,7 +38,73 @@ Hacer code review con tus compañeras e instructorxs.
 * Hacer code review con tus compañeras e instructorxs.
 * Preparar tu demo/presentación.
 Publicar el ejemplo principal (index.html) en GitHub pages.
+
+## Snippets
+Para hacer uso de estos snippets debes tomar la informacion y adecuarla a los snippets del editor q uses, luego puedes llamarlos:
+
+    containerJQ
+```html
+<div class="container">
+  <div class="{:class}">
+    <img src="{:address}" alt="{:data}">
+  </div>
+</div>
+```
+
+    PluginJQ
+```js
+$(document).ready(() => {
+  let container = $(data);
+
+  let pluginImage = (containerX) => {
+    let searchImage = containerX.find(data);
+
+    searchImage.css({'width': '335px', 'height': '200px', 'border': '4px solid white', 'border-radius': '10px'});
+
+    for (let i = 0; i < searchImage.length; i++) {
+
+      let figure = $('<figure style="color: transparent" class="col-lg-4">')
+        figure.append(searchImage[i]);
+        let altImage = $(searchImage[i]).attr('alt');
+        let figcaption = $('<figcaption style="width: 346px">' + altImage + '</figcaption>');
+        figure.append(figcaption);
+
+        containerX.append(figure);
+
+        figure.on('mouseover', () => {
+          $(searchImage[i]).attr('hidden', 'hidden');
+          $(figure).css({'color': 'black', 'width': 'auto', 'height': '250px', 'text-align': 'center', 'text-transform': 'capitalize', 'font-weight': 'bold'});
+          figure.addClass('col-lg-4');
+          figcaption.css({'margin-top': '100px', 'font-size': '30px'});
+
+        });
+
+        figure.on('mouseout', () => {
+          $(searchImage[i]).removeAttr('hidden');
+          $(figure).css({'color': 'white'});
+          figcaption.css({'margin-top': '0', 'font-size': '20px'});
+        });
+      }
+    }
+    pluginImage(container);
+  });
+  ```
+
 ## Instalación
+## Descripcion
+##### Cómo agregar Cardify a tu proyecto
+
+###### Requisitos previos
+Antes de comenzar, necesitarás una app de JavaScript.
+
+###### Agrega Cardify a tu app
+Para agregar Cardify a tu app, necesitarás un proyecto de index.html, agregando jQuery en el script de preferencia la ultima version.
+
+```js
+<script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>
+```
+
+
 
 ### Global (navegador)
 
