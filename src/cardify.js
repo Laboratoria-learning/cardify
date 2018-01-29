@@ -3,6 +3,7 @@ $(document).ready(() => {
 
   let pluginImage = (containerX) => {
     let searchImage = containerX.find('img');
+    searchImage.css({'width': '335px', 'height': '200px', 'border': '4px solid white', 'border-radius': '10px'});
     console.log(searchImage);
 
 
@@ -30,3 +31,5 @@ $(document).ready(() => {
   };
   pluginImage(containerA);
 });
+
+PluginJQ
