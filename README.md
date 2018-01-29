@@ -90,8 +90,8 @@ $(document).ready(() => {
 ## Instalación
 ## Descripcion
 
-#####Funcionalidad:
-La libreria de Cardify busca todas las imagenes que se encuentren dentro de un contenedor y semanticamente las coloca dentro de una etiqueta <figure> junto con una etiqueta <figcaption> que adquiere el texto de el atributo 'alt' de dicha imagen.Esta libreria contiene estilos css y de bootstrap ya definidos.
+##### Funcionalidad:
+La libreria de Cardify busca todas las imagenes que se encuentren dentro de un contenedor y semanticamente las coloca dentro de una etiqueta **figure** junto con una etiqueta **figcaption** que adquiere el texto de el atributo **alt** de dicha imagen.Esta libreria contiene estilos css y de bootstrap ya definidos.
 
 ##### Cómo agregar Cardify a tu proyecto
 
