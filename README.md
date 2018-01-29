@@ -1,8 +1,9 @@
-# Cardify
+# **Cardify**
 
 * **Track:** _Common Core_
 * **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_
 * **Unidad:** _Producto final_
+* **Front-ends:** _Aurora Vásquez Sanchez y Jessica Manturano_
 
 ***
 
@@ -12,26 +13,31 @@ elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>
 con el texto del atributo `alt` de la imagen.
 
 ## Flujo de trabajo
-
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
-
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
-
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/cardify.git
-   ```
-
-3. Cuando hayas terminado tu producto, envía un Pull Request a la rama que tus
-   instructorxs este repositorio
-   (puedes solicitar apoyo de tus profes para este paso).
-
-> Nota: No olvides que es una buena práctica describir tu proyecto en este
-> archivo `README.md` :smiley:.
+Para el desarrollo de este trabajo estamos haciendo uso de diferentes ramas para evitar conflictos y perdida de informacion cada rama tiene informacion relevante y paso a paso de la funcionalidad de esta Librería.
 
 ***
+## Progreso Propuesto
+Checklists de progreso para cada semana:
 
+#### SEMANA 1
+* Formar equipo.
+* Elegir reto.
+* Hacer fork de reto modelo o crear nuevo repo si has propuesto un reto no propuesto por Laboratoria.
+* Escribir primera versión del README.md con una descripción general de la librería así como ejemplos (snippets) de uso y configuración (si fuera necesario).
+* Crear issues y milestones que sirvan como hoja de ruta (roadmap)
+* Inicializar proyecto con npm init y git init.
+* Crear index.html con ejemplo principal de uso.
+
+#### SEMANA 2
+* Agregar tests que describan la API de tu librería y los casos de uso esperados.
+* Implementar funcionalidad esencial.
+Hacer code review con tus compañeras e instructorxs.
+
+#### SEMANA 3
+* Completar implementación de librería y ejemplo principal (usando la librería).
+* Hacer code review con tus compañeras e instructorxs.
+* Preparar tu demo/presentación.
+Publicar el ejemplo principal (index.html) en GitHub pages.
 ## Instalación
 
 ### Global (navegador)
