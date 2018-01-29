@@ -5,7 +5,6 @@
 * **Unidad:** _Producto final_
 
 ***
-
 Es un plugin de jQuery que dado un _contenedor_ busca todas las
 imágenes que encuentra dentro del _contenedor_ y las reemplaza por un nuevo
 elemento `<figure>` que contiene la imagen (`<img>`) además  un `<figcaption>`
