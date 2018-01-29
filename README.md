@@ -1,3 +1,4 @@
+[![GitHub issue age](https://img.shields.io/badge/created-January%202018-yellowgreen.svg)](https://github.com/meliveloz/cardify)
 # Cardify
 
 * **Track:** _Common Core_
