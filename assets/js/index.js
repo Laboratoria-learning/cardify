@@ -1,4 +1,5 @@
 
+
 $(document).ready(function() {
    
     //Al pasar sobre .gepic animamos la imágen dando un tamaño menor y mostramos el div .negro
@@ -16,10 +17,6 @@ $(document).ready(function() {
     $(this).children('a').children('.negro').css({ "padding-top": "150px" , "opacity" : 0 });
    
     }); 
-
-});
-
-
 
 
 
