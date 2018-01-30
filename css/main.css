@@ -25,7 +25,7 @@
 }
 /* 
  */
-/*  hover
+ hover
 .product-photo {
     background-color: #CCCCCC;
     float: left;
@@ -41,12 +41,17 @@
     left: 0px;
     opacity: 1;
 }
-
+.figcaptionhover {
+    height: 100px;
+    background-color: black;
+    color: white;
+    padding-top: 30px;
+}
 .img2 {
     position:absolute;
     top:0px;
     left:0px;
-} */
+}
 
 pre {
     display: block;
