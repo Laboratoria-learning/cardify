@@ -1,4 +1,5 @@
-[![GitHub issue age](https://img.shields.io/badge/created-January%202018-yellowgreen.svg)](https://github.com/meliveloz/cardify)
+[![GitHub issue age](https://img.shields.io/badge/created-January%202018-31C285.svg)](https://github.com/meliveloz/cardify) ![licence](https://img.shields.io/badge/license-ISC-1F618D.svg) [![npm](https://img.shields.io/badge/npm-v8.9.0-orange.svg)]() ![npm](https://img.shields.io/badge/author-melivalvane-C0225C.svg)
+
 # Cardify
 
 * **Track:** _Common Core_
@@ -26,8 +27,8 @@ El proyecto fue realizado con las siguientes dependencias NPM:
 + Dependencias de Producción
   - JQuery ~v. 3.2.1
   - Bootstrap ~v. 3.3.7
-  - Chai ^4.1.2
-  - Mocha ^5.0.0
+  - Chai ^ 4.1.2
+  - Mocha ^ 5.0.0
 
 ### Levantamiento ambiente de desarrollo
 
