@@ -1,8 +1,8 @@
 
-$(document).ready(function() {
+$(document).ready(function(){
    
     //Al pasar sobre .gepic animamos la imágen dando un tamaño menor y mostramos el div .negro
-    $('.gepic').mouseenter(function(e) {
+    $('.imagenes').mouseenter(function(e) {
        const alt = $ ('img').attr('alt')
        console.log(alt)
 

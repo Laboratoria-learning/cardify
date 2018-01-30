@@ -10,7 +10,7 @@ body{
     padding:20px;
 }
 
-.gepic {
+.imagenes {
     border: 3px solid #eee;
     float: left;
     height: 240px;
@@ -19,14 +19,14 @@ body{
     position: relative;
     width: 310px;
 }
-.gepic:hover {
+.imagenes:hover {
     border: 3px solid #81d7;
 }
-.gepic a {
+.imagenes a {
     display: block;
     position: relative;
 }
-.gepic a img {
+.imagenes a img {
     height: 280px;
     left: -20px;
     position: relative;
@@ -34,7 +34,7 @@ body{
     width: 350px;
 }
 
-.gepic .negro {
+.imagenes .negro {
     display: none;
     font-size: 2.3em;
     font-weight: bold;
@@ -50,7 +50,7 @@ body{
     text-shadow: #000 0px 0px 20px;
     transition:0.2s;
 }
-.gepic .negro em {
+.imagenes .negro em {
     display: block;
     font-size: 0.50em;
     font-weight: normal;
