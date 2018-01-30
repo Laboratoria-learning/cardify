@@ -4,18 +4,21 @@
   $.fn.pluss = function(options) {
     // Obtenemos los parámetros.
     options = $.extend({}, $.fn.pluss.defaultOptions, options);
-     this.each(function(index) {
+
+    this.each(function(index) {
+    // $(this).on('mouseover', function() {
       $('.container').append(
         '<figure>' +
             '<figcaption>' + $(this).attr('alt') + '</figcaption>' +
-            '</figure>'
+          '</figure>'
       );
+   // });
       $('figure')[index].prepend($(this)[0]);
       var element = $('figure');
-      var container=$('.container');
+      var container = $('.container');
       container.addClass(options.direction);
       element.addClass(options.align);
-
+      // });
     //   Aplicando Hover
     //   $(this).on('mouseover', function() {
     //     $('.container').append(
@@ -35,12 +38,11 @@
     //     $(this).animate({opacity:1});
     // });
     });
-
   };  
-     // Parametros del plugin.
+  // Parametros del plugin.
 
-     $.fn.pluss.defaultOptions = {
-      align: 'vertical',
-      direction: ''
-    }
+  $.fn.pluss.defaultOptions = {
+    align: 'vertical',
+    direction: ''
+  };
 })(jQuery);
