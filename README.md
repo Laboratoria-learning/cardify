@@ -15,32 +15,11 @@ con el texto del atributo `alt` de la imagen.
 ## Flujo de trabajo
 Para el desarrollo de este trabajo estamos haciendo uso de diferentes ramas para evitar conflictos y perdida de informacion cada rama tiene informacion relevante y paso a paso de la funcionalidad de esta Librería.
 
+Planificación de trabajo con [Trello](https://trello.com/b/gsC83EJh/cardify-reto-sprint-04)
+
 ***
-## Progreso Propuesto
-Checklists de progreso para cada semana:
-
-#### SEMANA 1
-* Formar equipo.
-* Elegir reto.
-* Hacer fork de reto modelo o crear nuevo repo si has propuesto un reto no propuesto por Laboratoria.
-* Escribir primera versión del README.md con una descripción general de la librería así como ejemplos (snippets) de uso y configuración (si fuera necesario).
-* Crear issues y milestones que sirvan como hoja de ruta (roadmap)
-* Inicializar proyecto con npm init y git init.
-* Crear index.html con ejemplo principal de uso.
-
-#### SEMANA 2
-* Agregar tests que describan la API de tu librería y los casos de uso esperados.
-* Implementar funcionalidad esencial.
-Hacer code review con tus compañeras e instructorxs.
-
-#### SEMANA 3
-* Completar implementación de librería y ejemplo principal (usando la librería).
-* Hacer code review con tus compañeras e instructorxs.
-* Preparar tu demo/presentación.
-Publicar el ejemplo principal (index.html) en GitHub pages.
 
 ## Snippets
-Para hacer uso de estos snippets debes tomar la informacion y adecuarla a los snippets del editor q uses, luego puedes llamarlos:
 
     containerJQ
 ```html
@@ -55,11 +34,11 @@ Para hacer uso de estos snippets debes tomar la informacion y adecuarla a los sn
 ```js
 $(document).ready(() => {
   let containerA = $('.container');
-  
+
   let pluginImage = (containerX) => {
     let searchImage = containerX.find('img');
     console.log(searchImage);
-  
+
 
     for (let i = 0; i < searchImage.length; i++) {
       console.log(searchImage[i]);
@@ -70,7 +49,7 @@ $(document).ready(() => {
       figure.append(searchImage[i]);
       let altImage = $(searchImage[i]).attr('alt');
       figure.append('<figcaption class="figcaption-image" style="font-size: 30px">' + altImage + '</figcaption>');
-     
+
       containerX.append(figure);
       figure.hover(() => {
         $(searchImage[i]).css({'visibility': 'hidden'});
@@ -81,14 +60,12 @@ $(document).ready(() => {
         $(searchImage[i]).animate(4000);
         $(figure).css({'color': 'transparent'});
       });
-    } 
+    }
   };
   pluginImage(containerA);
 });
   ```
 
-## Instalación
-## Descripcion
 
 ##### Funcionalidad:
 La libreria de Cardify busca todas las imagenes que se encuentren dentro de un contenedor y semanticamente las coloca dentro de una etiqueta **figure** junto con una etiqueta **figcaption** que adquiere el texto de el atributo **alt** de dicha imagen.Esta libreria contiene estilos css y de bootstrap ya definidos.
@@ -124,5 +101,8 @@ $(container).cardify({});
 ```
 
 ## Ejemplos
+![Sin titulo](public/assets/docs/1.png)
+Asi es como se ve antes de pasar el mouse
 
-...
+![Sin titulo](public/assets/docs/2.png)
+Al hacer el mouse over se realiza la funcionalidad del plugin.
