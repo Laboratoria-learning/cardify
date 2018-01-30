@@ -32,38 +32,50 @@ Planificación de trabajo con [Trello](https://trello.com/b/gsC83EJh/cardify-ret
 
     PluginJQ
 ```js
-$(document).ready(() => {
-  let containerA = $('.container');
+(function ($) {
+  $.fn.cardify = function () {
 
-  let pluginImage = (containerX) => {
-    let searchImage = containerX.find('img');
-    console.log(searchImage);
+    var containerA = $('.container');
 
+    var pluginImage = function pluginImage(containerX) {
+      var searchImage = containerX.find('img');
 
-    for (let i = 0; i < searchImage.length; i++) {
-      console.log(searchImage[i]);
-      searchImage.css({'width': '335px', 'height': '200px',     'border-radius': '10px'});
+      console.log(searchImage);
 
-      let figure = $('<figure style="color:transparent;" class="col-lg-4"></figure>');
-      $(figure).css({ 'width': 'auto', 'height': '250px', 'text-align': 'center', 'text-transform': 'capitalize', 'font-weight': 'bold'});
-      figure.append(searchImage[i]);
-      let altImage = $(searchImage[i]).attr('alt');
-      figure.append('<figcaption class="figcaption-image" style="font-size: 30px">' + altImage + '</figcaption>');
+      var _loop = function _loop(i) {
+        console.log(searchImage[i]);
+        searchImage.css({ 'width': '335px', 'height': '200px', 'border-radius': '10px' });
 
-      containerX.append(figure);
-      figure.hover(() => {
-        $(searchImage[i]).css({'visibility': 'hidden'});
-        $(searchImage[i]).animate(4000);
-        $(figure).css({'color': 'black'});
-      }, () => {
-        $(searchImage[i]).css({'visibility': 'visible'});
-        $(searchImage[i]).animate(4000);
-        $(figure).css({'color': 'transparent'});
-      });
-    }
+        var figure = $('<figure style="color:transparent" class="col-lg-4"></figure>');
+        figure.append(searchImage[i]);
+        $(figure).css({ 'width': 'auto', 'height': '250px', 'text-align': 'center', 'text-transform': 'capitalize', 'font-weight': 'bold' });
+
+        var altImage = $(searchImage[i]).attr('alt');
+        var figcaption = $('<figcaption>' + altImage + '</figcaption>');
+        figure.append(figcaption);
+
+        containerX.append(figure);
+        figure.hover(function () {
+          $(searchImage[i]).css({ 'visibility': 'hidden' });
+          $(searchImage[i]).animate(4000);
+          $(figure).css({ 'color': 'black', 'text-shadow': '0px 0px black' });
+          figure.addClass('col-lg-4');
+          figcaption.css({ 'font-size': '30px', 'transform': 'translateY(-300%)' });
+        }, function () {
+          $(searchImage[i]).css({ 'visibility': 'visible' });
+          $(searchImage[i]).animate(4000);
+          $(figure).css({ 'color': 'white', 'text-shadow': '2px 2px black' });
+          figcaption.css({ 'transform': 'translateY(0%)', 'font-size': '20px' });
+        });
+      };
+
+      for (var i = 0; i < searchImage.length; i++) {
+        _loop(i);
+      }
+    };
+    pluginImage(containerA);
   };
-  pluginImage(containerA);
-});
+})(jQuery);
   ```
 
 
@@ -105,4 +117,4 @@ $(container).cardify({});
 Asi es como se ve antes de pasar el mouse
 
 ![Sin titulo](public/assets/docs/2.png)
-Al hacer el mouse over se realiza la funcionalidad del plugin.
+Al pasar el mouse se produce un  **hover** que  realiza la funcionalidad del plugin.
