@@ -54,7 +54,6 @@ Global (navegador)
 ![](assets/img/ejemplo.png)
 
 
-
 ### Licencia
 
 + [ISC License](https://opensource.org/licenses/ISC)
