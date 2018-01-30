@@ -12,7 +12,7 @@ elemento `<figure>` que contiene la imagen (`<img>`) además  un `<figcaption>`
 con el texto del atributo `alt` de la imagen.
 Además al pasar el mouse sobre la imagen lograremos ver el contenido del `<figcaption>`.
 ***
-
+ 
 ### Metodología de Tabajo
 
 + Se utiliza la herramienta trello para la organización de actividades, propuestas y recursos.
