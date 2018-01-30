@@ -13,7 +13,7 @@ elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>
 con el texto del atributo `alt` de la imagen.
 
 ## Flujo de trabajo
-Para el desarrollo de este trabajo estamos haciendo uso de diferentes ramas para evitar conflictos y perdida de informacion cada rama tiene informacion relevante y paso a paso de la funcionalidad de esta Librería.
+Para el desarrollo de este trabajo estamos haciendo uso de diferentes ramas para evitar conflictos y perdida de informacion cada rama tiene informacion relevante y paso a paso de la funcionalidad de este plugin.
 
 Planificación de trabajo con [Trello](https://trello.com/b/gsC83EJh/cardify-reto-sprint-04)
 
@@ -68,7 +68,7 @@ $(document).ready(() => {
 
 
 ##### Funcionalidad:
-La libreria de Cardify busca todas las imagenes que se encuentren dentro de un contenedor y semanticamente las coloca dentro de una etiqueta **figure** junto con una etiqueta **figcaption** que adquiere el texto de el atributo **alt** de dicha imagen.Esta libreria contiene estilos css y de bootstrap ya definidos.
+El plugin de Cardify busca todas las imagenes que se encuentren dentro de un contenedor y semanticamente las coloca dentro de una etiqueta **figure** junto con una etiqueta **figcaption** que adquiere el texto de el atributo **alt** de dicha imagen.Este plugin contiene estilos css y de bootstrap ya definidos.
 
 ##### Cómo agregar Cardify a tu proyecto
 
