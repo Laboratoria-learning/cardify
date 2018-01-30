@@ -34,6 +34,9 @@ it("passes cuando la imagen es png o jpg", () => {
   $('img').attr('src').substring(('img').lastIndexOf('.')) === ".jpg" && ".png" 
    });
 });
+  afterEach(function (done) {
+    setTimeout(done, 200);
+});
 describe('cardify', () => {
   $('.container').cardify;
   it('Passes si se crea figure', () => {
