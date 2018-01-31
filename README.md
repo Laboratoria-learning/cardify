@@ -114,8 +114,8 @@ La clase **'.container'**
 ```
 
 ## Ejemplos
-![Sin titulo](public/assets/docs/1.png)
+![Sin titulo](public/assets/docs/1-back.png)
 Asi es como se ve antes de pasar el mouse
 
-![Sin titulo](public/assets/docs/2.png)
+![Sin titulo](public/assets/docs/2-back.png)
 Al pasar el mouse se produce un  **hover** que  realiza la funcionalidad del plugin.
