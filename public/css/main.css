@@ -1,0 +1,131 @@
+/* Helpers */
+.bold{
+    font-weight: bold;
+}
+.content-body {
+    background: rgb(247, 245, 245);
+    font-family:'Raleway', sans-serif;
+}
+
+.item-img {
+    outline: 1px solid blue;
+    float: left;
+    margin: 5%;
+    
+}
+.fixed-cont{
+    position: fixed;
+    z-index: 1000;
+}
+.cont-img {
+    outline: 1px solid red;
+    float: left;
+}
+.container {
+    overflow: hidden;
+}
+/* jennifer
+ */
+ 
+.product-photo {
+    background-color: #CCCCCC;
+    float: left;
+    position:relative;
+    height: 285px;
+    margin-bottom: 5px;
+    width: 181px;
+}
+.imgdisplay{
+    display: none;
+}
+.imghover {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+}
+.figcaptionhover {
+    height: 100px;
+    background-color: black;
+    color: white;
+    padding-top: 30px;
+}
+.img2 {
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+
+pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.428571429;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: relative;
+}
+span {
+    position: absolute;
+    left: 10px;
+}
+.texto-azul {
+    border: 1px solid red;
+}
+
+figure.horizontal {
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    margin: 5px 2px;
+}
+.tb {
+    width: 70%;
+    max-width: 960px;
+    width: 90%;
+    list-style-type: none;
+    margin: 20px auto;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.nav-wrapper {
+   /* background: #3f51b5;*/
+   background: rgb(126, 125, 125);
+}
+.cont-section {
+    margin-top: 2%;
+    padding: 2%;
+    background: #fff;
+}
+.back-img {
+    background: url('../assets/img/programa-cod.jpg')
+            center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    color: white;        
+}
+.text {
+    text-align: center;
+    padding-top: 15%;
+    font-family: 'Stint Ultra Condensed', cursive;
+}
+.opacity{
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+.descarga {
+    text-align: center;
+    /*margin: 2%;*/
+}
+.descarga a {
+    margin: 2%;
+}
