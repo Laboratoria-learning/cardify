@@ -29,22 +29,67 @@ Planificación de trabajo con [Trello](https://trello.com/b/gsC83EJh/cardify-ret
   </div>
 </div>
 ```
+
+    PluginJQ
+```js
+(function ($) {
+  $.fn.cardify = function () {
+
+    var containerA = $('.container');
+
+    var pluginImage = function pluginImage(containerX) {
+      var searchImage = containerX.find('img');
+
+      console.log(searchImage);
+
+      var _loop = function _loop(i) {
+        console.log(searchImage[i]);
+        searchImage.css({ 'width': '335px', 'height': '200px', 'border-radius': '10px' });
+
+        var figure = $('<figure style="color:transparent" class="col-lg-4"></figure>');
+        figure.append(searchImage[i]);
+        $(figure).css({ 'width': 'auto', 'height': '250px', 'text-align': 'center', 'text-transform': 'capitalize', 'font-weight': 'bold' });
+
+        var altImage = $(searchImage[i]).attr('alt');
+        var figcaption = $('<figcaption>' + altImage + '</figcaption>');
+        figure.append(figcaption);
+
+        containerX.append(figure);
+        figure.hover(function () {
+          $(searchImage[i]).css({ 'visibility': 'hidden' });
+          $(searchImage[i]).animate(4000);
+          $(figure).css({ 'color': 'black', 'text-shadow': '0px 0px black' });
+          figure.addClass('col-lg-4');
+          figcaption.css({ 'font-size': '30px', 'transform': 'translateY(-300%)' });
+        }, function () {
+          $(searchImage[i]).css({ 'visibility': 'visible' });
+          $(searchImage[i]).animate(4000);
+          $(figure).css({ 'color': 'white', 'text-shadow': '2px 2px black' });
+          figcaption.css({ 'transform': 'translateY(0%)', 'font-size': '20px' });
+        });
+      };
+
+      for (var i = 0; i < searchImage.length; i++) {
+        _loop(i);
+      }
+    };
+    pluginImage(containerA);
+  };
+})(jQuery);
+  ```
+
+
 ##### Funcionalidad:
-El plugin de Cardify busca todas las imagenes que se encuentren dentro de un contenedor y semanticamente las coloca dentro de una etiqueta **figure** junto con una etiqueta **figcaption** que adquiere el texto de el atributo **alt** de dicha imagen.Este plugin contiene estilos css y de bootstrap ya definidos.
+El plugin de Cardify busca todas las imagenes que se encuentren dentro de un contenedor y semanticamente las coloca dentro de una etiqueta **figure** junto con una etiqueta **figcaption** que adquiere el texto del atributo **alt** de dicha imagen.Este plugin contiene estilos css y de bootstrap ya definidos.
 
 ##### Cómo agregar Cardify a tu proyecto
 
 ###### Requisitos previos
-Antes de comenzar, necesitarás una app de JavaScript.
 
-###### Agrega Cardify a tu app
-Para agregar Cardify a tu app, necesitarás un proyecto de index.html, agregando jQuery en el script de preferencia la ultima version y necesitaras instalar el frameworks Bootstrap version 3.0.0.
+primero necesitarás enlazar el siguiente archivo a tu index.html:
 
-
-```js
-<script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>
-```
-
+<script type="text/javascript" src="nombre_carpeta/cardify.js"></script>
+ 
 
 ### Global (navegador)
 
@@ -56,14 +101,21 @@ Para agregar Cardify a tu app, necesitarás un proyecto de index.html, agregando
 ## Uso
 
 ```js
-// `container` es el selector del contenedor donde se buscarán todas las
-// imágenes a ser procesadas.
-$(container).cardify({});
+En tu archivo app.js deberás colocar la siguiente línea de código:
+
+$('.container').cardify();
+
+y para que se ejecute la función el usuario debe poner en el elemento html que contenga en su interior elementos de etiqueta 'img'  
+La clase **'.container'**
+
+<div class="container">
+  <img src="url_imagen" alt="descripción_imagen">
+</div>
 ```
 
 ## Ejemplos
-![Sin titulo](public/assets/docs/1-back.png)
+![Sin titulo](public/assets/docs/1.png)
 Asi es como se ve antes de pasar el mouse
 
-![Sin titulo](public/assets/docs/2-back.png)
+![Sin titulo](public/assets/docs/2.png)
 Al pasar el mouse se produce un  **hover** que  realiza la funcionalidad del plugin.
