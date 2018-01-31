@@ -39,7 +39,7 @@ body{
     font-size: 2.3em;
     font-weight: bold;
     height: 100%;
-    padding-top: 120px;
+    padding-top: 100px;
     position: absolute;
     text-align: center;
     text-decoration: none;
@@ -52,6 +52,12 @@ body{
 }
 .gepic .negro em {
     display: block;
-    font-size: 0.50em;
-    font-weight: normal;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#caption{
+    display: block;
+    position: absolute;
+    top:0;
 }
