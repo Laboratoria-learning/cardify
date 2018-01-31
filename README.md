@@ -79,12 +79,12 @@ Planificación de trabajo con [Trello](https://trello.com/b/gsC83EJh/cardify-ret
   ```
 
 
-##### Funcionalidad:
+## Funcionalidad:
 El plugin de Cardify busca todas las imagenes que se encuentren dentro de un contenedor y semanticamente las coloca dentro de una etiqueta **figure** junto con una etiqueta **figcaption** que adquiere el texto del atributo **alt** de dicha imagen.Este plugin contiene estilos css y de bootstrap ya definidos.
 
-##### Cómo agregar Cardify a tu proyecto
+## Cómo agregar Cardify a tu proyecto
 
-###### Requisitos previos
+### Requisitos previos
 
 primero necesitarás enlazar el siguiente archivo a tu index.html:
 
