@@ -23,9 +23,9 @@
 .container {
     overflow: hidden;
 }
-/* 
+/* jennifer
  */
- hover
+ 
 .product-photo {
     background-color: #CCCCCC;
     float: left;
@@ -34,8 +34,10 @@
     margin-bottom: 5px;
     width: 181px;
 }
-
-.img1 {
+.imgdisplay{
+    display: none;
+}
+.imghover {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -78,10 +80,6 @@ span {
 figure.horizontal {
     height: 200px;
     width: 200px;
-    /* line-height: 80px; */
-    /* font-size: 20px; */
-    /* background-color: steelblue; */
-    /* color: #fff; */
     text-align: center;
     margin: 5px 2px;
 }
