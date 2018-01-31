@@ -1,37 +1,32 @@
-(function($) {
+(($) => {
   // Declaración del plugin.
   $.fn.pluss = function(options) {
     // Obtenemos los parámetros.
     options = $.extend({}, $.fn.pluss.defaultOptions, options);
-    
-     this.each(function(index) {
-      $('.container').append(
-        '<figure>' +
-            '<figcaption>' + $(this).attr('alt') + '</figcaption>' +
-            '</figure>'
-      );
-      $('figure')[index].prepend($(this)[0]);
-      var element = $('figure');
-      var container=$('.container');
-            container.addClass(options.direction);
-      element.addClass(options.align);
-        
-      $( this ).mouseover(function() {
-        $('.container img').eq(index).addClass('imgdisplay');
-        $('figcaption:eq('+(index)+')').addClass('figcaptionhover');
-        
+    $(this).find('img').each((index, value) => {
+
+      $(value).wrap('<figure></figure>');
+      let figure = $(value).parent();
+      figure.append('<figcaption>' + $(value).attr('alt') + '</figcaption>');
+      // Estableciendo clases (horizontal o vertical---por defecto vertical)
+      $(value).addClass('cont-img');
+
+      $(this).addClass(options.direction);
+      figure.addClass(options.align);
+      //  Efecto Hover
+      $(value).mouseover(() => {
+        $(value).addClass('imgdisplay');
+        $('figcaption:eq(' + (index) + ')').addClass('figcaptionhover');
       });
-      $('figcaption:eq('+(index)+')' ).mouseout(function() {
-        $('.container img').eq(index).removeClass('imgdisplay');
-        $('figcaption:eq('+(index)+')').removeClass('figcaptionhover');
-              });
-
+      $('figcaption').mouseout(() => {
+        $(value).removeClass('imgdisplay');
+        $('figcaption:eq(' + (index) + ')').removeClass('figcaptionhover');
+      });
     });
-  };  
-     // Parametros del plugin.
-
-     $.fn.pluss.defaultOptions = {
-      align: 'vertical',
-      direction: ''
-    }
+  };
+  // Parametros del plugin.
+  $.fn.pluss.defaultOptions = {
+    align: 'vertical',
+    direction: ''
+  };
 })(jQuery);

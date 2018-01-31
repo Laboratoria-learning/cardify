@@ -1,7 +1,7 @@
-$(document).ready(function() {
-  $('.container img').pluss(
-    {align: 'horizontal',
+'use strict';
+
+$(document).ready( () =>{
+  $('.container-cardify').pluss({ align: 'horizontal',
     direction: 'tb'
   });
-
 });
