@@ -1,44 +1,23 @@
-
 {
   "name": "cardify",
   "version": "1.0.0",
-  "description": "Desarrollo plugin jquery cardify",
-  "author": "Jennifer Carmen, Valeria valles",
-  "homepage": "https://Jennifercarmen.github.io/cardify",
+  "description": "Cardify es un proyecto  que se nos pidio implementar como parte de la creacion de una librería (library), teniendo como objetivo responder a la necesidad de hacer mas legible o evitar estar repitiendo codigo para paginas web o aplicaciones moviles.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src -d public/js"
   },
-  "keywords":[
-    "cardify",
-    "jquery",
-    "javascript",
-    "plugin",
-    "image",
-    "jquery-plugin"
-    ],
-  "contributors": [
-    {
-      "name": "Jennifer Milagros Carmen Sosa",
-      "email": "jennifercarmens@gmail.com",
-      "url": "https://github.com/Jennifercarmen"
-    },
-    {
-      "name": "Valeria Valles",
-      "email": "sindryv@gmail.com",
-      "url": "https://github.com/valeriavalles"
-    }
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Jennifercarmen/cardify.git"
   },
-  "dependencies": {
-    "jquery": ">=3.2.1"
-  },
+  "author": "valeria y jennifer",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Jennifercarmen/cardify/issues"
   },
-  "docs": "https://github.com/Jennifercarmen/cardify#readme"
+  "homepage": "https://github.com/Jennifercarmen/cardify#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
 }
