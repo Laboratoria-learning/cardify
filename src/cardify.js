@@ -1,7 +1,7 @@
 (function($) {
   $.fn.cardify = function() {
 
-    let containerA = $('.container');
+    let containerA = $('.container-img');
 
     let pluginImage = (containerX) => {
       let searchImage = containerX.find('img');
