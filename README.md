@@ -3,7 +3,7 @@
 # Cardify
 
 ***
-Es un plugin de jQuery que permite que tus imágenes almacenadas dentro de un contenedor sean reemplazadas por un nuevo elemento `<figure>` que a su vez posee un `<figcaption>` con el texto del atributo `alt` de la imagen.
+Es un plugin de jQuery para Bootstrap que permite que tus imágenes almacenadas dentro de un contenedor sean reemplazadas por un nuevo elemento `<figure>` que a su vez posee un `<figcaption>` con el texto del atributo `alt` de la imagen.
 Además al pasar el mouse sobre la imagen lograremos ver el contenido del 
 `<figcaption>`.
 ***
@@ -25,18 +25,18 @@ El proyecto fue realizado con las siguientes dependencias NPM:
 
 ### Uso
 
-+ Clonar repositorio.
-+ Posicionado en nuestro proyecto hacer correr `npm install` para descargar e instalar todas las dependencias utilizadas.
++ Descarga este repositorio e incluye la carpeta en tu proyecto.
++ Debes usar class = 'cardify' en el elemento que contiene las imagenes.
++ Recuerda usar la class de bootstrap class='img-responsive' en tus imagenes.
++ Debes incluir el atributo alt en tus imagenes con el texto que desees.
+
+![](assets/img/explainreadme.png)
 
 ```
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="path-to-cardify.js"></script>
+  `Por último añade este script en tu html.
+  <script type="text/javascript" src="cardify-master/lib/main.js"></script>
 ```
 
-
-```
-  `Debes usar class = 'cardify'; en el elemento que contiene las imagenes .
-```
 
 ### Ejemplo
 

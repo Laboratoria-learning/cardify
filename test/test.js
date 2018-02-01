@@ -1,7 +1,7 @@
 
 const jsdom = require('jsdom');
 const { JSDOM } = jsdom;
-let dom = new JSDOM('<!DOCTYPE html><html><body><div class="container"><img class ="img-responsive col" src="../assets/img/tres.jpg" alt="hola test"></></div></body></html>');
+let dom = new JSDOM('<!DOCTYPE html><html><body><div class="cardify"><img class ="img-responsive col" src="../assets/img/tres.jpg" alt="hola test"></></div></body></html>');
 const { window } = dom;
 global.document = dom;
 global.window = window;
@@ -65,8 +65,6 @@ describe('cardify', () => {
     $('img').width() === $('figure').width();
 
   });*/
-
-  });
   it('Passes si figure tiene position relative', () => {
     chai.expect($('figure')).to.have.$css('position', 'relative');
   });
@@ -80,13 +78,10 @@ describe('cardify', () => {
   });
 
   it('Passes si existe div posee una class', () => {
-    chai.expect($('div')).to.have.$class('container');
+    chai.expect($('div')).to.have.$class('cardify');
   });
-
-  
-
-
-afterEach(function(done) { //dynamic cat test !
+});
+afterEach(function(done) { // dynamic cat test !
   setTimeout(done, 200);
 });
 
