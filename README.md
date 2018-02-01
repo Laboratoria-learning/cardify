@@ -2,16 +2,10 @@
 
 # Cardify
 
-* **Track:** _Common Core_
-* **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_
-* **Unidad:** _Producto final_
-
 ***
-Es un plugin de jQuery que dado un _contenedor_ busca todas las
-imágenes que encuentra dentro del _contenedor_ y las reemplaza por un nuevo
-elemento `<figure>` que contiene la imagen (`<img>`) además  un `<figcaption>`
-con el texto del atributo `alt` de la imagen.
-Además al pasar el mouse sobre la imagen lograremos ver el contenido del `<figcaption>`.
+Es un plugin de jQuery que permite que tus imágenes almacenadas dentro de un contenedor sean reemplazadas por un nuevo elemento `<figure>` que a su vez posee un `<figcaption>` con el texto del atributo `alt` de la imagen.
+Además al pasar el mouse sobre la imagen lograremos ver el contenido del 
+`<figcaption>`.
 ***
  
 ### Metodología de Tabajo
