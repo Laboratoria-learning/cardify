@@ -21,8 +21,13 @@ El proyecto fue realizado con las siguientes dependencias NPM:
 + Dependencias de Producción
   - JQuery ~v. 3.2.1
   - Bootstrap ~v. 3.3.7
+  - Jsdom ^11.6.1
+  - Browserify ^15.2.0
+
++ Dependencias de Desarrollo
   - Chai ^ 4.1.2
   - Mocha ^ 5.0.0
+  - Browserify ^ 15.2.0
 
 ### Levantamiento ambiente de desarrollo
 
@@ -37,7 +42,9 @@ Global (navegador)
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="path-to-cardify.js"></script>
 ```
+
 ### Uso
+
 ```
   // `container` es el selector del contenedor donde se buscarán todas las
   // imágenes a ser procesadas.
