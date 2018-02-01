@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,141 +8,191 @@
   <title>Plugin</title>
   <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Raleway|Stint+Ultra+Condensed" rel="stylesheet">
   <link rel="stylesheet" href="vendors/materialize/css/materialize.min.css">
-  <link rel="stylesheet" href="css/main.css">  
-  <link rel="stylesheet" href="css/cardify.css">  
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/cardify.css">
 </head>
+
 <body class="content-body">
-    <header class="nav-wrapper">
-            <nav class="fixed-cont">
-              <div class="nav-wrapper">
-                <a href="#" class="brand-logo">Cardify</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                  <li><a href="#cardify">¿Que es cardify</a></li>
-                  <li><a href="#utilizar">Como utlizar</a></li>
-                  <li><a href="#documentacion">Documentación</a></li>
-                  <li><a href="#ejemplos">Ejemplos</a></li>
-                </ul>
-              </div>
-            </nav>
-    </header>
-    <section>
-      <div class="back-img">
-          <div class="opacity">
-          <div class="container text">
-            <h3> Haz mas y escribe menos</h3>
-            
-          </div>
-          </div>
+  <header class="nav-wrapper">
+    <nav class="fixed-cont">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Cardify</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <a href="#cardify">¿Que es cardify</a>
+          </li>
+          <li>
+            <a href="#utilizar">Como utilizar</a>
+          </li>
+          <li>
+            <a href="#documentacion">Documentación</a>
+          </li>
+          <li>
+            <a href="#ejemplos">Ejemplos</a>
+          </li>
+        </ul>
       </div>
-      
-    </section>
-    <section>
-    <div class="container cont-section">
-      <div id="cardify"><h5><i class="fa fa-info" aria-hidden="true"></i> &nbsp; ¿Que es cardify</h5></div>
-      <div>
-        <p><strong>Cardify</strong> es un complemento de Javascript que le permite crear una barra de progreso utilizando sus propias imágenes.</p>
-        <p>- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam dolore quos nisi maiores minima 
-          tempore error voluptatibus ducimus. Accusantium odit, ipsum voluptates a ut quis minima libero pariatur
-           enim corporis!</p>
-        <p>- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, laudantium ab praesentium voluptatem 
-          libero quasi maxime eaque deserunt sed excepturi quis voluptate hic error quibusdam provident aut dolores
-           numquam nobis.</p>
+    </nav>
+  </header>
+  <section>
+    <div class="back-img">
+      <div class="opacity">
+        <div class="container text">
+          <h3> Haz mas y escribe menos</h3>
+
+        </div>
       </div>
     </div>
-    </section>
-    <section>
-      <div class="container cont-section" >
-        <div id="utilizar"><h5><i class="fa fa-file-code-o" aria-hidden="true"></i> &nbsp; Como utilizar cardify</h5></div>
-        <div>
-          <p>Si está utilizando jQuery , debe incluirlo ANTES de usar este complemento. Funciona con jQuery> =  <strong>3.2.1.</strong></p>
+
+  </section>
+  <section>
+    <div class="container cont-section">
+      <div id="cardify">
+        <h5>
+          <i class="fa fa-info" aria-hidden="true"></i> &nbsp; ¿Que es cardify?</h5>
+      </div>
+      <div>
+        <p>
+          <strong>Cardify</strong> es un complemento de Javascript que le permite simular una estructura semántica de tu código html
+          al momento de cargar tu sitio web , cardify se encarga de buscar todas las imágenes que encuentra dentro de un
+          contenedor y reemplazarlas por un nuevo elemento 'figure'' que contenga la imagen además de un figcaption con el
+          texto del atributo alt de la imagen, mostrando este último en un efecto hover.</p>
+        <p>- Perfecto para ordenar tu galeria de imagenes, animar tus imagenes con efecto hover, vista de codigo con estructura
+          semántica,etc</p>
+
+      </div>
+    </div>
+    <div class="container-cardify">
+        
+        <img  src="assets/images/img3.jpg" alt="Vichayito-Piura" >
+        <img src="assets/images/img4.jpg" alt="Caravelí-Arequipa">
+        <img  src="assets/images/img5.jpg" alt="Punta Sal" >
+        <img  src="assets/images/img6.jpg" alt="Playa Roja-Paracas" >
+                
+        <img  src="assets/images/img1.jpg" alt="Playa de los muertos- España">
+        <img  src="assets/images/img2.jpg" alt="Playa del Carmen-Mexico">
+                
+          <img  src="assets/images/img7.jpg" alt="Colan-Piura 2018" >
+          <img  src="assets/images/img8.jpg"  alt="Mancora-Piura 2018" > 
+          <img  src="assets/images/img9.jpg"  alt="Zorrritos-Tumbes" > 
+
+      </div>
+  </section>
+  <section>
+    <div class="container cont-section">
+      <div id="utilizar">
+        <h5>
+          <i class="fa fa-file-code-o" aria-hidden="true"></i> &nbsp; Como utilizar cardify</h5>
+      </div>
+      <div>
+        <p>Si está utilizando jQuery , debe incluirlo ANTES de usar este complemento. Funciona con jQuery> =
+          <strong>3.2.1.</strong>
+        </p>
+        <p class="bold">Entorno de desarrollo</p>
+        <li> Descargue LoadGo desde este enlace o clónelo desde GitHub .</li>
+        <li> Descomprímalo (si está comprimido) y copie la carpeta Cardify en sus scripts JS.</li>
+        <li> Insertar las siguiente lineas en su página web:</li>
+        <br>
+        <div class="language-javascript">
+          <div class="bold">
+            <div>&lt;linkrel="stylesheet"href="css/cardify.css"&gt;</div>
+            <div>&nbsp;</div>
+            <div>&lt;script type = "text / javascript" src = "jquery.cardify.js" &gt; &lt;/ script&gt;&nbsp;</div>
+            <div>&nbsp;</div>
+          </div>
         </div>
       </div>
-    </section>
-    <section>
-        <div class="container cont-section" >
-          <div id="documentacion"><h5><i class="fa fa-file-text" aria-hidden="true"></i> &nbsp;
-            Documentación</h5></div>
-            <br>
-            <div>
-              <h6>INTRODUCCION</h6>
-            </div>
-            <P>Cardify es un complemento que le proporciona una mejor manera de mantener a desarrolladores o diseñadores 
-              de implementar funcionalidades mas rapidas y accesibles.</P>
-              
-            <p>Cardify se  ajusta a su imagen en  div, y agrega una superposición dentro de este envoltorio. Luego, 
-              cambiará al pasar el mouse el figcaption se mostrara superponiendose a la imagen.
-            </p>
-            
-            <p>Cardify solo funcionará en img elementos proporcionados por id.</p>
-        </div>
-        
+    </div>
+  </section>
+  <section>
+    <div class="container cont-section">
+      <div id="documentacion">
+        <h5>
+          <i class="fa fa-file-text" aria-hidden="true"></i> &nbsp; Documentación
+        </h5>
+      </div>
+      <br>
+      <div>
+        <h6>INTRODUCCION</h6>
+      </div>
+      <P>Cardify es un complemento que le proporciona una mejor manera de mantener a desarrolladores o diseñadores de implementar
+        funcionalidades mas rapidas y accesibles.</P>
 
-    </section>
-    <section>
-        <div class="container cont-section" >
-          <div id="ejemplos"><h5>Ejemplos</h5></div>
-        </div>
-        <div class="row">
-            <div class="col m10 offset-m1 col s10 offset-s1">
-              <h5 style="border-bottom: 1px solid #ddd;padding-bottom: 10px;">Cardify - jQuery Examples</h5>
-              <ul style="margin-top: 20px">
-                <li>
-                  <h6>
-                    <a href="https://Jennifercarmen.github.io/cardify"> Sitio Oficial </a>
-                  </h6>
-                </li>
-                <li>
-                  <h6>
-                    <a href="http://github.com/Jennifercarmen/cardify">Github</a>
-                  </h6>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col m10 col s10 offset-m1 offset-s1">
-              <h5>Example #1:Imagenes alineadas verticalmente</h5>
-              <h6>
-                Imagenes con Figure y figcaption
-              </h6>
-              <div class="row" style="margin-top:10px;">
-                <div class="col m6 offset-m3 col s12">
-                  <h6 class="bold">jQuery</h6>
-        
-                  <pre class="language-javascript">
+      <p>Cardify se ajusta a su imagen en div, y agrega una superposición dentro de este envoltorio. Luego, cambiará al pasar
+        el mouse el figcaption se mostrara superponiendose a la imagen.
+      </p>
+
+    </div>
+
+
+  </section>
+  <section>
+    <div class="container cont-section">
+      <div id="ejemplos">
+        <h5>Ejemplos</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col m10 offset-m1 col s10 offset-s1">
+        <h5 style="border-bottom: 1px solid #ddd;padding-bottom: 10px;">Cardify - jQuery Examples</h5>
+        <ul style="margin-top: 20px">
+          <li>
+            <h6>
+              <a href="https://Jennifercarmen.github.io/cardify"> Sitio Oficial </a>
+            </h6>
+          </li>
+          <li>
+            <h6>
+              <a href="http://github.com/Jennifercarmen/cardify">Github</a>
+            </h6>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col m10 col s10 offset-m1 offset-s1">
+        <h5>Example #1:Imagenes alineadas verticalmente</h5>
+        <h6>
+          Imagenes con Figure y figcaption
+        </h6>
+        <div class="row" style="margin-top:10px;">
+          <div class="col m6 offset-m3 col s12">
+            <h6 class="bold">jQuery</h6>
+
+            <pre class="language-javascript">
                         <p>     $('.container-cardify').pluss();
                         </p>
                         </pre>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col s4 col m6  offset-m3 center-align">
-                  <div class="container-cardify">
-                    <img  src="assets/images/img1.jpg" alt="Parque Nacional Banff">
-                    <img  src="assets/images/img2.jpg" alt="Vacaciones en Ecuador">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col m12  col s12 center-align">
-                  <button class="btn btn-primary" id="startvertical">
-                    Start
-                  </button>
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s4 col m6  offset-m3 center-align">
+            <div class="container-cardify">
+              <img src="assets/images/img1.jpg" alt="Playa de los muertos-España">
+              <img src="assets/images/img2.jpg" alt="Playa del Carmen-Mexico">
             </div>
           </div>
-          <div class="row">
-            <div class="col m10 offset-m1 offset-s1">
-              <h5>Example #2:Imagenes alineadas horizontalmente</h5>
-              <h6>
-                Imagenes con Figure y figcaption
-              </h6>
-              <div class="row" style="margin-top:10px;">
-                <div class="col m6 offset-m3 col s12 ">
-                  <h6 class="bold">jQuery</h6>
-        
-                  <pre class="language-javascript">
+        </div>
+        <div class="row">
+          <div class="col m12  col s12 center-align">
+            <button class="btn btn-primary" id="startvertical">
+              Start
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col m10 offset-m1 offset-s1">
+        <h5>Example #2:Imagenes alineadas horizontalmente</h5>
+        <h6>
+          Imagenes con Figure y figcaption
+        </h6>
+        <div class="row" style="margin-top:10px;">
+          <div class="col m6 offset-m3 col s12 ">
+            <h6 class="bold">jQuery</h6>
+
+            <pre class="language-javascript">
                           <p> 
                             $('.container-horizontal').pluss({ 
                               align: 'horizontal',
@@ -149,44 +200,43 @@
                             });
                          </p>
                         </pre>
-                </div>
-              </div>
-              <div class="row" style="margin-top:10px;">
-                <div class="col s4 col m8  offset-m2 center-align">
-                  <div class="container-horizontal">
-        
-                    <img  src="assets/images/img3.jpg" alt="Patrimonio Cultural" >
-                    <img  src="assets/images/img4.jpg" alt="Macchu Picchu" >
-                    <img  src="assets/images/img5.jpg" alt="Coordillera Volcanica" >
-                    <img  src="assets/images/img6.jpg" alt="Nevado Huascar" >
+          </div>
+        </div>
+        <div class="row" style="margin-top:10px;">
+          <div class="col s4 col m8  offset-m2 center-align">
+            <div class="container-horizontal">
+                <img  src="assets/images/img3.jpg" alt="Vichayito-Piura" >
+                <img src="assets/images/img4.jpg" alt="Caravelí-Arequipa">
+                <img  src="assets/images/img5.jpg" alt="Punta Sal" >
+                <img  src="assets/images/img6.jpg" alt="Playa Roja-Paracas" >
 
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col m12  col s12 center-align">
-                  <button class="btn btn-primary" id="startHorizontal">
-                    Start
-                  </button>
-                </div>
-              </div>
             </div>
           </div>
-    </section>
-    <section>
-      <div class="container descarga"> 
-          <a class="waves-effect waves-light btn-large " href="../src/cifradoCesar.zip" download="Cifrado" >Descargar Plugin</a>
+        </div>
+        <div class="row">
+          <div class="col m12  col s12 center-align">
+            <button class="btn btn-primary" id="startHorizontal">
+              Start
+            </button>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
+  <section>
+    <div class="container descarga">
+      <a class="waves-effect waves-light btn-large " href="../src/cifradoCesar.zip" download="Cifrado">Descargar Plugin</a>
+    </div>
+  </section>
 
 
- 
+
   <!-- Materialize  Jquery JavaScript -->
   <script src="https://use.fontawesome.com/eb8c5d1ec4.js"></script>
   <script src="vendors/js/jquery-3.2.1.min.js"></script>
   <script src="examples/examples.js"></script>
+  <script src="js/app.js"></script>
   <script src="js/jquery.cardify.js"></script>
-
 </body>
 
 </html>
