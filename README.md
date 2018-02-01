@@ -31,6 +31,16 @@ Valeria Valles encarga en :
 * Funcionalidad 
 * Maquetacion del contenido de la pagina del plugin
 
+### Herramientas utilizadas
+
+> html  maquetado e estructura de la pagina.
+
+> CSS estilos a la pagina del plugin.
+
+> jquery para el plugin e funcionalidad.
+
+> Babel transpilador.
+
 
 
 ## Requisitos del Proyecto
