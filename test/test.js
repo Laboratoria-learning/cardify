@@ -53,9 +53,7 @@ describe('cardify', () => {
     chai.expect($('.text-caption')).to.have.$css('position', 'absolute');
   });
 
-  /*it('passes si imagen es del mismo ancho que figcaption', () => {
-
-
+  /*
   it('passes si imagen es del mismo ancho que figcaption', () => {
 
     $('img').width() === $('figcaption').width();
@@ -95,7 +93,7 @@ describe('cardify', () => {
   //});
 
  
-});
+
 afterEach(function(done) { //dynamic cat test !
   setTimeout(done, 200);
 });
