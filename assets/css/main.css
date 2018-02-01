@@ -17,8 +17,7 @@ body{
 .imagenes {
     display: none;
     font-size: 2.3em;
-    font-weight: bold;   
-    padding-top: 120px;
+
     text-align: center;
     text-decoration: none;
     width: 100%;
@@ -29,7 +28,7 @@ body{
 }
 .imagenes{
     display: block;
-    font-size: 0.50em;
-    font-weight: normal;
+    font-size: 1em;
+    font-weight: bold;
 }
-*/
+<
