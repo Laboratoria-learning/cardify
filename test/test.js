@@ -46,7 +46,7 @@ describe('cardify', () => {
   });
 
   it('Passes cuando la imagen es png o jpg', () => {
-    $('img').attr('src').substring(('img').lastIndexOf('.')) === '.jpg' && '.png'; 
+    $('img').attr('src').substring(('img').lastIndexOf('.')) === '.jpg' || '.png' || '.gif'; 
   });
   
   it('Passes si figure no tiene atributo class', () => {
@@ -76,7 +76,7 @@ describe('cardify', () => {
   });
   
   //it('Passes cuando el atributo alt sea igual a un string', () => {
-  // chai.expect($('alt')).to.be.a.$typeOf('string');
+   //chai.expect($('alt')).to.be.$typeOf('string');
   //});
 
   //it('Passes cuando el atributo alt sea distinto a un número', () => {
