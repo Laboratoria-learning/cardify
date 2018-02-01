@@ -55,7 +55,7 @@ Global (navegador)
 
 ### Ejemplo
 
-![](assets/img/ejemplo.png)
+![](assets/img/img_example.png)
 
 
 ### Licencia
