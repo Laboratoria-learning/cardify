@@ -1,7 +1,7 @@
 
 const jsdom = require('jsdom');
 const { JSDOM } = jsdom;
-let dom = new JSDOM('<!DOCTYPE html><html><body><div class="container"><img src="../assets/img/tres.jpg" alt="hola test"></></div></body></html>');
+let dom = new JSDOM('<!DOCTYPE html><html><body><div class="container"><img class ="img-responsive col" src="../assets/img/tres.jpg" alt="hola test"></></div></body></html>');
 const { window } = dom;
 global.document = dom;
 global.window = window;
@@ -20,7 +20,7 @@ const cardify = require('../src/app');
 describe('cardify', () => {
   $('.container').cardify();
 
-  it('passes si figure no tiene atributo class', () => {
+  it('Passes si figure no tiene atributo class', () => {
     chai.expect($('figure')).to.not.have.$data('class');
   });
    
@@ -30,31 +30,34 @@ describe('cardify', () => {
   it('Passes cuando h3 tiene class text-caption', () => {
     chai.expect($('h3')).to.have.$class('text-caption');
   });
-  it('passes cuando el atributo src no esta vacio ', () => {
+  it('Passes cuando el atributo src no esta vacio ', () => {
     $('img').attr('src') !== '';
   });
-  it('passes cuando el body tiene hijos', () => {
+  it('Passes cuando el body tiene hijos', () => {
     dom.window.document.body.children.length >= 1;
     // quiero saber si existen elementos en el body
   });
-  it('passes cuando existen imagenes dentro de container', () => {
+  it('Passes cuando existen imagenes dentro de container', () => {
     $('.container').children('img').length >= 1; 
   });
 
-  it('passes cuando el atributo alt no esta vacio', () => {
+  it('Passes cuando el atributo alt no esta vacio', () => {
     $('img').attr('alt') !== '';
   });
 
-  it('passes cuando la imagen es png o jpg', () => {
+  it('Passes cuando la imagen es png o jpg', () => {
     $('img').attr('src').substring(('img').lastIndexOf('.')) === '.jpg' && '.png'; 
   });
-  it('passes si figure no tiene atributo class', () => {
-    chai.expect($('figure')).to.not.have.$data('class');
-  });
-  it('passes si figure no tiene atributo class', () => {
+  
+  it('Passes si figure no tiene atributo class', () => {
     chai.expect($('.text-caption')).to.have.$css('position', 'absolute');
   });
+
   /*it('passes si imagen es del mismo ancho que figcaption', () => {
+
+
+  it('passes si imagen es del mismo ancho que figcaption', () => {
+
     $('img').width() === $('figcaption').width();
   });
   it('passes si imagen es del mismo ancho que figcaption', () => {
@@ -62,8 +65,36 @@ describe('cardify', () => {
   })
   it('passes si imagen es del mismo ancho que figcaption', () => {
     $('img').width() === $('figure').width();
+
   });*/
+
+  });
+  it('Passes si figure tiene position relative', () => {
+    chai.expect($('figure')).to.have.$css('position', 'relative');
+  });
+
+  it('Passes si la imagen tiene class responsive', () => {
+    chai.expect($('img')).to.have.$class('img-responsive');
+  });
+
+  it('Passes si la imagen tiene class col', () => {
+    chai.expect($('img')).to.have.$class('col');
+  });
+
+  it('Passes si existe div posee una class', () => {
+    chai.expect($('div')).to.have.$class('container');
+  });
+
   
+  //it('Passes cuando el atributo alt sea igual a un string', () => {
+  // chai.expect($('alt')).to.be.a.$typeOf('string');
+  //});
+
+  //it('Passes cuando el atributo alt sea distinto a un número', () => {
+    
+  //});
+
+ 
 });
 afterEach(function(done) { //dynamic cat test !
   setTimeout(done, 200);
