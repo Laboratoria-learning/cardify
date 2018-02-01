@@ -53,11 +53,19 @@ describe('cardify', () => {
     chai.expect($('.text-caption')).to.have.$css('position', 'absolute');
   });
 
+  /*
   it('passes si imagen es del mismo ancho que figcaption', () => {
+
     $('img').width() === $('figcaption').width();
   });
   it('passes si imagen es del mismo ancho que figcaption', () => {
+    expect(('img').width()).to.equal(('figcaption').width());
+  })
+  it('passes si imagen es del mismo ancho que figcaption', () => {
     $('img').width() === $('figure').width();
+
+  });*/
+
   });
   it('Passes si figure tiene position relative', () => {
     chai.expect($('figure')).to.have.$css('position', 'relative');
@@ -74,9 +82,10 @@ describe('cardify', () => {
   it('Passes si existe div posee una class', () => {
     chai.expect($('div')).to.have.$class('container');
   });
+
   
 
-});
+
 afterEach(function(done) { //dynamic cat test !
   setTimeout(done, 200);
 });

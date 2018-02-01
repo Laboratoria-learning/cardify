@@ -9,7 +9,6 @@ $(document).ready(() => {
       this.find('figure').map(function() {
         $(this).append(`<figcaption><h3 class="text-caption">${$(this).children('img').attr('alt')}</h3></figcaption>`);
       }); // encuentra y recorre los figure dentro de la class y agrega un figcaption que tiene como contenido lo escrito en ALT.
-      
       this.find('figure').map(function() { // Encuentra los figure dentro de la class y agrega estilo.
         $(this).css({
           'position': 'relative',
