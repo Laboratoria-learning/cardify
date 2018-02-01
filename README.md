@@ -30,43 +30,6 @@ Planificación de trabajo con [Trello](https://trello.com/b/gsC83EJh/cardify-ret
 </div>
 ```
 
-    PluginJQ
-```js
-$(document).ready(() => {
-  let containerA = $('.container');
-
-  let pluginImage = (containerX) => {
-    let searchImage = containerX.find('img');
-    console.log(searchImage);
-
-
-    for (let i = 0; i < searchImage.length; i++) {
-      console.log(searchImage[i]);
-      searchImage.css({'width': '335px', 'height': '200px',     'border-radius': '10px'});
-
-      let figure = $('<figure style="color:transparent;" class="col-lg-4"></figure>');
-      $(figure).css({ 'width': 'auto', 'height': '250px', 'text-align': 'center', 'text-transform': 'capitalize', 'font-weight': 'bold'});
-      figure.append(searchImage[i]);
-      let altImage = $(searchImage[i]).attr('alt');
-      figure.append('<figcaption class="figcaption-image" style="font-size: 30px">' + altImage + '</figcaption>');
-
-      containerX.append(figure);
-      figure.hover(() => {
-        $(searchImage[i]).css({'visibility': 'hidden'});
-        $(searchImage[i]).animate(4000);
-        $(figure).css({'color': 'black'});
-      }, () => {
-        $(searchImage[i]).css({'visibility': 'visible'});
-        $(searchImage[i]).animate(4000);
-        $(figure).css({'color': 'transparent'});
-      });
-    }
-  };
-  pluginImage(containerA);
-});
-  ```
-
-
 ##### Funcionalidad:
 El plugin de Cardify busca todas las imagenes que se encuentren dentro de un contenedor y semanticamente las coloca dentro de una etiqueta **figure** junto con una etiqueta **figcaption** que adquiere el texto de el atributo **alt** de dicha imagen.Este plugin contiene estilos css y de bootstrap ya definidos.
 
@@ -82,7 +45,6 @@ Para agregar Cardify a tu app, necesitarás un proyecto de index.html, agregando
 ```js
 <script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>
 ```
-
 
 
 ### Global (navegador)
