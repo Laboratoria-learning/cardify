@@ -41,6 +41,10 @@
 .vertical {
     margin: 15px auto;
 }
+.container-cardify1 img {
+    width: 100%;
+}
+
 img {
     width: 75%;
     height: 150px;

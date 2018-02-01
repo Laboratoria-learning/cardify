@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Plugin</title>
+  <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Raleway|Stint+Ultra+Condensed" rel="stylesheet">
   <link rel="stylesheet" href="vendors/materialize/css/materialize.min.css">
   <link rel="stylesheet" href="css/main.css">
@@ -16,7 +17,7 @@
   <header class="nav-wrapper">
     <nav class="fixed-cont">
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Cardify</a>
+        <a href="#" class="brand-logo cardify-left">Cardify</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li>
             <a href="#cardify">¿Que es cardify</a>
@@ -62,7 +63,7 @@
 
       </div>
     </div>
-    <div class="container-cardify1">
+    <div class="container-cardify1 col m12">
         
         <img  src="assets/images/img3.jpg" alt="Vichayito-Piura" >
         <img src="assets/images/img4.jpg" alt="Caravelí-Arequipa">
@@ -74,7 +75,7 @@
                 
           <img  src="assets/images/img7.jpg" alt="Colan-Piura 2018" >
           <img  src="assets/images/img8.jpg"  alt="Mancora-Piura 2018" > 
-          <img  src="assets/images/img9.jpg"  alt="Zorrritos-Tumbes" > 
+      <!--    <img  src="assets/images/img9.jpg"  alt="Zorrritos-Tumbes" > -->
 
       </div>
   </section>
@@ -121,6 +122,31 @@
       <p>Cardify se ajusta a su imagen en div, y agrega una superposición dentro de este envoltorio. Luego, cambiará al pasar
         el mouse el figcaption se mostrara superponiendose a la imagen.
       </p>
+      <div>
+        <p>Cardify solo funcionará con la class="container-cardify".
+          por ejemplo :</p>
+
+          <div class="language-javascript">
+            <div class="bold">
+                
+            <div>&lt;div class="container-cardify"&gt;</div>          
+            <div>&lt;img  src="tiernos.jpg" alt="probandoAlt"&gt;</div>    
+            <div>&lt;img  src="tortuga.jpg"  alt="probando"&gt;</div> 
+            <div>&lt;/div&gt;</div>  
+            </div>
+          </div>
+        <p>Y no funcionara por ejemplo si no cuenta con un class="container-cardify" .</p>   
+        
+        <div class="language-javascript">
+          <div class="bold">
+            <div>&lt;div&gt;</div>
+            <div>&lt;img  src="tiernos.jpg" alt="probandoAlt"&gt;</div>
+            <div>&lt;img  src="tortuga.jpg"  alt="probando"&gt;</div>
+            <div>&lt;/div&gt;</div> 
+          </div>
+          </div>
+        </div>
+      </div>
 
     </div>
 
@@ -135,7 +161,7 @@
 </section>
   <section>
     <div class="container descarga">
-      <a class="waves-effect waves-light btn-large " href="../src/cifradoCesar.zip" download="Cifrado">Descargar Plugin</a>
+      <a class="waves-effect waves-light btn-large " href="test/plugin-cardify/jquery.cardify.zip" download="Cardify">Descargar Plugin</a>
     </div>
   </section>
 
