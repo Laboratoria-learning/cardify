@@ -5,7 +5,7 @@
 ***
 
 Cardify es un proyecto  que se nos pidio implementar como parte de la creacion de una librería (library), teniendo como objetivo responder a la necesidad de hacer mas legible o evitar estar repitiendo codigo para paginas web o aplicaciones moviles.
-![pagina](public/assets/docs/pagina.PNG) 
+![pagina](public/assets/docs/pagina.png) 
 
 ## Equipo Conformado
 
