@@ -1,4 +1,5 @@
 
+
 $(document).ready(function() {
   $(".content img").mouseover(function(){
        
@@ -18,6 +19,7 @@ $(document).ready(function() {
     $('figcaption').css({'display':'block',
                         'width':'90%',
                        
+
 
           
 
