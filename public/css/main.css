@@ -21,6 +21,7 @@
 }
 .fixed-cont{
     position: fixed;
+    z-index: 1000;
 }
 .container {
     overflow: hidden;

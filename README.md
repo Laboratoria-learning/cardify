@@ -16,7 +16,7 @@ Cardify es un proyecto  que se nos pidio implementar como parte de la creacion d
 
 Como parte de la organizacion en equipo se implemento los issues y los milestones.
 
-![Example](public/assets/images/milestone.PNG) 
+![Example](public/assets/docs/milestone.PNG) 
 
 
 y parte de asignacion de tareas se hiso lo siguiente.
