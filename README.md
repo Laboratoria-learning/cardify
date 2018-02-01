@@ -10,6 +10,13 @@ Cardify es un proyecto  que se nos pidio implementar como parte de la creacion d
 
 ## Organizacion de equipo
 
+Como parte de la organizacion en equipo se implemento los issues y los milestones.
+
+![Example](public/assets/images/milestone.PNG) 
+
+
+y parte de asiganacion de tareas se hiso lo siguiente.
+
 Jennifer Carmen encargada en : 
 
 * Investigacion de implementacion del plugin 
