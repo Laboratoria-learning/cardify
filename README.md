@@ -1,5 +1,9 @@
 # Cardify
 
+* **Track:** _Common Core_
+* **Curso:** _CREA TU PROPIA LIBRERÍA USANDO JAVASCRIPT_
+***
+
 Cardify es un proyecto  que se nos pidio implementar como parte de la creacion de una librería (library), teniendo como objetivo responder a la necesidad de hacer mas legible o evitar estar repitiendo codigo para paginas web o aplicaciones moviles.
 
 ## Equipo Conformado
@@ -69,7 +73,7 @@ Si está utilizando jQuery , debe incluir el scrip en el html de su pagina . Fun
 
 ```html
 <script src="src/index.js"></script>
-<script src="TuApp.js"></script>
+<script src="app.js"></script>
 ```
 
 Cardify necesita imágenes completamente cargadas para leer sus dimensiones correctamente. Si no está seguro de cuándo sucederá esto, puede usar este fragmento de código con cada imagen:
@@ -116,4 +120,25 @@ $('.container-cardify').pluss({ align: 'horizontal',
   });
 ```
 
+## CSS
+para los posibles casos de uso en los ejemplos mostrados (vertical-horizontal) necesita importar el archivo cardify.css
 
+
+## Testing
+- Para realizar pruebas unitarias a las posibles funciones a ser usadas en nuestro proyecto se utilizo Mocha
+
+1. Installar `mocha`
+```
+  <link rel="stylesheet" href="css/cardify.css">
+```
+2. Se creo un directorio Test y se crearón dos archivos `test\cardify-test.spec.js`,`test\cardifyimages.js` y el archivo `text.html`
+en el que se hace el llamado de los archivos creados anteriormente ,se inicializa la interfaz BDD de mocha
+
+Incluimos todos los tests que queramos correr
+```
+<script src="./makeVowelsUpperCase.js"></script>
+
+```
+
+Para visualizar los resultados de test puede ingresar aquí 
+[Test](https://jennifercarmen.github.io/cardify/public/test/test.html/)
