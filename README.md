@@ -3,8 +3,9 @@
 # Cardify
 
 ***
-Es un plugin de jQuery que permite que tus imágenes almacenadas dentro de un contenedor sean reemplazadas por un nuevo elemento `<figure>` que a su vez posee un elemento `<figcaption>`con el texto del atributo `alt` de la imagen.
-Además al pasar el mouse sobre la imagen lograremos ver el contenido del `<figcaption>`.
+Es un plugin de jQuery que permite que tus imágenes almacenadas dentro de un contenedor sean reemplazadas por un nuevo elemento `<figure>` que a su vez posee un `<figcaption>` con el texto del atributo `alt` de la imagen.
+Además al pasar el mouse sobre la imagen lograremos ver el contenido del 
+`<figcaption>`.
 ***
  
 ### Metodología de Tabajo
