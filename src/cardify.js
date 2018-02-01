@@ -1,33 +1,34 @@
-$(document).ready(() => {
-  let containerA = $('.container');
-  
-  let pluginImage = (containerX) => {
-    let searchImage = containerX.find('img');
-    console.log(searchImage);
-  
+(function($) {
+  $.fn.cardify = function() {
 
-    for (let i = 0; i < searchImage.length; i++) {
-      console.log(searchImage[i]);
-      searchImage.css({'width': '335px', 'height': '200px',     'border-radius': '10px'});
+    let containerA = $('.container-img');
 
-      let figure = $('<figure style="color:transparent;" class="col-lg-4"></figure>');
-      $(figure).css({ 'width': 'auto', 'height': '250px', 'text-align': 'center', 'text-transform': 'capitalize', 'font-weight': 'bold'});
-      figure.append(searchImage[i]);
-      let altImage = $(searchImage[i]).attr('alt');
-      figure.append('<figcaption class="figcaption-image" style="font-size: 30px">' + altImage + '</figcaption>');
-     
-      containerX.append(figure);
-      figure.hover(() => {
-        $(searchImage[i]).css({'visibility': 'hidden'});
-        $(searchImage[i]).animate(4000);
-        $(figure).css({'color': 'black'});
-      }, () => {
-        $(searchImage[i]).css({'visibility': 'visible'});
-        $(searchImage[i]).animate(4000);
-        $(figure).css({'color': 'transparent'});
-      });
-    } 
-  };
-  pluginImage(containerA);
-});
+    let pluginImage = (containerX) => {
+      let searchImage = containerX.find('img');
 
+      console.log(searchImage);
+
+      for (let i = 0; i < searchImage.length; i++) {
+        console.log(searchImage[i]);
+
+        let figure = $('<figure></figure>');
+        figure.append(searchImage[i]);
+        let altImage = $(searchImage[i]).attr('alt');
+        let figcaption = $('<figcaption>' + altImage + '</figcaption>');
+        figure.append(figcaption);
+
+        containerX.append(figure);
+        figure.hover(() => {
+          $(searchImage[i]).css({'visibility': 'hidden'});
+          $(searchImage[i]).animate(4000);
+          figcaption.css({'font-size': '30px', 'transform': 'translateY(-300%)', 'text-align': 'center'});
+        }, () => {
+          $(searchImage[i]).css({'visibility': 'visible'});
+          $(searchImage[i]).animate(4000);
+          figcaption.css({'transform': 'translateY(0%)', 'font-size': '20px'});
+        });
+      }
+    };
+    pluginImage(containerA);
+}
+})(jQuery);
