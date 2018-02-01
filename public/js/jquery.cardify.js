@@ -11,6 +11,8 @@
       figure.append('<figcaption class="hidden">' + $(value).attr('alt') + '</figcaption>');
 
       // Estableciendo clases (horizontal o vertical---por defecto vertical)
+      $(value).addClass('cont-img');
+
       $(this).addClass(options.direction);
       figure.addClass(options.align);
       //  Efecto Hover
@@ -28,7 +30,7 @@
   };
   // Parametros del plugin.
   $.fn.pluss.defaultOptions = {
-    align: 'figure-cardify',
-    direction: 'vertical'
+    align: 'vertical',
+    direction: ''
   };
 })(jQuery);
