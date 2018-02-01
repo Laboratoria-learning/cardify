@@ -4,7 +4,7 @@ const chai = require('chai'),
 
 
 describe('Verificar si atributo alt contiene texto', function() {
-  it('Atributo alt contiene texto', function() {
+  it('Atributo alt debería contener texto', function() {
     expect($('img-item').attr('alt')).to.be.a('string');
   });
 });
