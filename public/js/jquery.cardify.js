@@ -18,12 +18,12 @@
       //  Efecto Hover
       $(value).mouseover(() => {
         $(value).addClass('hidden');
-        $('figcaption:eq(' + (index) + ')').removeClass('hidden');
-        $('figcaption:eq(' + (index) + ')').addClass('cardify-figcaption');
+               $( value).next().removeClass('hidden');
+               $( value).next().addClass('cardify-figcaption');
       });
       $('figcaption').mouseout(() => {
         $(value).removeClass('hidden');
-        $('figcaption:eq(' + (index) + ')').addClass('hidden');
+               $( value).next().addClass('hidden');
         $(this).removeClass('figcaptionhover');
       });
     });
