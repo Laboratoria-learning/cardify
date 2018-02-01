@@ -1,0 +1,50 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #faebd7;
+}
+
+.container {
+  margin-top: 5em;
+  border: 1px solid #eacadd;
+  margin-bottom: 5em;
+}
+/* Título del Encabezado */
+
+nav .brand-logo {
+  font-family: 'Tinos', serif;
+  font-size: 2.5em;
+}
+
+/* Estilos a las imágenes */
+
+img.responsive-img, video.responsive-video {
+  width: 400px;
+}
+
+@media (min-width: 993px) {
+  .container {
+    width: 80%;
+  } 
+
+  img.responsive-img, video.responsive-video {
+    max-height: 600px;
+    height: 300px;
+    width: auto;
+  }   
+}
+
+@media only screen and (min-width: 1201px) {
+  .container {
+    width: 70%;
+  }
+}
+
+/* Probando */
+
+.opacity {
+  opacity: 0.5;
+}

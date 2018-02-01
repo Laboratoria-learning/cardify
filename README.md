@@ -13,42 +13,37 @@ con el texto del atributo `alt` de la imagen.
 
 ## Flujo de trabajo
 
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
+1. Se realizó un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
+   del repositorio brindado por `Laboratoria`.
 
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
+## Planificación:
 
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/cardify.git
-   ```
+1. Semana 1 - días : 
 
-3. Cuando hayas terminado tu producto, envía un Pull Request a la rama que tus
-   instructorxs este repositorio
-   (puedes solicitar apoyo de tus profes para este paso).
+  - **Miércoles 24**: Tomar decisiones del reto a desarrollar.
+    - Encargadas: Araceli y Lesly.
+    - Resultado: Se determinó por unanimidad realizar el reto 2 - Cardify.
 
-> Nota: No olvides que es una buena práctica describir tu proyecto en este
-> archivo `README.md` :smiley:.
+  - **Jueves 25**: Investigación del material a utilizar, como son los issues y milestones.
+    - Encargadas: Araceli y Lesly.
 
-***
+  - **Viernes 26**: Iniciamos la estructura del reto elegido y se hizo la asignación de tareas aplicando el issues. 
+    - Encargadas: Araceli y Lesly 
+    - Resultado: Planificación parte 1, se puede observar dándole click en el siguiente enlace: https://github.com/AraceliGS/cardify/issues/1.
 
-## Instalación
+  - **Sábado 27**: Se realizó la maquetación, asignación de tareas del día, se añadieron los archivos package.json y .gitignore.
+    - Encargadas: Araceli y Lesly
+    - Resultado: 
+      - Scketch inicial.
+      - Estructura inicial y estilos.
+      - Asignación de tareas empleando issues, Planificación - parte 2: https://github.com/AraceliGS/cardify/issues/3.
+      - Primera versión de nuestro archivo package.json.
+      - Primera actualización del archivo README.md.
+      - Investigación de plugin.
 
-### Global (navegador)
+## Anexos
 
-```html
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="path-to-cardify.js"></script>
-```
+**Scketch**
 
-## Uso
+![scketch-inicial](assets/docs/scketch-inicial.jpg "scketch-inicial")
 
-```js
-// `container` es el selector del contenedor donde se buscarán todas las
-// imágenes a ser procesadas.
-$(container).cardify({});
-```
-
-## Ejemplos
-
-...

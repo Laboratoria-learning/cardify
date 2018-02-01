@@ -1,0 +1,22 @@
+{
+  "name": "cardify",
+  "version": "1.0.0",
+  "description": "Reto 2 Cardify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeslyN/cardify.git"
+  },
+  "keywords": [
+    "images"
+  ],
+  "author": "Araceli Gutarra & Lesly Nomberto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeslyN/cardify/issues"
+  },
+  "homepage": "https://github.com/LeslyN/cardify#readme"
+}
