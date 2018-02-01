@@ -5,6 +5,7 @@
 ***
 
 Cardify es un proyecto  que se nos pidio implementar como parte de la creacion de una librería (library), teniendo como objetivo responder a la necesidad de hacer mas legible o evitar estar repitiendo codigo para paginas web o aplicaciones moviles.
+![pagina](public/assets/docs/pagina.PNG) 
 
 ## Equipo Conformado
 
@@ -53,10 +54,6 @@ Implementar un plugin de jQuery que dado un _contenedor_ debe buscar todas las
 imágenes que encuentre dentro del _contenedor_ y reemplazarlas por un nuevo
 elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>`
 con el texto del atributo `alt` de la imagen.
-
-## Pruebas
-
-Las pruebas se pueden encontrar en la test/test.js para las pruebas de versión de jQuery . Simplemente abra su index.html archivo en su navegador y todas las pruebas se deben ejecutar con éxito.
 
 ## Como usar cardefy
 
@@ -123,9 +120,12 @@ $('.container-cardify').pluss({ align: 'horizontal',
 ## CSS
 para los posibles casos de uso en los ejemplos mostrados (vertical-horizontal) necesita importar el archivo cardify.css
 
+![ejemplo1](public/assets/docs/ejemplo1.PNG) 
+![ejemplo2](public/assets/docs/ejemplo2.PNG) 
 
 ## Testing
 - Para realizar pruebas unitarias a las posibles funciones a ser usadas en nuestro proyecto se utilizo Mocha
+![ejemplo1](public/assets/docs/test.PNG) 
 
 1. Installar `mocha`
 ```
@@ -141,4 +141,4 @@ Incluimos todos los tests que queramos correr
 ```
 
 Para visualizar los resultados de test puede ingresar aquí 
-[Test](https://jennifercarmen.github.io/cardify/public/test/test.html/)
+[Test](https://jennifercarmen.github.io/cardify/public/test/test.html)
