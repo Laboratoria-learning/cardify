@@ -14,6 +14,7 @@ $(document).ready(() => {
         $(this).css({
           'position': 'relative',
           'width': '99%'
+
       });
     });
     $('figcaption').css({ // Estilos.
