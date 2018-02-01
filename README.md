@@ -15,7 +15,7 @@ Como parte de la organizacion en equipo se implemento los issues y los milestone
 ![Example](public/assets/images/milestone.PNG) 
 
 
-y parte de asiganacion de tareas se hiso lo siguiente.
+y parte de asignacion de tareas se hiso lo siguiente.
 
 Jennifer Carmen encargada en : 
 
