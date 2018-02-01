@@ -1,5 +1,4 @@
 .vcode/
 node_modules/
 *.eslintrc
-
 *.eslintrc.json

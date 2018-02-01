@@ -8,6 +8,24 @@ Cardify es un proyecto  que se nos pidio implementar como parte de la creacion d
 
 > Valeria Valles 
 
+## Organizacion de equipo
+
+Jennifer Carmen encargada en : 
+
+* Investigacion de implementacion del plugin 
+* Creacion de Issues 
+* Funcionalidad 
+* Maquetacion ejemplos de documentacion de la pagina del plugin
+
+Valeria Valles encarga en :
+
+* Investigacion de implementacion del plugin 
+* Readme 
+* Funcionalidad 
+* Maquetacion del contenido de la pagina del plugin
+
+
+
 ## Requisitos del Proyecto
 
 Implementar un plugin de jQuery que dado un _contenedor_ debe buscar todas las
