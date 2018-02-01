@@ -54,12 +54,15 @@ describe('cardify', () => {
   it('passes si figure no tiene atributo class', () => {
     chai.expect($('.text-caption')).to.have.$css('position', 'absolute');
   });
-  it('passes si imagen es del mismo ancho que figcaption', () => {
+  /*it('passes si imagen es del mismo ancho que figcaption', () => {
     $('img').width() === $('figcaption').width();
   });
   it('passes si imagen es del mismo ancho que figcaption', () => {
+    expect(('img').width()).to.equal(('figcaption').width());
+  })
+  it('passes si imagen es del mismo ancho que figcaption', () => {
     $('img').width() === $('figure').width();
-  });
+  });*/
   
 });
 afterEach(function(done) { //dynamic cat test !
