@@ -29,36 +29,40 @@ Planificación de trabajo con [Trello](https://trello.com/b/gsC83EJh/cardify-ret
   </div>
 </div>
 ```
-##### Funcionalidad:
-El plugin de Cardify busca todas las imagenes que se encuentren dentro de un contenedor y semanticamente las coloca dentro de una etiqueta **figure** junto con una etiqueta **figcaption** que adquiere el texto de el atributo **alt** de dicha imagen.Este plugin contiene estilos css y de bootstrap ya definidos.
 
-##### Cómo agregar Cardify a tu proyecto
+## Funcionalidad:
+El plugin de Cardify busca todas las imagenes que se encuentren dentro de un contenedor y semanticamente las coloca dentro de una etiqueta **figure** junto con una etiqueta **figcaption** que adquiere el texto del atributo **alt** de dicha imagen.Este plugin contiene estilos css y de bootstrap ya definidos.
 
-###### Requisitos previos
-Antes de comenzar, necesitarás una app de JavaScript.
+## Cómo agregar Cardify a tu proyecto
 
-###### Agrega Cardify a tu app
-Para agregar Cardify a tu app, necesitarás un proyecto de index.html, agregando jQuery en el script de preferencia la ultima version y necesitaras instalar el frameworks Bootstrap version 3.0.0.
+### Requisitos previos
 
+primero necesitarás enlazar el siguiente archivo a tu index.html:
 
-```js
-<script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>
-```
-
+<script type="text/javascript" src="nombre_carpeta/cardify.js"></script>
+ 
 
 ### Global (navegador)
 
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 <script src="path-to-cardify.js"></script>
 ```
 
 ## Uso
 
 ```js
-// `container` es el selector del contenedor donde se buscarán todas las
-// imágenes a ser procesadas.
-$(container).cardify({});
+En tu archivo app.js deberás colocar la siguiente línea de código:
+
+$('.container').cardify();
+
+y para que se ejecute la función el usuario debe poner en el elemento html que contenga en su interior elementos de etiqueta 'img'  
+La clase **'.container'**
+
+<div class="container">
+  <img src="url_imagen" alt="descripción_imagen">
+</div>
 ```
 
 ## Ejemplos
