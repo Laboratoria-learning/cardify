@@ -75,15 +75,7 @@ describe('cardify', () => {
     chai.expect($('div')).to.have.$class('container');
   });
   
-  //it('Passes cuando el atributo alt sea igual a un string', () => {
-   //chai.expect($('alt')).to.be.$typeOf('string');
-  //});
 
-  //it('Passes cuando el atributo alt sea distinto a un número', () => {
-    
-  //});
-
- 
 });
 afterEach(function(done) { //dynamic cat test !
   setTimeout(done, 200);
