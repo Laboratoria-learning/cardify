@@ -30,18 +30,18 @@ describe('cardify', () => {
   it('Passes cuando h3 tiene class text-caption', () => {
     chai.expect($('h3')).to.have.$class('text-caption');
   });
-  it('passes cuando el atributo src no esta vacio ', function() {
+  it('passes cuando el atributo src no esta vacio ', () => {
     $('img').attr('src') !== '';
   });
-  it('passes cuando el body tiene hijos', function() {
+  it('passes cuando el body tiene hijos', () => {
     dom.window.document.body.children.length >= 1;
     // quiero saber si existen elementos en el body
   });
-  it('passes cuando existen imagenes dentro de container', function() {
+  it('passes cuando existen imagenes dentro de container', () => {
     $('.container').children('img').length >= 1; 
   });
 
-  it('passes cuando el atributo alt no esta vacio', function() {
+  it('passes cuando el atributo alt no esta vacio', () => {
     $('img').attr('alt') !== '';
   });
 
@@ -54,6 +54,13 @@ describe('cardify', () => {
   it('passes si figure no tiene atributo class', () => {
     chai.expect($('.text-caption')).to.have.$css('position', 'absolute');
   });
+  it('passes si imagen es del mismo ancho que figcaption', () => {
+    $('img').width() === $('figcaption').width();
+  });
+  it('passes si imagen es del mismo ancho que figcaption', () => {
+    $('img').width() === $('figure').width();
+  });
+  
 });
 afterEach(function(done) { //dynamic cat test !
   setTimeout(done, 200);
