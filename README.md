@@ -29,7 +29,6 @@ Planificación de trabajo con [Trello](https://trello.com/b/gsC83EJh/cardify-ret
   </div>
 </div>
 ```
-
 ##### Funcionalidad:
 El plugin de Cardify busca todas las imagenes que se encuentren dentro de un contenedor y semanticamente las coloca dentro de una etiqueta **figure** junto con una etiqueta **figcaption** que adquiere el texto de el atributo **alt** de dicha imagen.Este plugin contiene estilos css y de bootstrap ya definidos.
 
@@ -63,8 +62,8 @@ $(container).cardify({});
 ```
 
 ## Ejemplos
-![Sin titulo](public/assets/docs/1.png)
+![Sin titulo](public/assets/docs/1-back.png)
 Asi es como se ve antes de pasar el mouse
 
-![Sin titulo](public/assets/docs/2.png)
-Al hacer el mouse over se realiza la funcionalidad del plugin.
+![Sin titulo](public/assets/docs/2-back.png)
+Al pasar el mouse se produce un  **hover** que  realiza la funcionalidad del plugin.

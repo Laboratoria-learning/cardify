@@ -1,7 +1,7 @@
 'use strict';
 
-(function ($) {
-  $.fn.cardify = function () {
+(function($) {
+  $.fn.cardify = function() {
 
     var containerA = $('.container');
 
@@ -20,11 +20,11 @@
         figure.append(figcaption);
 
         containerX.append(figure);
-        figure.hover(function () {
+        figure.hover(function() {
           $(searchImage[i]).css({ 'visibility': 'hidden' });
           $(searchImage[i]).animate(4000);
-          figcaption.css({ 'font-size': '30px', 'transform': 'translateY(-300%)', 'text-align': 'center' });
-        }, function () {
+          figcaption.css({ 'font-size': '30px', 'transform': 'translateY(-300%)' });
+        }, function() {
           $(searchImage[i]).css({ 'visibility': 'visible' });
           $(searchImage[i]).animate(4000);
           figcaption.css({ 'transform': 'translateY(0%)', 'font-size': '20px' });
