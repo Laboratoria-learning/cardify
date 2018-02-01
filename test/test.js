@@ -75,9 +75,12 @@ describe('cardify', () => {
     chai.expect($('div')).to.have.$class('container');
   });
   
-  //it('Passes cuando el atributo alt sea igual a un string', () => {
-  // chai.expect($('alt')).to.be.a.$typeOf('string');
-  //});
+  it('Passes cuando el atributo alt sea igual a un string', () => {
+  //typeof (('alt').should.equal('string'));
+  //chai.expect($('img').attr('alt') === 'string');
+    chai.expect(1).to.be.a('string', 'nooo why fail??');
+   //chai.expect($('alt')).should.equal.$typeof('string');
+  });
 
   //it('Passes cuando el atributo alt sea distinto a un número', () => {
     
