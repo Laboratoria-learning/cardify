@@ -37,10 +37,17 @@ El plugin de Cardify busca todas las imagenes que se encuentren dentro de un con
 
 ### Requisitos previos
 
-primero necesitarás enlazar el siguiente archivo a tu index.html:
+primero necesitarás enlazar la librería de jquery a tu archivo index.html:
 
-<script type="text/javascript" src="nombre_carpeta/cardify.js"></script>
- 
+<script type="text/javascript"src="vendors/js/jquery-3.2.1.min.js"></script>
+
+Luego descargar el plugin que contiene una carpeta js y dos archivos : cardify.js y app.js.
+
+ambos archivos deben ser enlazados en el index.html:
+
+<script type="text/javascript" src="js/cardify.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
 
 ### Global (navegador)
 
@@ -58,7 +65,7 @@ En tu archivo app.js deberás colocar la siguiente línea de código:
 $('.container').cardify();
 
 y para que se ejecute la función el usuario debe poner en el elemento html que contenga en su interior elementos de etiqueta 'img'  
-La clase **'.container'**
+La clase **"container-img"**
 
 <div class="container">
   <img src="url_imagen" alt="descripción_imagen">

@@ -5,32 +5,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Cardify</title>
-  <link href="https://fonts.googleapis.com/css?family=Lemon" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Acme|Roboto+Slab" rel="stylesheet">
   <link rel="icon" href="assets/icons/ico.png">
   <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+  <!-- estructura para el header -->
   <header>
     <div class="container">
       <div class="row">
         <div class="col-xs-6">
           <h1>Cardify</h1>
         </div>
-        <div class="col-xs-6">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Uso</a></li>
-            <li><a href="">Ejemplos</a></li>
+        <div  class="col-xs-6">
+          <ul class="nav-list pull-right">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#uso">Uso</a></li>
+            <li><a href="#home">Descargar</a></li>
+            <li><a href="#ejemplo">Ejemplo</a></li>
           </ul>
         </div>    
       </div>
     </div>
   </header>
-    
-       
+  <!-- estructura para la sección de home -->
+  <section id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-7">
+          <h2>¿Qué es Cardify?</h2>
+          <div class="line-decoration"></div>
+          <br>
+          <h4>Cardify es un plugin que transforma las imágenes semántica y dinámicamente; permite que nuestras imagenes sean correctamente colocadas dentro de una etiqueta <code>figure</code> junto con una etiqueta <code>figcaption</code> que contiene una descripción que es la misma que se muestra en el <code>alt</code> de la imagen.Cardify tambien crea para las imagenes un efecto de <code>hover</code> que muestra el <code>alt</code> de la imagen correspondiente.</h4>
+          <br>
+          <button class="btn"><a class="waves-effect waves-light btn-large " href="pluginCardify.zip" download="Cardify">Descargar plugin <span class="glyphicon glyphicon-cloud-download"></span></a></button>
+        </div>
+        <div class="col-xs-5">
+          <img class="img-cardify img-responsive" src="assets/docs/2-back.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- estructura para la sección de uso -->
+  <section  id="uso">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Uso</h1>
+          <div class="line-decoration2"></div>
+          <br>
+          <h4>Para tener acceso al plugin <strong>Cardify</strong> solo necesitas <a href="#home">descargar</a> el api cardify y enlazarlo en tu documento index.html.Tambien necesitarás enlazar la libreria de JQuery previamente"</h4>
+          <br>
+          <div class="col-xs-12"><img src="assets/images/enlace.png" alt=""></div>
+        </div>
+        <div class="col-xs-12">
+          <br>
+          <br>
+          <br>
+          <h4>Déspues debes colocar la clase <code>"container-img"</code> a cualquier <strong>elemento html</strong> que contenga elementos <code>img</code> con su atributo <code>alt</code> respectivamente</h4>
+          <br>
+          <div>
+            <img src="assets/images/estructura.png" alt="">
+          </div> 
+          <br>
+          <br>
+          <h4>Listo! tus imagenes perfectamente semánticas y dinámicas en menos de 1 minuto</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- estructura para la sección de ejemplo -->
+  <section id="ejemplo">
+   
+
+  </section>
   <!-- enlazando herramientas js -->
-  <script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript"src="vendors/js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/cardify.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
 </body>
