@@ -15,7 +15,7 @@ $(document).ready(() => {
       this.find('figure').map(function() { // Encuentra los figure dentro de la class y agrega estilo.
         $(this).css({
           'position': 'relative',
-          'width': '100%'
+          'width': '99%'
         });
       });
 
