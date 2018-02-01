@@ -19,17 +19,6 @@ Planificación de trabajo con [Trello](https://trello.com/b/gsC83EJh/cardify-ret
 
 ***
 
-## Snippets
-
-    containerJQ
-```html
-<div class="container">
-  <div class="{:class}">
-    <img src="{:address}" alt="{:data}">
-  </div>
-</div>
-```
-
 ## Funcionalidad:
 El plugin de Cardify busca todas las imagenes que se encuentren dentro de un contenedor y semanticamente las coloca dentro de una etiqueta **figure** junto con una etiqueta **figcaption** que adquiere el texto del atributo **alt** de dicha imagen.Este plugin contiene estilos css y de bootstrap ya definidos.
 
@@ -40,7 +29,7 @@ El plugin de Cardify busca todas las imagenes que se encuentren dentro de un con
 primero necesitarás enlazar el siguiente archivo a tu index.html:
 
 <script type="text/javascript" src="nombre_carpeta/cardify.js"></script>
- 
+
 
 ### Global (navegador)
 
@@ -55,12 +44,12 @@ primero necesitarás enlazar el siguiente archivo a tu index.html:
 ```js
 En tu archivo app.js deberás colocar la siguiente línea de código:
 
-$('.container').cardify();
+$('.container-img').cardify();
 
 y para que se ejecute la función el usuario debe poner en el elemento html que contenga en su interior elementos de etiqueta 'img'  
 La clase **'.container'**
 
-<div class="container">
+<div class="container-img">
   <img src="url_imagen" alt="descripción_imagen">
 </div>
 ```
