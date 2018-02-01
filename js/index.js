@@ -1,5 +1,6 @@
 (($) => {
   // Declaración del plugin.
+  
   $.fn.pluss = function(options) {
     // Obtenemos los parámetros.
     options = $.extend({}, $.fn.pluss.defaultOptions, options);
