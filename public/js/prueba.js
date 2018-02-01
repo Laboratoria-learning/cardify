@@ -1,7 +1,7 @@
 'use strict';
 
 $(document).ready(function () {
-  $('.container').pluss({ align: 'horizontal',
+  $('.container-cardify').pluss({ align: 'horizontal',
     direction: 'tb'
   });
 });
