@@ -3,16 +3,10 @@
 # Cardify
 
 ***
-Es un plugin de jQuery que permite que tus imágenes almacenadas dentro de un contenedor sean reemplazadas por un nuevo elemento `<figure>` que a su vez posee un `<figcaption>` con el texto del atributo `alt` de la imagen.
+Es un plugin de jQuery para Bootstrap que permite que tus imágenes almacenadas dentro de un contenedor sean envueltas por un nuevo elemento `<figure>` que a su vez posee un `<figcaption>` con el texto del atributo `alt` de la imagen.
 Además al pasar el mouse sobre la imagen lograremos ver el contenido del 
 `<figcaption>`.
 ***
- 
-### Metodología de Tabajo
-
-+ Se utiliza la herramienta trello para la organización de actividades, propuestas y recursos.
-
-+ Herramientas para comunicación grupal, slack para trabajo en forma remota y no perder comunicación de todos los pasos de los intengrantes.
 
 ### Requerimientos Técnicos
 
@@ -23,24 +17,22 @@ El proyecto fue realizado con las siguientes dependencias NPM:
   - Bootstrap ~v. 3.3.7
   - Jsdom ^11.6.1
   - Browserify ^15.2.0
-  - ESlint ~v 4.16.0
 
 ##### Dependencias de Desarrollo
   - Chai ^ 4.1.2
   - Mocha ^ 5.0.0
   - Browserify ^ 15.2.0 
 
-### Levantamiento ambiente de desarrollo
+### Uso
 
-+ Clonar repositorio.
-+ Posicionado en nuestro proyecto hacer correr `npm install` para descargar e instalar todas las dependencias utilizadas.
++ Descarga este repositorio e incluye la carpeta en tu proyecto.
++ Debes usar class = 'cardify' en el elemento que contiene las imagenes.
++ Recuerda usar la class de bootstrap class='img-responsive' en tus imagenes.
++ Debes incluir el atributo alt en tus imagenes con el texto que desees.
 
-### Instalación
-
-Global (navegador)
+![](assets/img/explainreadme.png)
 
 ```
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="lib/main.js"></script>
 ```
 
@@ -50,6 +42,8 @@ Global (navegador)
   Debes colocar la clase `cardify` al contenedor donde se irán todas las
   imágenes a ser procesadas.
 
+  Por último añade este script en tu html.
+  <script type="text/javascript" src="cardify-master/lib/main.js"></script>
 ```
 
 ### Ejemplo
