@@ -1,7 +1,7 @@
 
 const jsdom = require('jsdom');
 const { JSDOM } = jsdom;
-let dom = new JSDOM('<!DOCTYPE html><html><body><div class="container"><img class ="img-responsive col" src="../assets/img/tres.jpg" alt="hola test"></></div></body></html>');
+let dom = new JSDOM('<!DOCTYPE html><html><body><div class="cardify"><img class ="img-responsive col" src="../assets/img/tres.jpg" alt="hola test"></></div></body></html>');
 const { window } = dom;
 global.document = dom;
 global.window = window;
@@ -46,19 +46,25 @@ describe('cardify', () => {
   });
 
   it('Passes cuando la imagen es png o jpg', () => {
-    $('img').attr('src').substring(('img').lastIndexOf('.')) === '.jpg' && '.png'; 
+    $('img').attr('src').substring(('img').lastIndexOf('.')) === '.jpg' || '.png' || '.gif'; 
   });
   
   it('Passes si figure no tiene atributo class', () => {
     chai.expect($('.text-caption')).to.have.$css('position', 'absolute');
   });
 
+  /*
   it('passes si imagen es del mismo ancho que figcaption', () => {
+
     $('img').width() === $('figcaption').width();
   });
   it('passes si imagen es del mismo ancho que figcaption', () => {
+    expect(('img').width()).to.equal(('figcaption').width());
+  })
+  it('passes si imagen es del mismo ancho que figcaption', () => {
     $('img').width() === $('figure').width();
-  });
+
+  });*/
   it('Passes si figure tiene position relative', () => {
     chai.expect($('figure')).to.have.$css('position', 'relative');
   });
@@ -72,21 +78,11 @@ describe('cardify', () => {
   });
 
   it('Passes si existe div posee una class', () => {
-    chai.expect($('div')).to.have.$class('container');
+    chai.expect($('div')).to.have.$class('cardify');
   });
-  
-  //it('Passes cuando el atributo alt sea igual a un string', () => {
-  //typeof (('alt').should.equal('string'));
-  //chai.expect($('img').attr('alt') === 'string');
- 
-  //chai.expect($('alt')).should.equal.$typeof('string');
-  //});
 
-  
-
- 
 });
-afterEach(function(done) { //dynamic cat test !
+afterEach(function(done) { // dynamic cat test !
   setTimeout(done, 200);
 });
 
