@@ -20,11 +20,10 @@ const $ = require('jquery');
 const cardify = require('../assets/js/index.js');
 
 describe('Imagenes dentro de un container', function() {
-           cardify('content')
+  cardify('content');
 
-  it('Deberian existir  imagenes dentro del container', function () {
+  it('Deberian existir  imagenes dentro del container', function() {
     $('.content').children('img').length >= 1;
-  
   });
 
   it(' El atributo alt no debería estar vacio ', () => {
@@ -33,6 +32,5 @@ describe('Imagenes dentro de un container', function() {
 
   it(' El atributo src no debería estar vacio ', () => {
     $('img').attr('src') !== '';
-});
-
+  });
 });

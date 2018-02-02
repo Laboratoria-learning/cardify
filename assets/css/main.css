@@ -3,32 +3,3 @@ body{
 }
 
 
-/*.imagenes:hover {
-    border: 3px solid #81d7;
-}
-
-.imagenes a img {
-   
-    left: -20px;
-    top: -20px;
-    width: 350px;
-}
-
-.imagenes {
-    display: none;
-    font-size: 2.3em;
-
-    text-align: center;
-    text-decoration: none;
-    width: 100%;
-    background-color: rgba(15, 15, 15, 0.6);
-    color: #fff;
-    text-shadow: #000 0px 0px 20px;
-   
-}
-.imagenes{
-    display: block;
-    font-size: 1em;
-    font-weight: bold;
-}
-<

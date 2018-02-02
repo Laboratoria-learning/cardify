@@ -1,6 +1,6 @@
 const chai = require('chai'),
   checkAlt = ('../js/index.js'),
-  assert = chai.assert;
+  expect = require('chai').expect;
 
 
 describe('Verificar si atributo alt contiene texto', function() {
@@ -9,4 +9,3 @@ describe('Verificar si atributo alt contiene texto', function() {
   });
 });
  
-//expect('foobar').to.include('foo');
