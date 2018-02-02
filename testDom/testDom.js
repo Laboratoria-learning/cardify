@@ -1,5 +1,4 @@
 const chai = require('chai');
-
 const jsdom = require('jsdom');
 const { JSDOM } = jsdom;
 let dom = new JSDOM('<!DOCTYPE html><html lang = "en"><head><title>Document</title>"></head>' + 
@@ -17,10 +16,10 @@ global.navigator = {
 };
 
 const $ = require('jquery');
-const cardify = require('../assets/js/index.js');
+const imaginator = require('../assets/js/index.js');
 
 describe('Imagenes dentro de un container', function() {
-  cardify('content');
+  imaginator('content');
 
   it('Deberian existir  imagenes dentro del container', function() {
     $('.content').children('img').length >= 1;

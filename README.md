@@ -1,4 +1,4 @@
-#Imaginator
+# Imaginator
 
 - - -
 
@@ -19,20 +19,25 @@ Plugin de Jquery que permite agregar etiquetas `<figure` y `<figcaption>` al pas
 
 ## Funcionamiento
 1. ####  Inicializar el proyecto con el comando:
-                                 npm init
+                                        npm init
 
 2. ####  Descargar Imaginator con el comando:
-                            npm install imaginator
+                                 npm install imaginator
                         
 3. #### Enlazar script a Documento html.
 `                    <script>jquery.imaginator.js</script>`
 
-4. #### Pegar el siguiente códido en el documento JS principal:
+4. #### Pegar el siguiente código en el documento JS principal:
 
                        var imaginator = require('imaginator')
                    
 5. #### Colocar las imagenes dentro de un contenedor con class "content", las imagenes deben incluir el atributo alt con alguna descripción de la imagen.
 
+                        <div class="content">
+                          <div class="imagenes">
+                            <img src="corgi.jpg" alt="Corgi"/>
+                          </div>
+                        </div.
 
 
 6. #### Comienza a utilizar el Plugin.
