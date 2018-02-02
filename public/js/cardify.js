@@ -23,11 +23,11 @@
         figure.hover(function () {
           $(searchImage[i]).css({ 'visibility': 'hidden' });
           $(searchImage[i]).animate(4000);
-          figcaption.css({ 'transform': 'translateY(-300%)', 'text-align': 'center', 'background-color':'black', 'color':'white', 'border-radius':'10px'});
+          figcaption.css({ 'transform': 'translateY(-300%)', 'text-align': 'center', 'background-color': 'black', 'color': 'white', 'border-radius': '10px' });
         }, function () {
           $(searchImage[i]).css({ 'visibility': 'visible' });
           $(searchImage[i]).animate(4000);
-          figcaption.css({ 'transform': 'translateY(0%)','background-color':'transparent', 'color':'black' });
+          figcaption.css({ 'transform': 'translateY(0%)', 'background-color': 'transparent', 'color': 'black' });
         });
       };
 
