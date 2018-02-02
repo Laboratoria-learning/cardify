@@ -25,7 +25,6 @@ El proyecto fue realizado con las siguientes dependencias NPM:
 
 ### Uso
 
-+ Descarga este repositorio e incluye la carpeta en tu proyecto.
 + Debes usar class = 'cardify' en el elemento que contiene las imagenes.
 + Recuerda usar la class de bootstrap class='img-responsive' en tus imagenes.
 + Debes incluir el atributo alt en tus imagenes con el texto que desees.
@@ -33,8 +32,8 @@ El proyecto fue realizado con las siguientes dependencias NPM:
 ![](assets/img/explainreadme.png)
 
 ```
-  `Por último añade este script en tu html.
-  <script type="text/javascript" src="cardify-master/lib/main.js"></script>
+  `Por último añade este CDN en tu html.
+  <script type="text/javascript" src="https://rawgit.com/meliveloz/cardify/master/lib/main.js">
 ```
 
 

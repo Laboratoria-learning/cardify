@@ -1,8 +1,8 @@
 {
-  "name": "cardify",
+  "name": "cardify_bootstrap",
   "version": "1.0.0",
   "description": "* **Track:** _Common Core_\r * **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_\r * **Unidad:** _Producto final_",
-  "main": "lib/main.js",
+  "main": "./lib/main.js",
   "directories": {
     "test": "test"
   },
