@@ -41,16 +41,15 @@ Global (navegador)
 
 ```
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="path-to-cardify.js"></script>
+  <script type="text/javascript" src="lib/main.js"></script>
 ```
 
 ### Uso
 
 ```
-  `cardify` es el selector del contenedor donde se buscarán todas las
+  Debes colocar la clase `cardify` al contenedor donde se irán todas las
   imágenes a ser procesadas.
 
-  $(class).cardify({});
 ```
 
 ### Ejemplo
