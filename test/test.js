@@ -80,20 +80,7 @@ describe('cardify', () => {
   it('Passes si existe div posee una class', () => {
     chai.expect($('div')).to.have.$class('cardify');
   });
-<<<<<<< HEAD
-  
-  //it('Passes cuando el atributo alt sea igual a un string', () => {
-  //typeof (('alt').should.equal('string'));
-  //chai.expect($('img').attr('alt') === 'string');
- 
-  //chai.expect($('alt')).should.equal.$typeof('string');
-  //});
 
-  
-
- 
-=======
->>>>>>> upstream/master
 });
 afterEach(function(done) { // dynamic cat test !
   setTimeout(done, 200);

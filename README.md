@@ -33,15 +33,6 @@ El proyecto fue realizado con las siguientes dependencias NPM:
 ![](assets/img/explainreadme.png)
 
 ```
-  <script type="text/javascript" src="lib/main.js"></script>
-```
-
-### Uso
-
-```
-  Debes colocar la clase `cardify` al contenedor donde se irán todas las
-  imágenes a ser procesadas.
-
   Por último añade este script en tu html.
   <script type="text/javascript" src="cardify-master/lib/main.js"></script>
 ```
