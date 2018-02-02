@@ -1,7 +1,6 @@
 
 
 $(document).ready(function() {
-  
   $('.content img').mouseover(function() {
     let imagenFigure = $(this).attr('alt');
     $(this).each(function() {
