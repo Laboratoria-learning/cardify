@@ -80,6 +80,7 @@ describe('cardify', () => {
   it('Passes si existe div posee una class', () => {
     chai.expect($('div')).to.have.$class('cardify');
   });
+
 });
 afterEach(function(done) { // dynamic cat test !
   setTimeout(done, 200);
