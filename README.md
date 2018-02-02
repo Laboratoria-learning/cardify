@@ -3,7 +3,7 @@
 # Cardify
 
 ***
-Es un plugin de jQuery para Bootstrap que permite que tus imágenes almacenadas dentro de un contenedor sean reemplazadas por un nuevo elemento `<figure>` que a su vez posee un `<figcaption>` con el texto del atributo `alt` de la imagen.
+Es un plugin de jQuery para Bootstrap que permite que tus imágenes almacenadas dentro de un contenedor sean envueltas por un nuevo elemento `<figure>` que a su vez posee un `<figcaption>` con el texto del atributo `alt` de la imagen.
 Además al pasar el mouse sobre la imagen lograremos ver el contenido del 
 `<figcaption>`.
 ***
@@ -36,7 +36,6 @@ El proyecto fue realizado con las siguientes dependencias NPM:
   <script type="text/javascript" src="https://rawgit.com/meliveloz/cardify/master/lib/main.js">
 ```
 
-
 ### Ejemplo
 
 ![](assets/img/img_example.png)
@@ -46,3 +45,6 @@ El proyecto fue realizado con las siguientes dependencias NPM:
 
 + [ISC License](https://opensource.org/licenses/ISC)
    
+### Demo
+
++ https://meliveloz.github.io/cardify-demo/
