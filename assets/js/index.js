@@ -42,7 +42,7 @@ $(document).ready(function() {
     });
 
     $('.content img').mouseout(function() {
-      $('img').unwrap();
+      $('figcaption').unwrap();
       $('img').css({
         'filter': 'brightness(1)',
       });
