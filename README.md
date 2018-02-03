@@ -43,8 +43,7 @@ Plugin de Jquery que permite agregar etiquetas `<figure` y `<figcaption>` al pas
 6. #### Comienza a utilizar el Plugin.
 
 ## Ejemplo
-
-<a href="https://giphy.com/gifs/xThtacKxgD3QBRdMLm"></a>
+<iframe src="https://giphy.com/embed/xThtacKxgD3QBRdMLm" width="480" height="267" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/xThtacKxgD3QBRdMLm">via GIPHY</a></p>
     
 
 ## Herramientas de Producción
