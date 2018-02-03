@@ -44,7 +44,7 @@ Plugin de Jquery que permite agregar etiquetas `<figure` y `<figcaption>` al pas
 
 ## Ejemplo
 
-https://media.giphy.com/media/xThtacKxgD3QBRdMLm/giphy.gif
+<a href="https://giphy.com/gifs/xThtacKxgD3QBRdMLm"></a>
     
 
 ## Herramientas de Producción
