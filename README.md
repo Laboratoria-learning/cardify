@@ -14,7 +14,7 @@ Plugin de Jquery que permite agregar etiquetas `<figure` y `<figcaption>` al pas
 
 ### Uso
 
-`$(content).imaginator({});
+`$(content).imaginator();
 `
 
 ## Funcionamiento
