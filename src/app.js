@@ -1,4 +1,6 @@
-$(document).ready(function() {
+var begin = function() {
   $('.container-img').cardify();
-  $('figure').addClass('col-xs-12 col-sm-6 col-lg-3');
-});
+  $('.container-img > figure').addClass('col-xs-12 col-sm-6 col-lg-3');
+};
+
+$(document).ready(begin);

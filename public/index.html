@@ -33,13 +33,13 @@
   <section id="home">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-md-6 col-lg-6">
+        <div class="col-xs-12 col-md-6 col-lg-6 margin-top">
           <h2>¿Qué es Cardify?</h2>
           <div class="line-decoration"></div>
           <br>
           <h4>Cardify es un plugin que transforma las imágenes semántica y dinámicamente; permite que nuestras imagenes sean correctamente colocadas dentro de una etiqueta <code>figure</code> junto con una etiqueta <code>figcaption</code> que contiene una descripción que es la misma que se muestra en el <code>alt</code> de la imagen.Cardify tambien crea para las imagenes un efecto de <code>hover</code> que muestra el <code>alt</code> de la imagen correspondiente.</h4>
           <br>
-          <button class="btn"><a class="waves-effect waves-light btn-large " href="pluginCardify.zip" download="Cardify">Descargar plugin <span class="glyphicon glyphicon-cloud-download"></span></a></button>
+          <button class="btn center-block"><a class="waves-effect waves-light btn-large " href="pluginCardify.zip" download="Cardify">Descargar plugin <span class="glyphicon glyphicon-cloud-download"></span></a></button>
         </div>
         <div class="col-xs-12 col-md-6 col-lg-6">
           <img class="img-cardify img-responsive" src="assets/docs/2-back.png" alt="">
@@ -48,27 +48,31 @@
     </div>
   </section>
   <!-- estructura para la sección de uso -->
-  <section  id="uso">
+  <section id="uso">
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
           <h1>Uso</h1>
           <div class="line-decoration2"></div>
+          <h4>Para tener acceso al plugin <strong>Cardify</strong> solo necesitas <a href="#home">descargar</a> el api cardify y enlazarlo en tu documento index.html.Tambien necesitarás enlazar la libreria de JQuery previamente.</h4>
           <br>
-          <h4>Para tener acceso al plugin <strong>Cardify</strong> solo necesitas <a href="#home">descargar</a> el api cardify y enlazarlo en tu documento index.html.Tambien necesitarás enlazar la libreria de JQuery previamente"</h4>
-          <br>
-          <div class="col-xs-12"><img class="img1" src="assets/images/enlace.png" alt=""></div>
-          <br>
-          <br>
-          <br>
-          <h4>Déspues debes colocar la clase <code>"container-img"</code> a cualquier <strong>elemento html</strong> que contenga elementos <code>img</code> con su atributo <code>alt</code> respectivamente</h4>
-          <br>
-          <div>
-            <img class="img2" src="assets/images/estructura.png" alt="">
+          <div class="center-block col-xs-6">
+            <pre class="prettyprint"><code>&lt;script src="js/cardify.js"&gt;&lt;/script&gt;</code></pre>
+          </div>
+          <div class="center-block col-xs-6">
+            <pre class="prettyprint"><code>&lt;script src="js/app.js"&gt;&lt;/script&gt;</code></pre>
           </div>
           <br>
           <br>
-          <h4>Listo! tus imagenes perfectamente semánticas y dinámicas en menos de 1 minuto</h4>
+          <br>
+          <h4>Déspues debes colocar la clase <code>"container-img"</code> a cualquier <strong>elemento html</strong> que contenga elementos <code>img</code> con su atributo <code>alt</code> respectivamente.</h4>
+          <br>
+          <figure class="col-xs-12">
+            <img class="img2" src="assets/images/enlaces.PNG" alt="">
+          </figure>
+          <br>
+          <br>
+          <h4>Listo! tus imagenes perfectamente semánticas y dinámicas en menos de 1 minuto.</h4>
         </div>
       </div>
     </div>
@@ -82,57 +86,67 @@
         <div class="col-lg-4">
           <h1 class="demo-space">Ejemplo</h1>
           <div class="line-decoration3"></div>
-          <h4>Experimenta el efecto Cardify! , Pase el pulsor del mouse sobre las imágenes</h4>
+          <h4>Experimenta el efecto Cardify!. Pase el pulsor del mouse sobre las imágenes.</h4>
+          <div class="form-group">
+            <input id="texto" type="text" class="center-block" placeholder="Descripción">
+            <input type="file" id="inputPhoto" class="center-block">
+            <figure>
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNzEiIGhlaWdodD0iMTgwIj48cmVjdCB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9Ijg1LjUiIHk9IjkwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MTcxeDE4MDwvdGV4dD48L3N2Zz4=" alt="" id="img-guardar" class="center-block img-preview">
+            </figure>
+            <div>
+              <a id="btn-photo" class="center-block btn btn-default" href="#" role="button">Public</a>
+            </div>
+          </div>
         </div>
         <br>
         <br>
         <div class="col-lg-8 container-images">
-          <div class="container-img" value='reset'>
+          <div class="container-img">
             <center><h1 class="title">Animals</h1></center>
-            <div class="style-figure col-xs-12 col-md-6 col-sm-6 col-lg-4">
-              <img src="assets/images/1.jpg" alt="Loris perezoso" class="style-img img-responsive images">
+            <div class="col-xs-12 col-md-6 col-sm-6 col-lg-4">
+              <img src="assets/images/1.jpg" alt="Loris perezoso" class="img-responsive images">
+            </div>
+            <div class="col-xs-12 col-md-6 col-sm-6 col-lg-4">
+              <img src="assets/images/2.jpg" alt="Ornitorrinco" class="img-responsive images">
+            </div>
+            <div class="col-xs-12 col-md-6 col-sm-6 col-lg-4">
+              <img src="assets/images/gato.jpg" alt="gatito tierno" class="img-responsive images">
+            </div>
+            <div class="col-xs-12 col-md-6 col-sm-6 col-lg-4">
+              <img src="assets/images/3.jpg" alt="pez globo" class="img-responsive images">
+            </div>
+            <div class="col-xs-12 col-md-6 col-sm-6 col-lg-4">
+              <img src="assets/images/5.jpg" alt="glotón" class="img-responsive images">
+            </div>
+            <div class="col-xs-12 col-md-6 col-sm-6 col-lg-4">
+              <img src="assets/images/6.jpg" alt="mapache" class="img-responsive images">
+            </div>
+            <div class="col-xs-12 col-md-6 col-sm-6 col-lg-4">
+              <img src="assets/images/4.jpg" alt="conejo" class="img-responsive images">
+            </div>
+            <div class="col-xs-12 col-md-6 col-sm-6 col-lg-4">
+              <img src="assets/images/7.jpg" alt="chancho" class="img-responsive images">
+            </div>
+            <div class="col-xs-12 col-md-6 col-sm-6 col-lg-4">
+              <img src="assets/images/8.jpg" alt="caballo" class="img-responsive images">
+            </div>
+            <div class="col-xs-12 col-md-6 col-sm-6 col-lg-4">
+              <img src="assets/images/9.jpg" alt="ardilla" class="img-responsive images">
+            </div>
+            <div class="col-xs-12 col-md-6 col-sm-6 col-lg-4">
+              <img src="assets/images/10.jpg" alt="perro" class="img-responsive images">
             </div>
             <div class="style-figure col-xs-12 col-md-6 col-sm-6 col-lg-4">
-              <img src="assets/images/2.jpg" alt="Ornitorrinco" class="style-img img-responsive images">
+              <img src="assets/images/11.jpg" alt="mono" class="img-responsive images">
             </div>
             <div class="style-figure col-xs-12 col-md-6 col-sm-6 col-lg-4">
-              <img src="assets/images/gato.jpg" alt="gatito tierno" class="style-img img-responsive images">
+              <img src="assets/images/12.jpg" alt="lemur" class="img-responsive images">
             </div>
             <div class="style-figure col-xs-12 col-md-6 col-sm-6 col-lg-4">
-              <img src="assets/images/3.jpg" alt="pez globo" class="style-img img-responsive images">
+              <img src="assets/images/13.jpg" alt="emú" class="img-responsive images">
             </div>
             <div class="style-figure col-xs-12 col-md-6 col-sm-6 col-lg-4">
-              <img src="assets/images/5.jpg" alt="glotón" class="style-img img-responsive images">
-            </div>
-            <div class="style-figure col-xs-12 col-md-6 col-sm-6 col-lg-4">
-              <img src="assets/images/6.jpg" alt="mapache" class="style-img img-responsive images">
-            </div>
-            <div class="style-figure col-xs-12 col-md-6 col-sm-6 col-lg-4">
-              <img src="assets/images/4.jpg" alt="conejo" class="style-img img-responsive images">
-            </div>
-            <div class="style-figure col-xs-12 col-md-6 col-sm-6 col-lg-4">
-              <img src="assets/images/7.jpg" alt="chancho" class="style-img img-responsive images">
-            </div>
-            <div class="style-figure col-xs-12 col-md-6 col-sm-6 col-lg-4">
-              <img src="assets/images/8.jpg" alt="caballo" class="style-img img-responsive images">
-            </div>
-            <div class="style-figure col-xs-12 col-md-6 col-sm-6 col-lg-4">
-              <img src="assets/images/9.jpg" alt="ardilla" class="style-img img-responsive images">
-            </div>
-            <div class="style-figure col-xs-12 col-md-6 col-sm-6 col-lg-4">
-              <img src="assets/images/10.jpg" alt="perro" class="style-img img-responsive images">
-            </div>
-            <div class="style-figure col-xs-12 col-md-6 col-sm-6 col-lg-4">
-              <img src="assets/images/11.jpg" alt="mono" class="style-img img-responsive images">
-            </div>
-            <div class="style-figure col-xs-12 col-md-6 col-sm-6 col-lg-4">
-              <img src="assets/images/12.jpg" alt="lemur" class="style-img img-responsive images">
-            </div>
-            <div class="style-figure col-xs-12 col-md-6 col-sm-6 col-lg-4">
-              <img src="assets/images/13.jpg" alt="emú" class="style-img img-responsive images">
-            </div>
-            <div class="style-figure col-xs-12 col-md-6 col-sm-6 col-lg-4">
-              <img src="assets/images/14.jpg" alt="oso" class="style-img  img-responsive images">
+              <img src="assets/images/14.jpg" alt="oso" class="img-responsive images">
             </div>
           </div>
         </div>
@@ -141,7 +155,12 @@
   </section>
   <!-- enlazando herramientas js -->
   <script type="text/javascript"src="vendors/js/jquery-3.2.1.min.js"></script>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
   <script type="text/javascript" src="js/cardify.js"></script>
+  <script type="text/javascript" src="../src/photo.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
+  <!--<script type="text/javascript" src="../src/cardify.js"></script>
+  <script type="text/javascript" src="../src/photo.js"></script>
+  <script type="text/javascript" src="../src/app.js"></script>-->
 </body>
 </html>
