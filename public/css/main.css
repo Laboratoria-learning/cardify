@@ -118,3 +118,6 @@ pre {
 .descarga a {
     margin: 2%;
 }
+.btn-floating.btn-large {
+    float: right;
+}
