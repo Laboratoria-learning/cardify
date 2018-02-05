@@ -27,17 +27,27 @@ nav .brand-logo {
   padding-left: .5em;
 }
 
+.side-nav {
+  background-color: rgb(243, 236, 203);
+}
+
+nav ul a {
+  font-size: 1.5rem;
+}
+
+/* Estilos install */
+pre, p, li {
+  font-size: 1.29em;
+}
+
 /* Estilos descripción */
-.text-style, p, li {
-  font-size: 20px;
+
+.text-style {
+  padding-top: 2em;
 }
 
 .style-info {
   padding-left: 1em;
-}
-
-li {
-  padding: .5em;
 }
 
 /* Botón add */
@@ -63,14 +73,14 @@ figure {
 }
 
 .gallery {
-  padding: 2em;
+  padding: 1em;
   max-width: 90%;
 }
 
 .card {
   border: 1px solid #eacadd;
   border-radius: 4px;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
 }
 
