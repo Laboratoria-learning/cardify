@@ -1,15 +1,17 @@
 'use strict';
 
-(function($) {
-  $.fn.cardify = function() {
+(function ($) {
+  $.fn.cardify = function () {
 
     var containerA = $('.container-img');
 
     var pluginImage = function pluginImage(containerX) {
       var searchImage = containerX.find('img');
 
+      console.log(searchImage);
+
       var _loop = function _loop(i) {
-        // console.log(searchImage[i]);
+        console.log(searchImage[i]);
 
         var figure = $('<figure></figure>');
         figure.append(searchImage[i]);
@@ -18,11 +20,11 @@
         figure.append(figcaption);
 
         containerX.append(figure);
-        figure.hover(function() {
+        figure.hover(function () {
           $(searchImage[i]).css({ 'visibility': 'hidden' });
           $(searchImage[i]).animate(4000);
           figcaption.css({ 'transform': 'translateY(-300%)', 'text-align': 'center', 'background-color': 'black', 'color': 'white', 'border-radius': '10px' });
-        }, function() {
+        }, function () {
           $(searchImage[i]).css({ 'visibility': 'visible' });
           $(searchImage[i]).animate(4000);
           figcaption.css({ 'transform': 'translateY(0%)', 'background-color': 'transparent', 'color': 'black' });
