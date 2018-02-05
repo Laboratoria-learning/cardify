@@ -68,7 +68,7 @@
           <h4>Déspues debes colocar la clase <code>"container-img"</code> a cualquier <strong>elemento html</strong> que contenga elementos <code>img</code> con su atributo <code>alt</code> respectivamente.</h4>
           <br>
           <figure class="col-xs-12">
-            <img class="img2" src="assets/images/enlaces.PNG" alt="">
+            <pre class="prettyprint"><code>&lt;div class="container-img"&gt;&lt;div class="row"&gt;&lt;img src="url_imagen" alt="descripción_imagen"&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
           </figure>
           <br>
           <br>
@@ -86,15 +86,18 @@
         <div class="col-lg-4">
           <h1 class="demo-space">Ejemplo</h1>
           <div class="line-decoration3"></div>
-          <h4>Experimenta el efecto Cardify!. Pase el pulsor del mouse sobre las imágenes.</h4>
+          <h4 >Experimenta el efecto Cardify!. Pase el pulsor del mouse sobre las imágenes.</h4>
+          <br>
+          <h4>Puedes agregar imágenes!, solo debes poner la url de la imagen en el input.</h4>
+          <br>
           <div class="form-group">
-            <input id="texto" type="text" class="center-block" placeholder="Descripción">
-            <input type="file" id="inputPhoto" class="center-block">
-            <figure>
-              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNzEiIGhlaWdodD0iMTgwIj48cmVjdCB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9Ijg1LjUiIHk9IjkwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MTcxeDE4MDwvdGV4dD48L3N2Zz4=" alt="" id="img-guardar" class="center-block img-preview">
-            </figure>
+            <input id="image-url" type="text" class="center-block" placeholder="Url de imagen">
+            <br>
+            <input id="alt-image" type="text" placeholder="Descripción de imagen" class="center-block">
+            <br>
+            <br>
             <div>
-              <a id="btn-photo" class="center-block btn btn-default" href="#" role="button">Public</a>
+              <button id="btn-image" class="center-block btn " href="#" role="button" disabled>Public</button>
             </div>
           </div>
         </div>
@@ -103,49 +106,49 @@
         <div class="col-lg-8 container-images">
           <div class="container-img">
             <center><h1 class="title">Animals</h1></center>
-            <div class="col-xs-12 col-md-6 col-sm-6 col-lg-4">
+            <div>
               <img src="assets/images/1.jpg" alt="Loris perezoso" class="img-responsive images">
             </div>
-            <div class="col-xs-12 col-md-6 col-sm-6 col-lg-4">
+            <div>
               <img src="assets/images/2.jpg" alt="Ornitorrinco" class="img-responsive images">
             </div>
-            <div class="col-xs-12 col-md-6 col-sm-6 col-lg-4">
+            <div>
               <img src="assets/images/gato.jpg" alt="gatito tierno" class="img-responsive images">
             </div>
-            <div class="col-xs-12 col-md-6 col-sm-6 col-lg-4">
+            <div>
               <img src="assets/images/3.jpg" alt="pez globo" class="img-responsive images">
             </div>
-            <div class="col-xs-12 col-md-6 col-sm-6 col-lg-4">
+            <div>
               <img src="assets/images/5.jpg" alt="glotón" class="img-responsive images">
             </div>
-            <div class="col-xs-12 col-md-6 col-sm-6 col-lg-4">
+            <div>
               <img src="assets/images/6.jpg" alt="mapache" class="img-responsive images">
             </div>
-            <div class="col-xs-12 col-md-6 col-sm-6 col-lg-4">
+            <div>
               <img src="assets/images/4.jpg" alt="conejo" class="img-responsive images">
             </div>
-            <div class="col-xs-12 col-md-6 col-sm-6 col-lg-4">
+            <div>
               <img src="assets/images/7.jpg" alt="chancho" class="img-responsive images">
             </div>
-            <div class="col-xs-12 col-md-6 col-sm-6 col-lg-4">
+            <div>
               <img src="assets/images/8.jpg" alt="caballo" class="img-responsive images">
             </div>
-            <div class="col-xs-12 col-md-6 col-sm-6 col-lg-4">
+            <div>
               <img src="assets/images/9.jpg" alt="ardilla" class="img-responsive images">
             </div>
-            <div class="col-xs-12 col-md-6 col-sm-6 col-lg-4">
+            <div>
               <img src="assets/images/10.jpg" alt="perro" class="img-responsive images">
             </div>
-            <div class="style-figure col-xs-12 col-md-6 col-sm-6 col-lg-4">
+            <div>
               <img src="assets/images/11.jpg" alt="mono" class="img-responsive images">
             </div>
-            <div class="style-figure col-xs-12 col-md-6 col-sm-6 col-lg-4">
+            <div>
               <img src="assets/images/12.jpg" alt="lemur" class="img-responsive images">
             </div>
-            <div class="style-figure col-xs-12 col-md-6 col-sm-6 col-lg-4">
+            <div>
               <img src="assets/images/13.jpg" alt="emú" class="img-responsive images">
             </div>
-            <div class="style-figure col-xs-12 col-md-6 col-sm-6 col-lg-4">
+            <div>
               <img src="assets/images/14.jpg" alt="oso" class="img-responsive images">
             </div>
           </div>
@@ -157,7 +160,7 @@
   <script type="text/javascript"src="vendors/js/jquery-3.2.1.min.js"></script>
   <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
   <script type="text/javascript" src="js/cardify.js"></script>
-  <script type="text/javascript" src="../src/photo.js"></script>
+  <script type="text/javascript" src="js/photo.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
   <!--<script type="text/javascript" src="../src/cardify.js"></script>
   <script type="text/javascript" src="../src/photo.js"></script>

@@ -132,8 +132,8 @@ button a:hover {
   z-index: 2;
 }
 
-.container-images::before {
-  opacity: 0.4;
+.container-images::before{
+  /* opacity: 0.4; */
   content: '';
   position: absolute;
   z-index: -2;
@@ -143,7 +143,7 @@ button a:hover {
   right: 0;
   border-radius: 10px;
   border: 4px solid rgb(253, 173, 23);
-  background-image: url('../assets/images/huellas.jpg');
+  background-color: #f4f4f4;
 }
 
 .line-decoration3 {
@@ -211,10 +211,28 @@ pre {
   overflow: hidden;
 }
 
-#btn-photo {
+input{
+  outline: none;
+  border-radius: 5px;
+  width: 300px;
+  padding: 7px;
+  border: none;
+  
+}
+
+input:focus{
+  border:2px solid rgb(253, 173, 23);
+}
+
+#btn-image {
   width: 100px;
+  background-color: rgb(105, 104, 104);
+  color: black;
 }
 
 .img-preview {
   width: 170px;
+
 }
+
+

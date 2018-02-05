@@ -1,7 +1,7 @@
 'use strict';
 
-(function ($) {
-  $.fn.cardify = function () {
+(function($) {
+  $.fn.cardify = function() {
 
     var containerA = $('.container-img');
 
@@ -20,17 +20,17 @@
         figure.append(figcaption);
 
         containerX.append(figure);
-        figure.hover(function () {
+        figure.hover(function() {
           $(searchImage[i]).css({ 'visibility': 'hidden' });
           $(searchImage[i]).animate(4000);
           figcaption.css({ 'transform': 'translateY(-300%)', 'text-align': 'center', 'background-color':'black', 'color':'white', 'border-radius':'10px'});
-        }, function () {
+        }, function() {
           $(searchImage[i]).css({ 'visibility': 'visible' });
           $(searchImage[i]).animate(4000);
-          figcaption.css({ 'transform': 'translateY(0%)','background-color':'transparent', 'color':'black' });
+          figcaption.css({ 'transform': 'translateY(0%)', 'background-color':'transparent', 'color':'black' });
         });
       };
-
+      
       for (var i = 0; i < searchImage.length; i++) {
         _loop(i);
       }
