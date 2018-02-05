@@ -1,8 +1,24 @@
-'use strict';
+$(document).ready(() => {
+  let btnStart = $('#start');
 
-$(document).ready(function () {
-  $('.container-cardify1').pluss({ 
-    align: 'horizontal',
-    direction: 'tb'
+  btnStart.one('click', () => {
+    $('.container-cardify1').pluss({ 
+   
+    });
+  });
+
+  let btnStartvertical = $('#startvertical');
+  btnStartvertical.one('click', () => {
+    $('.container-cardify').pluss({
+      align: 'vertical',
+      direction: ''
+    });
+  });
+
+  let btnstartHorizontal = $('#startHorizontal');
+  
+  btnstartHorizontal.one('click', () => {
+    $('.container-horizontal').pluss({ 
+    });
   });
 });
