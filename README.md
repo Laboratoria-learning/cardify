@@ -1,27 +1,21 @@
 # Cardify
 
-[![forthebadge](http://forthebadge.com/images/badges/built-by-developers.svg)](http://forthebadge.com)
-[![forthebadge](http://forthebadge.com/images/badges/uses-css.svg)](http://forthebadge.com)
-[![forthebadge](http://forthebadge.com/images/badges/uses-html.svg)](http://forthebadge.com)
-[![forthebadge](http://forthebadge.com/images/badges/uses-js.svg)](http://forthebadge.com)
-[![forthebadge](http://forthebadge.com/images/badges/uses-git.svg)](http://forthebadge.com)
-[![forthebadge](http://forthebadge.com/images/badges/validated-html5.svg)](http://forthebadge.com)
-[![forthebadge](http://forthebadge.com/images/badges/for-you.svg)](http://forthebadge.com)
+Cardify es una librería, una herramienta que busca facilitar a los programadores su trabajo. El resultado es un efecto sobre las imágenes: al pasarles el mouse encima, se vuelven opacas y sobre éstas se muestra un fondo negro con una breve descripción a elección del usuario.
 
-* **Track:** _Common Core_
-* **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_
-* **Unidad:** _Producto final_
+![image](https://user-images.githubusercontent.com/32301650/36492011-1f427f9c-16fa-11e8-8d6a-7bbaf0ef8cd0.png)
 
-***
+## Desarrollado para 
 
-## **Objetivo**
+[Laboratoria](http://laboratoria.la)
+
+## Objetivo
 
 Implementar un plugin de jQuery que dado un _contenedor_ debe buscar todas las
 imágenes que encuentre dentro del _contenedor_ y reemplazarlas por un nuevo
 elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>`
 con el texto del atributo `alt` de la imagen.
 
-## **Herramientas Tecnológicas**
+## Herramientas Tecnológicas
 
 * HTML 5
 
@@ -39,9 +33,9 @@ con el texto del atributo `alt` de la imagen.
 
 * Guía de Estilos(`.eslintrc`)
 
-## **Getting Started**
+## Getting Started
 
-### **Estructura de Carpetas**
+### Estructura de Carpetas
 
 ```bash
 Proyecto
@@ -88,15 +82,15 @@ Para incluir este plugin a tu proyecto, inserta el archivo `index.js` en una eti
 <script src="js/app.js"></script>
 ```
 
-### **Inicializando con jQuery**
+### Inicializando con jQuery
 
 ```bash
 $('img').cardify();
 ```
 
-## **Flujo de trabajo**
+## Flujo de trabajo
 
-1. Se realizó un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
+1. Se realizó un [fork](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
    del repositorio brindado por `Laboratoria`.
 
 2. Se desarrolló la página web a la cual se le implementa el plugin Cardify.
@@ -110,7 +104,7 @@ $('img').cardify();
    * La imagen es envuelta por un elemento figure.
    * Se extrae su descripción contenida en el atributo alt y es encerrada en un figcaption, al cual se le añade algunos estilos.
 
-## **Planificación**
+## Planificación
 
 1. Semana 1 - días:
 
@@ -144,16 +138,16 @@ $('img').cardify();
   - **Jueves 01, Viernes 02 de febrero**: Se hizo actualizaciones de acuerdo al feedback obtenido en el code review por nuestro squad, actualización del readme, snippets.
   - Encargadas: Araceli y Lesly. 
 
-## **Anexos**
+## Anexos
 
-### **Scketch**
+### Scketch
 
 ![scketch-inicial](public/assets/docs/scketch-inicial.jpg "scketch-inicial")
 
-## **Prototipado**
+## Prototipado
 
 ![prototipado](public/assets/docs/prototipado.png "prototipado")
 
-## **Resultado Final**
+## Resultado Final
 
 ![resultado-final](public/assets/docs/resultado-final.png "resultado-final")
