@@ -1,19 +1,29 @@
 # Cardify
 
-* **Track:** _Common Core_
+* **Track:** _Front-end especialización_
 * **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_
 * **Unidad:** _Producto final_
 
 ***
 
-Implementar un plugin de jQuery que dado un _contenedor_ debe buscar todas las
-imágenes que encuentre dentro del _contenedor_ y reemplazarlas por un nuevo
-elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>`
+Implementar una funcion de Javascript EcmaScript 6 que dado un _contenedor_ debe buscar todas las imágenes que encuentre dentro del _contenedor_ y reemplazarlas por un nuevo elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>`
 con el texto del atributo `alt` de la imagen.
+
+## Para cumplir con el objetivo del proyecto deberas obtener el elemento con (id = "gallery") y pasarlo como parametro a la funcion principal
+
+```
+Ejemplo
+
+const obteniendoElElemento = document.getElementById("miId")
+
+const nombreDeTuFuncion =(obteniendoElElemento) => {
+  Inicia tu proyecto...
+}
+```
 
 ## Flujo de trabajo
 
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
+1. Debes realizar un [**fork**](https://github.com/Jonhks/cardify.git)
    de este repositorio.
 
 2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
@@ -23,8 +33,7 @@ con el texto del atributo `alt` de la imagen.
    git clone https://github.com/<nombre-de-usuario>/cardify.git
    ```
 
-3. Cuando hayas terminado tu producto, envía un Pull Request a la rama que tus
-   instructorxs este repositorio
+3. Crea tu propia rama y cuando tu producto esté terminado, sube tus cambios a la rama que creaste de ese repositorio y haz un pull request a tu propio master
    (puedes solicitar apoyo de tus profes para este paso).
 
 > Nota: No olvides que es una buena práctica describir tu proyecto en este
@@ -32,23 +41,4 @@ con el texto del atributo `alt` de la imagen.
 
 ***
 
-## Instalación
 
-### Global (navegador)
-
-```html
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="path-to-cardify.js"></script>
-```
-
-## Uso
-
-```js
-// `container` es el selector del contenedor donde se buscarán todas las
-// imágenes a ser procesadas.
-$(container).cardify({});
-```
-
-## Ejemplos
-
-...
