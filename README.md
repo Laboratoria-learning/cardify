@@ -1,5 +1,14 @@
 # **Cardify**
 
+El plugin de Cardify busca todas las imagenes que se encuentren dentro de un contenedor y semanticamente las coloca dentro de una etiqueta **figure** junto con una etiqueta **figcaption** que adquiere el texto del atributo **alt** de dicha imagen.Este plugin contiene estilos css y de bootstrap ya definidos.
+
+![Sin titulo](public/assets/docs/1-back.png)
+Asi es como se ve antes de pasar el mouse
+
+![Sin titulo](public/assets/docs/2-back.png)
+Al pasar el mouse se produce un  **hover** que  realiza la funcionalidad del plugin.
+
+***
 * **Track:** _Common Core_
 * **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_
 * **Unidad:** _Producto final_
@@ -60,10 +69,5 @@ La clase **"container-img"**
   <img src="url_imagen" alt="descripción_imagen">
 </div>
 ```
-
-## Ejemplos
-![Sin titulo](public/assets/docs/1-back.png)
-Asi es como se ve antes de pasar el mouse
-
-![Sin titulo](public/assets/docs/2-back.png)
-Al pasar el mouse se produce un  **hover** que  realiza la funcionalidad del plugin.
+#### Desarrollado para
+Laboratoria
