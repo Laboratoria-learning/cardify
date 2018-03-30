@@ -5,8 +5,9 @@ El plugin de Cardify busca todas las imagenes que se encuentren dentro de un con
 ![Cardify](https://user-images.githubusercontent.com/32301688/37807085-9279e15c-2e11-11e8-82e0-1e83bb0dfb6f.png)
 
 
-#### Desarrollado para
-Laboratoria(http://laboratoria.la)
+### Desarrollado para
+[Laboratoria](http://laboratoria.la)
+
 ***
 * **Track:** _Common Core_
 * **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_
