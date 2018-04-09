@@ -1,12 +1,15 @@
 # Cardify
 
 
-***
-
-El reto consiste en la implementación de  un plugin de jQuery que dado un _contenedor_ debe buscar todas las
+El reto consiste en la creación de un plugin de jQuery que dado un _contenedor_ debe buscar todas las
 imágenes que encuentre dentro del _contenedor_ y reemplazarlas por un nuevo
 elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>`
 con el texto del atributo `alt` de la imagen.
+
+![image](https://user-images.githubusercontent.com/19315632/38486092-9d742228-3ba1-11e8-8aef-fa1fcfb46b5f.png)
+
+## Desarrollado para 
+[Laboratoria](http://laboratoria.la)
 
 ## Flujo de trabajo
 
@@ -35,7 +38,7 @@ con el texto del atributo `alt` de la imagen.
 $('.container').cardify({});
 ```
 
-## Ejemplos
+### Ejemplos
 
 ```html
   <div class="container">
@@ -52,7 +55,7 @@ $('.container').cardify({});
 $('.container').cardify({});
 ```
 
-## Snippets
+### Snippets
 
 + html
 ```html
@@ -87,15 +90,6 @@ $('.container').cardify({});
 }(jQuery));
 
 ```
-
-## Herramientas
-
-+ Html
-+ Css
-+ Jquery
-+ Node.js
-+ Npm
-+ Babel
 
 ## Bibliografía
 + [Babel](https://platzi.com/blog/que-es-babel/)
