@@ -40,6 +40,8 @@ $('.container').cardify({});
 
 ### Ejemplos
 
+![demo](https://user-images.githubusercontent.com/19315632/38486368-6cb795ec-3ba2-11e8-85b4-46d0e4dd8fa4.png)
+
 ```html
   <div class="container">
       <img src="assets/images/perro1.jpg" alt="Cachorro1">
