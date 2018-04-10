@@ -1,7 +1,7 @@
 # Cardify
 
 
-El reto consiste en la creación de un plugin de jQuery que dado un conjunto de imagenes con una descripción al pasar se visualizará con el efecto hover.
+El reto consiste en la creación de un plugin de jQuery que dado un conjunto de imágenes con una descripción al pasar se visualizará con el efecto hover.
 
 ![image](https://user-images.githubusercontent.com/19315632/38486092-9d742228-3ba1-11e8-8aef-fa1fcfb46b5f.png)
 
