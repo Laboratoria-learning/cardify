@@ -1,10 +1,7 @@
 # Cardify
 
 
-El reto consiste en la creación de un plugin de jQuery que dado un _contenedor_ debe buscar todas las
-imágenes que encuentre dentro del _contenedor_ y reemplazarlas por un nuevo
-elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>`
-con el texto del atributo `alt` de la imagen.
+El reto consiste en la creación de un plugin de jQuery que dado un conjunto de imagenes con una descripción al pasar se visualizará con el efecto hover.
 
 ![image](https://user-images.githubusercontent.com/19315632/38486092-9d742228-3ba1-11e8-8aef-fa1fcfb46b5f.png)
 
