@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plugin</title>
+  <link rel="shortcut icon" href="assets/images/logo.png">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Raleway|Stint+Ultra+Condensed" rel="stylesheet">
+  <link rel="stylesheet" href="vendors/materialize/css/materialize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/cardify.css">
+</head>
+
+<body class="content-body">
+  <header class="nav-wrapper">
+    <nav class="fixed-cont">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo cardify-left">Cardify</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <a href="#cardify">¿Que es cardify</a>
+          </li>
+          <li>
+            <a href="#utilizar">Como utilizar</a>
+          </li>
+          <li>
+            <a href="#documentacion">Documentación</a>
+          </li>
+          <li>
+            <a href="#ejemplos">Ejemplos</a>
+          </li>
+          <li>
+            <a href="https://github.com/Jennifercarmen/cardify">
+              <i class="fab fa-github"></i> Github</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="back-img">
+      <div class="opacity">
+        <div class="container text">
+          <h3> Haz más y escribe menos</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="box">
+      <div id="cardify">
+        <h5 class="bold">
+          <i class="fa fa-info" aria-hidden="true"></i> &nbsp; ¿Que es cardify?</h5>
+      </div>
+      <div>
+        <p>
+          <strong>Cardify</strong> es un plugin de jquery que se encarga de buscar todas las imágenes que encuentra dentro de un
+          contenedor y reemplazarlas por un nuevo elemento 'figure'' que contenga la imagen además un figcaption con el texto
+          del atributo alt de la imagen, mostrando este último en un efecto hover.</p>
+        <p>- Perfecto para ordenar tu galeria de imagenes, animar tus imagenes con efecto hover, vista de codigo con estructura
+          semántica,etc
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col s6  m6">
+          <button id="start" class="btn waves-effect waves-light center" name="action">Probar Ahora
+            <i class="material-icons right">send</i>
+          </button>
+          <a href="index.html" id="reiniciar" class="btn waves-effect waves-light center" name="action">Reiniciar
+            <i class="material-icons right">send</i>
+          </a>
+        </div>
+        <div class="col s6  m6" id="add">
+            <label>
+                <input type="file" name="fichero" value="" id="fichero" class="hide">
+            <a class="btn-floating btn-large waves-effect waves-light sky" title="Añadir imagenes al container"><i class="material-icons">add</i></a>
+              </label>
+        </div>
+      </div>
+
+
+
+      <br>
+      <div class="container-cardify1">
+
+        <img src="assets/images/img3.jpg" alt="Vichayito-Piura">
+        <img src="assets/images/img4.jpg" alt="Caravelí-Arequipa">
+        <img src="assets/images/img5.jpg" alt="Punta Sal">
+        <img src="assets/images/img6.jpg" alt="Playa Roja-Paracas">
+
+        <img src="assets/images/img1.jpg" alt="Playa de los muertos- España">
+        <img src="assets/images/img2.jpg" alt="Playa del Carmen-Mexico">
+
+        <img src="assets/images/img7.jpg" alt="Colan-Piura 2018">
+        <img src="assets/images/img8.jpg" alt="Mancora-Piura 2018">
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container cont-section efect">
+      <div id="utilizar">
+        <h5 class="bold">
+          <i class="fa fa-file-code-o" aria-hidden="true"></i> &nbsp; Uso</h5>
+      </div>
+      <div class="row">
+        <div class="col m4">
+          <img src="assets/images/information.png" class="responsive-img" alt="">
+        </div>
+        <div class="col m8">
+          <p>Debe incluir jquery a su proyecto. Funciona con jQuery> =
+            <strong>3.2.1.</strong>
+          </p>
+          <p class="bold">Entorno de desarrollo</p>
+          <li> Descargue los archivos desde este
+            <a href="test/plugin-cardify/jquery.cardify.zip"> enlace </a> o ingrese al repositorio de
+            <a target="_blank" href="https://github.com/Jennifercarmen/cardify">
+              GitHub .</a>
+          </li>
+          <li> Incluir cardify.css en el HTML
+            <span class="red-text">head</span>
+          </li>
+          <br>
+          <div class="language-javascript bold">
+            <div>
+              <span class="blue-text">&lt;link </span>
+              <span class="purple-text"> rel</span>=
+              <span class="green-text"> "stylesheet" </span>
+              <span class="purple-text">href</span>=
+              <span class="green-text"> "css/cardify.css"&gt;</span>
+            </div>
+          </div>
+          <li> Incluir jquery.cardify.js en el pie de página, después de la biblioteca jQuery </li>
+          <br>
+          <div class="language-javascript bold">
+            <div>
+              <span class="blue-text">&lt;script </span>
+              <span class="purple-text">type </span>=
+              <span class="green-text"> "text / javascript" </span>
+              <span class="purple-text">src</span> =
+              <span class="green-text"> "js/jquery-3.2.1.min.js" &gt; </span>
+              <span class="blue-text">&lt;/ script&gt;&nbsp;</span>
+            </div>
+            <div>
+              <span class="blue-text">&lt;script </span>
+              <span class="purple-text">type </span>=
+              <span class="green-text"> "text / javascript" </span>
+              <span class="purple-text">src</span> =
+              <span class="green-text"> "jquery.cardify.js" &gt; </span>
+              <span class="blue-text">&lt;/ script&gt;&nbsp;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section>
+
+    <div class="container cont-section efect">
+      <div id="documentacion">
+        <h5>
+          <i class="fa fa-file-text" aria-hidden="true"></i> &nbsp; Inicializar Plugin
+        </h5>
+      </div>
+      <br>
+      <div>
+        <h6>Configuración por defecto</h6>
+        <h6>HTML</h6>
+      </div>
+      <div class="language-javascript bold">
+        <p>
+          &lt;
+          <span class="blue-text"> div </span>
+          <span class="cyan-text">class </span>=
+          <span class="red-text"> "container-cardify"</span>>
+          <br> &nbsp; &nbsp;
+          <<span class="blue-text">img </span>
+            <span class="cyan-text">src </span>=
+            <span class="green-text"> "images/img1.jpg"</span>
+            <span class="cyan-text">alt </span>=
+            <span class="green-text"> "descripción-image"</span>>
+            <br> &nbsp; &nbsp;
+            <<span class="blue-text">img </span>
+              <span class="cyan-text">src </span>=
+              <span class="green-text"> "images/img2.jpg"</span>
+              <span class="cyan-text">alt </span>=
+              <span class="green-text"> "descripción-image"</span>>
+              <br>
+              <<span>/</span>
+                <span class="blue-text">div </span>>
+        </p>
+      </div>
+      <div>
+        <h6>JS</h6>
+      </div>
+      <div class="language-javascript bold">
+        <div>
+          <p class="bold">
+            $(
+            <span class="red-text">'.container-cardify'</span> ).pluss();
+          </p>
+
+        </div>
+      </div>
+  </section>
+
+  <section>
+    <div class="container cont-section efect">
+      <div id="ejemplos">
+        <h5>Ejemplos</h5>
+        <div>
+          <h6>Ejemplo #1:
+            <br> Imagenes alineadas verticalmente</h6>
+          <div class="language-javascript bold">
+            <p>
+              $(
+              <span class="red-text">'.container-cardify'</span>).pluss({
+              <br> &nbsp; &nbsp; &nbsp;align: 'vertical',
+              <br> &nbsp; &nbsp; &nbsp;direction: ' '
+              <br> });
+            </p>
+          </div>
+          <div class="row">
+            <div class="col m12  col s12 center-align">
+              <button class="btn btn-primary" id="startvertical">
+                Start
+              </button>
+            </div>
+          </div>
+          <div class="container-cardify">
+            <img src="assets//images/img1.jpg" alt="Playa de los muertos-España">
+            <img src="assets//images/img2.jpg" alt="Playa del Carmen-Mexico">
+          </div>
+
+        </div>
+
+        <div>
+          <h6>Ejemplo #2:
+            <br> Imagenes alineadas horizontalmente</h6>
+          <h6>
+            Imagenes con Figure y figcaption
+          </h6>
+          <div class="language-javascript">
+            <p class="bold">
+              $(
+              <span class="red-text">'.container-cardify'</span> ).pluss();
+            </p>
+          </div>
+          <div class="row">
+            <div class="col m12  col s12 center-align">
+              <button class="btn btn-primary" id="startHorizontal">
+                Start
+              </button>
+            </div>
+          </div>
+          <div class="container-horizontal ">
+            <img src="assets//images/img3.jpg" alt="Vichayito-Piura">
+            <img src="assets//images/img4.jpg" alt="Caravelí-Arequipa">
+            <img src="assets//images/img5.jpg" alt="Punta Sal">
+            <img src="assets//images/img6.jpg" alt="Playa Roja-Paracas">
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container descarga">
+      <a class="waves-effect waves-light btn-large " href="src/jquery.cardify.zip" download="Cardify">Descargar Plugin</a>
+    </div>
+  </section>
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Copyrigth 2018</h5>
+          <p class="grey-text text-lighten-4">Laboratoria</p>
+
+
+        </div>
+        <div class="col l3 s12">
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li>
+              <i class="fab fa-github"></i>
+              <a class="white-text" href="https://github.com/Jennifercarmen/"> Jennifer Carmen</a>
+            </li>
+            <li>
+              <i class="fab fa-github"></i>
+              <a class="white-text" href="https://github.com/valeriavalles"> Valeria Valles</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Realizado por
+        <a class="brown-text text-lighten-3" href="http://materializecss.com">Valeria Valles-Jennifer Carmen</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Materialize  Jquery JavaScript -->
+  <script src="vendors/js/jquery-3.2.1.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/jquery.cardify.js"></script>
+</body>
+
+</html>

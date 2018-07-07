@@ -1,0 +1,54 @@
+.horizontal {
+    width: 22%;
+    height: 202px;
+    text-align: center;
+    margin: 5px 2px;
+}
+.figure-cardify {
+    width: 100%;
+    height: 202px;
+    text-align: center;
+    margin: 0 auto;
+}
+.cardify-figcaption {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    height: 150px;
+    background-color: #6dc72a;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 50px;
+    position: relative;
+}
+.tb {
+    max-width: 960px;
+    list-style-type: none;
+    margin: 20px auto;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+#cont-ejemp-img {
+    margin-left: 0;
+}
+#cont-vertical-img {
+    margin-left: 24%;
+}
+.vertical {
+    margin: 15px auto;
+    width: 200px;
+}
+.cont-img {
+    width: 95%;
+    height: 150px;
+    border-radius: 5px;
+} 
+
+.hidden{
+    display: none;
+}
+
+

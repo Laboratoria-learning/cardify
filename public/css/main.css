@@ -1,0 +1,123 @@
+/* Helpers */
+
+.bold{
+    font-weight: bold;
+}
+.row{
+    margin-top:10px;
+    margin-bottom: 0px;
+}
+
+/* Clases especificas */
+.content-body {
+    background: rgb(247, 245, 245);
+    font-family:'Raleway', sans-serif;
+}
+.box {
+    width:80%;
+    background:white;
+    margin:40px auto;
+    box-shadow: 0 8px 6px -6px #343a40;
+    padding: 10px;
+    }
+.efect{
+    box-shadow: 0 8px 6px -6px #343a40;
+    }
+.item-img {
+    outline: 1px solid blue;
+    float: left;
+    margin: 5%;
+
+}
+.cardify-left {
+    padding-left: 2px;
+}
+.fixed-cont{
+    position: fixed;
+    z-index: 1000;
+    font-family: 'Viga', sans-serif;
+}
+.container {
+    overflow: hidden;
+}
+.figcaptionhover {
+    height: 150px;
+    background-color: black;
+    color: white;
+    padding-top: 50px;
+}
+.btn, .btn-large {
+
+    background-color:#26a69a;
+    margin-bottom: 10px;
+
+}
+.language-javascript {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.428571429;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: relative;
+}
+pre {
+    z-index: -2;
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.428571429;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: relative;
+}
+
+.texto-azul {
+    border: 1px solid red;
+}
+
+
+.nav-wrapper {
+   background: #343a40;
+}
+.cont-section {
+    margin-top: 2%;
+    padding: 2%;
+    background: #fff;
+}
+.back-img {
+    background: url('../assets/images/programa-cod.jpg')
+            center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    color: white;        
+}
+.text {
+    text-align: center;
+    padding-top: 15%;
+    font-family: 'Stint Ultra Condensed', cursive;
+}
+.opacity{
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+.descarga {
+    text-align: center;
+}
+.descarga a {
+    margin: 2%;
+}
+.btn-floating.btn-large {
+    float: right;
+}
