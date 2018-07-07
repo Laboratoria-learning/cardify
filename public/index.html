@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- CDN materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <!-- iconos -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Cardify</title>
+
+</head>
+
+<body class="indigo lighten-5">
+  <!-- header -->
+  <header>
+    <nav class="indigo lighten-2">
+      <div class="nav-wrapper">
+        <div class="container">
+          <a href="" class="brand-logo">Cardify</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="../public/views/test.html" target="_blank">Test</a>
+            </li>
+            <li>
+              <a href="https://github.com/betsy18/cardify">Github</a>
+            </li>
+            <li>
+              <a href="../assets/plugin-cardify.rar" download>Download cardify</a>
+            </li>
+          </ul>
+          <ul class="side-nav col s4" id="mobile-demo">
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="../public/views/test.html" target="_blank">Test</a>
+            </li>
+            <li>
+              <a href="https://github.com/betsy18/cardify">Github</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- main -->
+  <main>
+    <div class="container center">
+      <div class="row">
+        <div class="col s12 m6 offset-m3">
+          <div class="card indigo lighten-5">
+            <br>
+            <figure>
+              <img src="assets/images/perro8.jpg">
+            </figure>
+            <div class="card-content">
+              <p></p>
+            </div>
+            <div class="card-action">
+              <a href="../public/views/test.html" target="_blank">Ver Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- section-info -->
+  <section class="section-info">
+    <br>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="center promo promo-example">
+            <i class="material-icons">local_library</i>
+            <p class="promo-caption">Utilidad</p>
+            <p class="light center">Cardify es un plugin implementado con jquery que tiene como finalidad darle un efecto hover a las imagenes y
+              que mostrar el texto del atributo alt de la imagen.</p>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="center promo promo-example">
+            <i class="material-icons">settings</i>
+            <p class="promo-caption">Escalabilidad</p>
+            <p class="light center">Al ser un código muy útil posee escalabilidad, ya que lo puede editar el usuario de acuerdo a sus necesidades</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section implementation-->
+  <section class="section-implementation">
+    <div class="container">
+      <hr>
+      <br>
+      <div class="row">
+        <h6>Implementación
+          <i class="material-icons">build</i>
+        </h6>
+        <ol>
+          <li>Descargar los siguientes archivos y añadirlos a tu proyecto:
+            <a href="../assets/plugin-cardify.rar">
+              <i class="material-icons indigo white-text">move_to_inbox</i>
+            </a>
+          </li>
+          <li>Vincular el css, js y jQuery en el html.</li>
+          <div class="row">
+            <div class="col s12 m12 center">
+              <div class="card-panel purple lighten-4">
+                <span class="black-text">
+                  &lt;link rel="stylesheet" href="test.css"&gt;
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m12 center">
+              <div class="card-panel purple lighten-4">
+                <span class="black-text">
+                  &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"&gt;&lt;/script&gt;
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m12 center">
+              <div class="card-panel purple lighten-4">
+                <span class="black-text">
+                  &lt;script src="path-to-cardify.js"&gt;&lt;/script&gt;
+                </span>
+              </div>
+            </div>
+          </div>
+          <li>Elaborar la siguiente estructura en el html.</li>
+          <div class="row">
+            <div class="col s12 m12">
+              <div class="card-panel purple lighten-4">
+                <span class="black-text center">
+                  &lt;div class="container"&gt;
+                  <br> &lt;img src="../assets/images/perro1.jpg" alt="Cachorro1"&gt;
+                  <br> &lt;img src="../assets/images/perro2.jpg" alt="Cachorro2"&gt;
+                  <br> &lt;img src="../assets/images/perro3.jpg" alt="Cachorro3"&gt;
+                  <br> &lt;img src="../assets/images/perro4.jpg" alt="Cachorro4"&gt;
+                  <br> &lt;img src="../assets/images/perro5.jpg" alt="Cachorro5"&gt;
+                  <br> &lt;img src="../assets/images/perro6.jpg" alt="Cachorro6"&gt;
+                  <br> &lt;img src="../assets/images/perro7.jpg" alt="Cachorro7"&gt;
+                  <br> &lt;img src="../assets/images/perro8.jpg" alt="Cachorro8"&gt;
+                  <br> &lt;/div&gt;
+                </span>
+              </div>
+            </div>
+          </div>
+          <li>En el contenedor de las imágenes colocar una clase llamada container</li>
+          <li>Todas las imágenes deben de tener su atributo alt</li>
+          <li>Llamar al plugin en su archivo js</li>
+          <div class="row">
+            <div class="col s12 m12 center">
+              <div class="card-panel purple lighten-4">
+                <span class="black-text">
+                  $('.container').cardify({});
+                </span>
+              </div>
+            </div>
+          </div>
+          <li>Ademas podran modificar el texto con las siguientes propiedades</li>
+          <div class="row">
+            <div class="col s12 m12 center">
+              <div class="card-panel purple lighten-4">
+                <span class="black-text">
+                  $('.container').cardify({color:'ingrese un color', fontFamily:'ingrese un tipo de letra'});
+                </span>
+              </div>
+            </div>
+          </div>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="page-footer indigo lighten-1">
+    <div class="footer-copyright">
+      <div class="container center">
+        © 2018 Copyright Cardify
+      </div>
+    </div>
+  </footer>
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- materialize.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <!-- js -->
+  <!-- <script src="js/app.js"></script> -->
+</body>
+
+</html>
