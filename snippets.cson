@@ -1,0 +1,11 @@
+# Snippet html
+".text.html.basic":
+  "container":
+    "prefix": "containerJQ"
+    "body": """
+    <div class="container-img">
+      <div class="{$(1:class)}">
+        <img src="{$2:address}" alt="{$3:data}">
+      </div>
+    </div>
+    """

@@ -1,8 +1,18 @@
 # Cardify
 
+El plugin de Cardify busca todas las imagenes que se encuentren dentro de un contenedor y semanticamente las coloca dentro de una etiqueta **figure** junto con una etiqueta **figcaption** que adquiere el texto del atributo **alt** de dicha imagen.Este plugin contiene estilos css y de bootstrap ya definidos.
+
+![Cardify](https://user-images.githubusercontent.com/32301688/37807085-9279e15c-2e11-11e8-82e0-1e83bb0dfb6f.png)
+
+
+### Desarrollado para
+[Laboratoria](http://laboratoria.la)
+
+***
 * **Track:** _Common Core_
 * **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_
 * **Unidad:** _Producto final_
+* **Front-ends:** _Aurora Vásquez Sanchez y Jessica Manturano_
 
 ***
 
@@ -12,43 +22,55 @@ elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>
 con el texto del atributo `alt` de la imagen.
 
 ## Flujo de trabajo
+Para el desarrollo de este trabajo estamos haciendo uso de diferentes ramas para evitar conflictos y perdida de informacion cada rama tiene informacion relevante y paso a paso de la funcionalidad de este plugin.
 
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
-
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
-
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/cardify.git
-   ```
-
-3. Cuando hayas terminado tu producto, envía un Pull Request a la rama que tus
-   instructorxs este repositorio
-   (puedes solicitar apoyo de tus profes para este paso).
-
-> Nota: No olvides que es una buena práctica describir tu proyecto en este
-> archivo `README.md` :smiley:.
+Planificación de trabajo con [Trello](https://trello.com/b/gsC83EJh/cardify-reto-sprint-04)
 
 ***
 
-## Instalación
+## Funcionalidad:
+El plugin de Cardify busca todas las imagenes que se encuentren dentro de un contenedor y semanticamente las coloca dentro de una etiqueta **figure** junto con una etiqueta **figcaption** que adquiere el texto del atributo **alt** de dicha imagen.Este plugin contiene estilos css y de bootstrap ya definidos.
+
+## Cómo agregar Cardify a tu proyecto
+
+### Requisitos previos
+
+primero necesitarás enlazar la librería de jquery a tu archivo index.html:
+
+<script type="text/javascript"src="vendors/js/jquery-3.2.1.min.js"></script>
+
+Luego descargar el plugin que contiene una carpeta js y dos archivos : cardify.js y app.js.
+
+ambos archivos deben ser enlazados en el index.html:
+
+<script type="text/javascript" src="js/cardify.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
 
 ### Global (navegador)
 
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 <script src="path-to-cardify.js"></script>
 ```
 
 ## Uso
 
 ```js
-// `container` es el selector del contenedor donde se buscarán todas las
-// imágenes a ser procesadas.
-$(container).cardify({});
+En tu archivo app.js deberás colocar la siguiente línea de código:
+
+$('.container-img').cardify();
+
+y para que se ejecute la función el usuario debe poner en el elemento html que contenga en su interior elementos de etiqueta 'img'  
+La clase **"container-img"**
+
+<div class="container-img">
+  <img src="url_imagen" alt="descripción_imagen">
+</div>
 ```
+![Carfdify](public/assets/docs/1-back.png)
+Asi es como se ve antes de pasar el mouse
 
-## Ejemplos
-
-...
+![Carfdify](public/assets/docs/2-back.png)
+Al pasar el mouse se produce un  **hover** que  realiza la funcionalidad del plugin.

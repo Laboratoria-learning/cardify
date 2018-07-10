@@ -1,0 +1,23 @@
+{
+  "name": "cardify",
+  "version": "1.0.0",
+  "description": "Plugin de jQuery",
+  "main": "cardify.js",
+  "scripts": {
+    "build": "babel --presets env src -d public/js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JessicaMP/cardify.git"
+  },
+  "author": "Aurora Sanchez Vásquez y Jessica Manturano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JessicaMP/cardify/issues"
+  },
+  "homepage": "https://github.com/JessicaMP/cardify#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}

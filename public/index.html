@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cardify</title>
+  <link href="https://fonts.googleapis.com/css?family=Acme|Roboto+Slab" rel="stylesheet">
+  <link rel="icon" href="assets/icons/ico.png">
+  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- estructura para el header -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 ">
+          <h1>Cardify</h1>
+        </div>
+        <div  class="col-xs-6">
+          <ul class="nav-list pull-right">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#uso">Uso</a></li>
+            <li><a href="#home">Descargar</a></li>
+            <li><a href="#ejemplo">Ejemplo</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- estructura para la sección de home -->
+  <section id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-6 col-lg-6 margin-top">
+          <h2>¿Qué es Cardify?</h2>
+          <div class="line-decoration"></div>
+          <br>
+          <h4>Cardify es un plugin que transforma las imágenes semántica y dinámicamente; permite que nuestras imagenes sean correctamente colocadas dentro de una etiqueta <code>figure</code> junto con una etiqueta <code>figcaption</code> que contiene una descripción que es la misma que se muestra en el <code>alt</code> de la imagen.Cardify tambien crea para las imagenes un efecto de <code>hover</code> que muestra el <code>alt</code> de la imagen correspondiente.</h4>
+          <br>
+          <button class="btn center-block"><a class="waves-effect waves-light btn-large " href="pluginCardify.zip" download="Cardify">Descargar plugin <span class="glyphicon glyphicon-cloud-download"></span></a></button>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-6">
+          <img class="img-cardify img-responsive" src="assets/docs/2-back.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- estructura para la sección de uso -->
+  <section id="uso">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Uso</h1>
+          <div class="line-decoration2"></div>
+          <h4>Para tener acceso al plugin <strong>Cardify</strong> solo necesitas <a href="#home">descargar</a> el api cardify y enlazarlo en tu documento index.html.Tambien necesitarás enlazar la libreria de JQuery previamente.</h4>
+          <br>
+          <div class="center-block col-xs-6">
+            <pre class="prettyprint"><code>&lt;script src="js/cardify.js"&gt;&lt;/script&gt;</code></pre>
+          </div>
+          <div class="center-block col-xs-6">
+            <pre class="prettyprint"><code>&lt;script src="js/app.js"&gt;&lt;/script&gt;</code></pre>
+          </div>
+          <br>
+          <br>
+          <br>
+          <h4>Déspues debes colocar la clase <code>"container-img"</code> a cualquier <strong>elemento html</strong> que contenga elementos <code>img</code> con su atributo <code>alt</code> respectivamente.</h4>
+          <br>
+          <figure class="col-xs-12">
+            <pre class="prettyprint"><code>&lt;div class="container-img"&gt;&lt;div class="row"&gt;&lt;img src="url_imagen" alt="descripción_imagen"&gt;&lt;/div&gt;&lt;/div&gt;</code></pre>
+          </figure>
+          <br>
+          <br>
+          <h4>Listo! tus imagenes perfectamente semánticas y dinámicas en menos de 1 minuto.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <!-- estructura para la sección de ejemplo -->
+  <section id="ejemplo">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h1 class="demo-space">Ejemplo</h1>
+          <div class="line-decoration3"></div>
+          <h4 >Experimenta el efecto Cardify!. Pase el pulsor del mouse sobre las imágenes.</h4>
+          <br>
+          <h4>Puedes agregar imágenes!, solo debes poner la url de la imagen en el input.</h4>
+          <br>
+          <div class="form-group">
+            <input id="image-url" type="text" class="center-block" placeholder="Url de imagen">
+            <br>
+            <input id="alt-image" type="text" placeholder="Descripción de imagen" class="center-block">
+            <br>
+            <br>
+            <div>
+              <button id="btn-image" class="center-block btn " href="#" role="button" disabled>Public</button>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="col-lg-8 container-images">
+          <div class="container-img">
+            <center><h1 class="title">Animals</h1></center>
+            <div>
+              <img src="assets/images/1.jpg" alt="Loris perezoso" class="img-responsive images">
+            </div>
+            <div>
+              <img src="assets/images/2.jpg" alt="Ornitorrinco" class="img-responsive images">
+            </div>
+            <div>
+              <img src="assets/images/gato.jpg" alt="gatito tierno" class="img-responsive images">
+            </div>
+            <div>
+              <img src="assets/images/3.jpg" alt="pez globo" class="img-responsive images">
+            </div>
+            <div>
+              <img src="assets/images/5.jpg" alt="glotón" class="img-responsive images">
+            </div>
+            <div>
+              <img src="assets/images/6.jpg" alt="mapache" class="img-responsive images">
+            </div>
+            <div>
+              <img src="assets/images/4.jpg" alt="conejo" class="img-responsive images">
+            </div>
+            <div>
+              <img src="assets/images/7.jpg" alt="chancho" class="img-responsive images">
+            </div>
+            <div>
+              <img src="assets/images/8.jpg" alt="caballo" class="img-responsive images">
+            </div>
+            <div>
+              <img src="assets/images/9.jpg" alt="ardilla" class="img-responsive images">
+            </div>
+            <div>
+              <img src="assets/images/10.jpg" alt="perro" class="img-responsive images">
+            </div>
+            <div>
+              <img src="assets/images/11.jpg" alt="mono" class="img-responsive images">
+            </div>
+            <div>
+              <img src="assets/images/12.jpg" alt="lemur" class="img-responsive images">
+            </div>
+            <div>
+              <img src="assets/images/13.jpg" alt="emú" class="img-responsive images">
+            </div>
+            <div>
+              <img src="assets/images/14.jpg" alt="oso" class="img-responsive images">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- enlazando herramientas js -->
+  <script type="text/javascript"src="vendors/js/jquery-3.2.1.min.js"></script>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+  <script type="text/javascript" src="js/cardify.js"></script>
+  <script type="text/javascript" src="js/photo.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <!--<script type="text/javascript" src="../src/cardify.js"></script>
+  <script type="text/javascript" src="../src/photo.js"></script>
+  <script type="text/javascript" src="../src/app.js"></script>-->
+</body>
+</html>
