@@ -1,0 +1,115 @@
+main {
+  background: linear-gradient(to bottom right, rgb(158, 5, 99), rgb(141, 90, 23));
+}
+
+.firstSection {
+  background: url(../assets/images/edificios.gif);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+}
+
+.title {
+  color: white;
+  font-size: 100px;
+  font-family: 'Berkshire Swash', cursive;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  padding-top: 110px;
+  text-align: center;
+}
+
+.white {
+  color: white;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.space {
+  margin: 12px;
+}
+
+.left {
+  flex-wrap: wrap;
+  margin-left: 50px;
+}
+
+.middle {
+  margin: 20px 450px;
+}
+
+.btn {
+  margin: 10px;
+  width: 16rem;
+}
+
+.btn-git {
+  margin: 22px;
+  width: 20rem;
+}
+
+a {
+  font-size: 1.5rem;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  bottom: 0;
+  line-height: 40px;
+  width: 100%;
+}
+
+pre {
+  background-color: rgba(223, 223, 76, 0.03);
+  border: 3px solid rgba(123, 21, 133, 0.418);
+  border-radius: 4px;
+  color: rgb(15, 13, 13);
+  line-height: 24px;
+  padding: 5px 8px;
+  margin: 0 0 20px;
+  overflow-x: auto;
+  word-wrap: normal;
+}
+
+.txt-size-card {
+  font-size: 0.8rem;
+}
+
+.size-code {
+  font-size: 0.6rem;
+}
+
+.navbar {
+  padding: .3rem .3rem;
+}
+
+.margin-txt {
+  margin: 1rem 3rem;
+}
+
+.card-body {
+  padding: 0.3rem 0.8rem;
+}
+
+@media (min-width: 992px) {
+  main {
+    background: linear-gradient(to bottom right, rgb(158, 5, 99), rgb(141, 90, 23));
+    min-height: 100vh;
+    position: relative; 
+  }
+
+  .firstSection {
+    height: 32vh;
+    width: 100%;
+  }
+  
+  .title {
+    font-size: 100px;
+    padding-top: 60px;
+  }
+}

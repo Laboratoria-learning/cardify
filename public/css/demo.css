@@ -1,0 +1,25 @@
+/* ESTILO DE LOS DEMOS HTML */
+
+body {
+  background: url(../assets/images/space.gif);
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+/* titulo */
+.center {
+  font-size: 60px;
+  font-family: 'Berkshire Swash', cursive;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
+}
+.white {
+  color: #fff;
+} 
+
+figcaption {
+  color: #fff
+}
