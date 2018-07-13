@@ -1,0 +1,115 @@
+/* Clases reutilizables */
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #FAFAFA;
+}
+
+.navbar {
+  background-color: #EF6957!important;
+}
+
+a {
+  display: inline-block;
+  padding: .375rem .75rem;
+  border-radius: .25rem;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+figure {
+  width: 80%;
+  margin:0.5em 1em 3em 2em;
+  display: inline-block;
+  border-radius: 15px;
+}
+
+img {
+  width:100%;
+  box-shadow: 7px 6px 32px -10px rgba(0,0,0,0.62);
+  border-radius: 25px;
+}
+
+footer {
+  /* background-color: #A5A8A8; */
+  background-color: #B2AA8E;
+}
+
+/* Clases específicas */
+.picture-container {
+  border:2px solid #EF6957;
+  border-radius: 15px;
+  box-shadow: 6px 6px 23px 0px rgba(239,105,87,0.21);
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.img-bckgrnd-color {
+  background-color: #D09591;
+  border-radius: .25rem;
+}
+
+.main-title {
+  color: #3C1518;
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+.info {
+  color: #3C3E3E;
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+}
+
+.code-box {
+background-color: #DEE1DF;
+border-radius: 0.2em;
+}
+
+.btn-style {
+  background-color: #3C1518;
+  /* background-color: #5F3F42; */
+  color: #FAFAFA;
+  letter-spacing: 1px;
+}
+
+.btn-style:hover {
+  background-color: #715457;
+  color: #FAFAFA;
+  border-color: #545b62;
+  font-weight: bold;
+}
+
+.disabled-btn {
+  background-color: #8E908E;
+  color: #3C3E3E;
+}
+
+.disabled-btn:hover {
+  background-color: #8E908E;
+  color: #3C3E3E;
+  border-color: #8E908E;
+  font-weight: normal;
+}
+
+.textFooter{
+  color:  #3C3E3E;
+}
+
+@media (min-width: 576px) {
+  figure {
+    width: 75%;
+    margin:2em 1em 3em 2em;
+  }
+}
+
+@media (min-width: 992px) {
+  figure {
+    width: 35%;
+    margin:2em 1em 3em 2em;
+  }
+  figure:nth-child(odd){
+    margin-left: 3em;
+  }
+}
