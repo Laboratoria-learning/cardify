@@ -1,54 +1,72 @@
-# Cardify
+# Imaginator
 
-* **Track:** _Common Core_
-* **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_
-* **Unidad:** _Producto final_
+- - -
 
-***
 
-Implementar un plugin de jQuery que dado un _contenedor_ debe buscar todas las
-imágenes que encuentre dentro del _contenedor_ y reemplazarlas por un nuevo
-elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>`
-con el texto del atributo `alt` de la imagen.
+Plugin de Jquery que permite agregar etiquetas `<figure` y `<figcaption>` al pasar el mouse por las imagenes. La etiqueta `<figcaption>`, mostrará el texto del atributo Alt.
 
-## Flujo de trabajo
-
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
-
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
-
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/cardify.git
-   ```
-
-3. Cuando hayas terminado tu producto, envía un Pull Request a la rama que tus
-   instructorxs este repositorio
-   (puedes solicitar apoyo de tus profes para este paso).
-
-> Nota: No olvides que es una buena práctica describir tu proyecto en este
-> archivo `README.md` :smiley:.
-
-***
+- - -
 
 ## Instalación
-
 ### Global (navegador)
 
-```html
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="path-to-cardify.js"></script>
-```
+`<script src="jquery.imaginator.js"></script>`
 
-## Uso
+### Uso
 
-```js
-// `container` es el selector del contenedor donde se buscarán todas las
-// imágenes a ser procesadas.
-$(container).cardify({});
-```
+`$(content).imaginator();
+`
 
-## Ejemplos
+## Funcionamiento
+1. ####  Inicializar el proyecto con el comando:
+                                            npm init
 
-...
+2. ####  Descargar Imaginator con el comando:
+                                     npm install imaginator
+                        
+3. #### Enlazar script a Documento html.
+`                       <script>jquery.imaginator.js</script>`
+
+4. #### Pegar el siguiente código en el documento JS principal:
+
+                              var imaginator = require('imaginator');
+                   
+5. #### Colocar las imagenes dentro de un contenedor con class "content", las imagenes deben incluir el atributo alt con alguna descripción de la imagen.
+
+                             <div class="content">
+                               <div class="imagenes">
+                                 <img src="corgi.jpg" alt="Corgi"/>
+                               </div>
+                             </div.
+
+
+6. #### Comienza a utilizar el Plugin.
+
+## Ejemplo
+
+![](https://media.giphy.com/media/xThtacKxgD3QBRdMLm/giphy.gif).
+
+## Herramientas de Producción
+- JQuery ~v. 3.2.1
+
+## Dependencias de Desarrollo
+- Mocha ^ 5.0.0
+- Chai ^ 4.1.2
+- ESlint ~v 4.16.0
+- Jsdom ^11.6.1
+
+
+	Autor: Teresita Cañete,
+           Ariella Rodríguez.
+           Enero,2018.
+    Licencia: ISC License.
+    
+
+
+
+    
+    
+     
+`
+
+

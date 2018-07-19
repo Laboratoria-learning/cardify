@@ -1,0 +1,29 @@
+{
+  "name": "imaginator",
+  "version": "1.0.0",
+  "description": "Proyecto cardify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AriellaRogueN/cardify.git"
+  },
+  "keywords": [
+    "proyecto"
+  ],
+  "author": "Teresita Cañete - Ariella Rodriguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AriellaRogueN/cardify/issues"
+  },
+  "homepage": "https://github.com/AriellaRogueN/cardify#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "jquery": "^3.3.1",
+    "jsdom": "^11.6.2",
+    "mocha": "^5.0.0"
+  }
+}
