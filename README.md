@@ -1,54 +1,50 @@
+[![GitHub issue age](https://img.shields.io/badge/created-January%202018-31C285.svg)](https://github.com/meliveloz/cardify) ![licence](https://img.shields.io/badge/license-ISC-1F618D.svg) [![npm](https://img.shields.io/badge/npm-v8.9.0-orange.svg)]() ![npm](https://img.shields.io/badge/author-melivalvane-C0225C.svg)
+
 # Cardify
 
-* **Track:** _Common Core_
-* **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_
-* **Unidad:** _Producto final_
-
+***
+Es un plugin de jQuery para Bootstrap que permite que tus imágenes almacenadas dentro de un contenedor sean envueltas por un nuevo elemento `<figure>` que a su vez posee un `<figcaption>` con el texto del atributo `alt` de la imagen.
+Además al pasar el mouse sobre la imagen lograremos ver el contenido del 
+`<figcaption>`.
 ***
 
-Implementar un plugin de jQuery que dado un _contenedor_ debe buscar todas las
-imágenes que encuentre dentro del _contenedor_ y reemplazarlas por un nuevo
-elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>`
-con el texto del atributo `alt` de la imagen.
+### Requerimientos Técnicos
 
-## Flujo de trabajo
+El proyecto fue realizado con las siguientes dependencias NPM:
 
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
+##### Dependencias de Producción
+  - JQuery ~v. 3.2.1
+  - Bootstrap ~v. 3.3.7
+  - Jsdom ^11.6.1
+  - Browserify ^15.2.0
 
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
+##### Dependencias de Desarrollo
+  - Chai ^ 4.1.2
+  - Mocha ^ 5.0.0
+  - Browserify ^ 15.2.0 
 
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/cardify.git
-   ```
+### Uso
 
-3. Cuando hayas terminado tu producto, envía un Pull Request a la rama que tus
-   instructorxs este repositorio
-   (puedes solicitar apoyo de tus profes para este paso).
++ Debes usar class = 'cardify' en el elemento que contiene las imagenes.
++ Recuerda usar la class de bootstrap class='img-responsive' en tus imagenes.
++ Debes incluir el atributo alt en tus imagenes con el texto que desees.
 
-> Nota: No olvides que es una buena práctica describir tu proyecto en este
-> archivo `README.md` :smiley:.
+![](assets/img/explainreadme.png)
 
-***
-
-## Instalación
-
-### Global (navegador)
-
-```html
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="path-to-cardify.js"></script>
+```
+  `Por último añade este CDN en tu html.
+  <script type="text/javascript" src="https://rawgit.com/meliveloz/cardify/master/lib/main.js">
 ```
 
-## Uso
+### Ejemplo
 
-```js
-// `container` es el selector del contenedor donde se buscarán todas las
-// imágenes a ser procesadas.
-$(container).cardify({});
-```
+![](assets/img/img_example.png)
 
-## Ejemplos
 
-...
+### Licencia
+
++ [ISC License](https://opensource.org/licenses/ISC)
+   
+### Demo
+
++ https://meliveloz.github.io/cardify-demo/
