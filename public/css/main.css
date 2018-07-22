@@ -1,0 +1,141 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .padding-30{
+    padding: 0 30px;
+  }
+  
+  .bg-teal {
+    background-color: #008080;
+  }
+
+  .icon-color {
+    color: #E64980;
+  }
+  
+  .principal-title {
+    font-size: 5em;
+  }
+
+  .position-left {
+    position: relative;
+    top: 6vh;
+  } 
+
+  .icon-styles {
+    display: inline-block;
+    width: 50px;
+  }
+  
+  .text-white {
+    color: #fff;
+  }
+  
+  .margin-0 {
+    margin: 0;
+  }
+  
+  p {
+    line-height: 1.5;
+  }
+  
+  code {
+    font-family: Courier New, Courier, monospace;
+    color: rgb(233, 40, 40);
+    background-color: #F7F8F4;
+    padding: 0px;
+  }
+  
+  pre {
+    overflow-x: auto; 
+    word-wrap: normal;
+    white-space: pre;
+    line-height: 20px;
+  }
+  
+  .height {
+    height: 35vh;
+  }
+  
+  .flex-box-container {
+    display: flex;
+    vertical-align: center; 
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .test{
+    background-color: rgba(61, 146, 146, 0.699);
+  }
+  
+  .box-file{
+    border : 2px solid purple;
+    border-radius: 10px;
+    padding: 10px;
+    overflow-x: auto;
+  }
+  
+  .btn-styles{
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+  
+  .btn-styles:hover{
+    background: #fff;
+    border: 1px solid black;
+    color: black;
+    transition: .2 all;
+    cursor: pointer;
+    
+  }
+
+  .text-decoration-none{
+    text-decoration: none;
+  }
+
+  .btn-download-styles{
+    background:#008080 ;
+    color: #fff;
+    padding: 20px;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+  
+  .btn-download-styles:hover{
+    background: #fff;
+    border: 1px solid #008080;
+    color: #008080;
+    transition: .2 all;
+    cursor: pointer;
+    
+  }
+
+  .btn-back {
+    color: #fff;
+    font-size: 2em;
+  }
+
+  .btn-back:hover{
+    color: rgb(230, 227, 227);
+    cursor: pointer;
+    transition: .2s;
+  }
+  
+  .img-size{
+    width: 100%;
+  }
+
+  .padding-0{
+    padding: 0
+  }
+
+  .position-relative{
+    position: relative;
+    left: 40%;
+  }

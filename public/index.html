@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cardify</title>
+  <!--icon -->
+  <link rel="icon" href="assets/images/icon.ico">
+  <!-- Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <!--Font Awesome -->
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!-- Plugin -->
+  <link rel="stylesheet" href="css/index.css">
+  <!--Styles CSS -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="margin-0">
+  <header class="row bg-teal">
+    <div class="xs-12">
+      <h1 class="text-center text-white principal-title">Cardify
+        <i class="fab fa-gratipay icon-color"></i>
+      </h1>
+    </div>
+  </header>
+
+  <div class="padding-30">
+
+    <div class="row">
+      <div class="xs-12 sm-12">
+        <h2>
+          <i class="far fa-file-alt"></i> ¿Qué es Cardify?</h2>
+        <p class="text-justify">Cardify es un plugin de JQuery que ayudará a que tus imagénes adquieran más estilo, este plugin captura todas las
+          imágenes a partir de un contenedor , las pone en una
+          <code> figure </code> y además agrega una etiqueta
+          <code> figcaption </code> donde muestra un efecto hover que enseña el texto del atributo
+          <code>alt</code>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="xs-12">
+        <h2>
+          <i class="fas fa-exclamation-triangle"></i> Archivos indispensables:</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="xs-6 ">
+        <p class="text-center">
+          Para que cardify se ejecute correctamente es necesario descargar los siguientes archivos:
+        </p>
+        <p class="box-file text-center">
+          <code>index.css</code>
+        </p>
+        <p class="box-file text-center">
+          <code>index.js</code>
+        </p>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="xs-6 flex-box-container">
+        <a class="btn-download-styles text-decoration-none" href="assets/cardify.zip.zip" download>Descarga zip
+          <i class="fas fa-download"></i>
+        </a>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="xs-12">
+        <h2>
+          <i class="fas fa-wrench"></i> Instalación:</h2>
+        <p>Deberán incluirse los siguientes links:</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="xs-12 sm-6 sm-offset-3">
+        <p class="text-center">En el
+          <code> head </code> : </p>
+        <pre class="box-file text-center"><code>&lt;link rel="stylesheet" href="css/index.css"&gt;&lt;/link&gt;</code> </pre>
+        </p>
+        <p class="text-center">Al final del
+          <code> body </code> : </p>
+        <pre class="box-file"><code>&lt;script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"&gt;&lt;/script&gt;</code> </pre>
+        <pre class="box-file text-center"><code>&lt;script  src="js/index.js"&gt;&lt;/script&gt;</code> </pre>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="xs-12">
+        <h2>
+          <i class="fas fa-book"></i> ¿Cómo usarlo?</h2>
+        <p class="text-justify">
+          <code>container</code> es el selector donde se buscarán todas las imágenes a ser procesadas ; en la variable
+          <code>config</code> se define el tipo de efecto (filtro/filter) al hacer
+          <code>hover</code> .</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="xs-12 sm-6 sm-offset-3">
+        <pre class="box-file text-center">
+            <code>var config = 'grayscale(50%)';</code>
+            <code>$(container).cardify();</code>
+          </pre>
+      </div>
+    </div>
+    <div class="row">
+      <div class="x-12 sm-12">
+        <h2>
+          <i class="fas fa-fast-forward"></i> Resultados</h2>
+      </div>
+    </div>
+
+
+    <div class="row container">
+      <div class="xs-12 sm-4 flex-box-container">
+        <img src="assets/images/demo-1.jpg" alt="Change your views" class="img-responsive img-size height radious-20">
+      </div>
+      <div class="xs-12 sm-4 flex-box-container">
+        <img src="assets/images/demo-2.jpg" alt="Dale estilos a tus imagenes" class=" img-size img-responsive height radious-20">
+      </div>
+      <div class="xs-12 sm-4 flex-box-container">
+        <img src="assets/images/demo-3.jpg" alt="Cambia tus vistas" class=" img-size img-responsive height radious-20">
+      </div>
+    </div>
+
+    <div class="row container">
+      <div class="xs-12 sm-4 flex-box-container">
+        <img src="assets/images/demo-4.png" alt="Dale estilos a tus imagenes" class=" img-size img-responsive height radious-20">
+      </div>
+      <div class="xs-12 sm-4 flex-box-container">
+        <img src="assets/images/demo-5.jpg" alt="Cambia todas tus vistas" class=" img-size img-responsive height radious-20">
+      </div>
+      <div class="xs-12 sm-4 flex-box-container">
+        <img src="assets/images/demo-6.jpg" alt="Dale estilos a tus imagenes" class=" img-size img-responsive height radious-20">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="x-12 sm-12">
+        <h2>
+          <i class="fab fa-sistrix"></i> Descubre que más puedes hacer con cardify</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="xs-12 sm-6 ">
+        <pre class="box-file text-center">
+              <code>var config = 'blur(5px)';</code>
+              <code>$(container).cardify();</code>
+            </pre>
+        <br>
+        <a class="btn-download-styles text-decoration-none position-relative start-1-js">Start
+          <i class="fas fa-angle-double-right"></i>
+        </a>
+      </div>
+      <div class="xs-12 sm-6">
+        <pre class="box-file text-center">
+                <code>var config = 'contrast(30%)';</code>
+                <code>$(container).cardify();</code>
+              </pre>
+        <br>
+        <a class="btn-download-styles text-decoration-none position-relative start-2-js">Start
+          <i class="fas fa-angle-double-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="xs-12">
+        <h2>
+          <i class="fas fa-th"></i> Sistema de grillas</h2>
+        <p>El componente de 12 grillas nos permite tener un diseño responsive.Las cuadriculas no son solo de imágenes, puede
+          usarlas con cualquier tipo de elemento.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="xs-12">
+        <h2>
+          <i class="fas fa-book"></i> ¿Cómo usarlas?</h2>
+        <p class="text-justify">Empezamos con la clase
+          <code>.container</code> , luego agregamos la clase
+          <code>.row</code> para agregar una fila y despues podemos poner las clases ;
+          <code>.xs-1</code> ,
+          <code>.xs-2</code> ,
+          <code>.xs-3</code> ,
+          <code>.xs-4</code> ,
+          <code>.xs-5</code> ,
+          <code>.xs-6</code> ,
+          <code>.xs-7</code> ,
+          <code>.xs-8</code> ,
+          <code>.xs-9</code> ,
+          <code>.xs-10</code> ,
+          <code>.xs-11</code> ó
+          <code>.xs-12</code> para dispositivos mobile ;
+          <code>.sm-1</code> ,
+          <code>.sm-2</code> ,
+          <code>.sm-3</code> ,
+          <code>.sm-4</code> ,
+          <code>.sm-5</code> ,
+          <code>.sm-6</code> ,
+          <code>.sm-7</code> ,
+          <code>.sm-8</code> ,
+          <code>.sm-9</code> ,
+          <code>.sm-10</code> ,
+          <code>.sm-11</code> ó
+          <code>.sm-12</code> para tablets y
+          <code>.md-1</code> ,
+          <code>.md-2</code> ,
+          <code>.md-3</code> ,
+          <code>.md-4</code> ,
+          <code>.md-5</code> ,
+          <code>.md-6</code> ,
+          <code>.md-7</code> ,
+          <code>.md-8</code> ,
+          <code>.md-9</code> ,
+          <code>.md-10</code> ,
+          <code>.md-11</code> ó
+          <code>.md-12</code> para desktop; a continuación se muestran algunos ejemplos:</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="xs-12 border-example">
+        <div class="row">
+          <div class="xs-1 test"> col-xs-1</div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="xs-2 test"> col-xs-2</div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="xs-3 test"> col-xs-3</div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="xs-4 test"> col-xs-4</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="xs-12">
+        <h2>
+          <i class="far fa-hand-point-right"></i> Encuentranos en Github:</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="xs-12 flex-box-container">
+        <a type="button" href="https://github.com/Manu160296/cardify" class="btn-styles text-decoration-none"> Repositorio Github
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+  <br>
+  <footer class="padding-0">
+    <div class="xs-12 bg-teal ">
+      <p class="text-center text-white">© Copyright 2018</p>
+    </div>
+  </footer>
+  <!--JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!--Plugin -->
+  <script src="js/index.js"></script>
+  <!--App JS -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
