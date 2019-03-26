@@ -150,4 +150,4 @@ $('img').cardify();
 
 ## Resultado Final
 
-![resultado-final](public/assets/docs/resultado-final.png "resultado-final")
+![resultado-final](public/assets/docs/resultado-final.JPG "resultado-final")
