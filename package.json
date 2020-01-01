@@ -1,0 +1,30 @@
+{
+  "name": "cardify",
+  "version": "1.0.0",
+  "description": "Reto 2 Cardify",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel --presets env src -d public/js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeslyN/cardify.git"
+  },
+  "keywords": [
+    "images"
+  ],
+  "author": "Araceli Gutarra & Lesly Nomberto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeslyN/cardify/issues"
+  },
+  "homepage": "https://github.com/LeslyN/cardify#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  },
+  "dependencies": {
+    "materialize-social": "^1.0.3"
+  }
+}

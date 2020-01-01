@@ -1,0 +1,100 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+
+body {
+  background-color: #fcf6ed;
+}
+
+.center {
+  justify-content: space-around;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  margin-top: 1em;
+  margin-left: .5rem;
+  overflow: auto;
+}
+
+/* Título del Encabezado */
+nav .brand-logo {
+  font-family: 'Tinos', serif;
+  font-size: 2.5em;
+  padding-left: .5em;
+}
+
+.side-nav {
+  background-color: rgb(243, 236, 203);
+}
+
+nav ul a {
+  font-size: 1.5rem;
+}
+
+/* Estilos install */
+pre, p, li {
+  font-size: 1.29em;
+}
+
+/* Estilos descripción */
+
+.text-style {
+  padding-top: 2em;
+}
+
+.style-info {
+  padding-left: 1em;
+}
+
+/* Botón add */
+.add-button {
+  bottom: 37px;
+}
+
+.image-form {
+  margin-top: 2em;
+}
+
+/* Estilos al figure */
+
+figure {
+  opacity: 8;
+  position: relative;
+}
+
+
+/* Estilos a las imágenes */
+.image {
+  padding: .3em 0em;
+}
+
+.gallery {
+  padding: 1em;
+  max-width: 90%;
+}
+
+.card {
+  border: 1px solid #eacadd;
+  border-radius: 4px;
+  /* display: flex; */
+  justify-content: center;
+}
+
+.figcaption-position {
+  background-color: rgba(91, 91, 97, 0.3);
+  color: white;
+  font-size: 1.5em;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 1;
+  position: absolute;
+  top: 0%;
+  font-size: 1.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

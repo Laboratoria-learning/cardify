@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cardify</title>
+  <link href="https://fonts.googleapis.com/css?family=Tinos" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="vendors/materialize/css/materialize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Cardify</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <a href="https://github.com/AraceliGS/cardify/archive/master.zip">Descargas<i class="material-icons right">cloud_download</i></a>
+          </li>
+          <li><a href="https://github.com/AraceliGS/cardify"><i class="fab fa-github right"></i> Github</a></li>
+        </ul>  
+        <!-- Mobile -->
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="https://github.com/AraceliGS/cardify/archive/master.zip">Descargas<i class="material-icons right">cloud_download</i></a></li>
+          <li><a href="https://github.com/AraceliGS/cardify"><i class="fab fa-github right"></i> Github</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Contenedor de imágenes -->
+  <section>
+    <section>
+      <div class="row">
+        <div class="col center">
+          <p>Cardify es un plugin de jQuery que dado un contenedor debe buscar todas las imágenes que encuentre dentro del contenedor y reemplazarlas por un nuevo elemento <code>&lt;figure&gt;</code> que contenga la imagen <code>&lt;img&gt;</code> además de un <code>&lt;figcaption&gt;</code> con el texto del atributo alt de la imagen.</p>
+        </div>
+      </div>
+      <!-- Información de instalación -->
+      <div class="row style-info center">
+        <div class="col s12 offset-m3 m6">
+          <h5>Instalación de la librería</h5>
+          <div class="card">
+            <div class="card-content">
+              <p>Se necesita tener lo siguiente: 
+                Librería de jQuery, Framework Materialize, y archivos js del plugin, como se muestra a continuación.
+              </p>
+            </div>
+            <div class="card-tabs">
+              <ul class="tabs tabs-fixed-width">
+                <li class="tab"><a href="#test4">jQuery</a></li>
+                <li class="tab"><a href="#test5">Materialize</a></li>
+                <li class="tab"><a href="#test6">Plugin</a></li>
+                <li class="indicator"></li>
+              </ul>
+            </div>
+            <div class="card-content red lighten-5">
+              <div id="test4" class="active">
+                <pre><code>&lt;script src="vendors/jquery/jquery-3.2.1.min.js"&gt;&lt;/script&gt;</code></pre>
+              </div>
+              <div id="test5">
+                <pre><code>&lt;script src="vendors/materialize/js/materialize.min.js"&gt;&lt;/script&gt;</code></pre>
+              </div>
+              <div id="test6">
+                <pre><code>&lt;script src="js/index.js"&gt;&lt;/script&gt;</code></pre>
+                <pre><code>&lt;script src="js/app.js"&gt;&lt;/script&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="row center">
+      <div class="col s12 offset-m1 m10">
+        <h5 class="text-style blue-text">Deslice el mouse sobre una imagen y aparecerá la descripción del mismo.</h5>
+      </div>
+    </div>
+      <section>
+        <div class="row gallery">
+          <div class="col s12 m4 l4 card container">
+            <div class="card">
+              <img class="responsive-img image" data-image="0" src="assets/images/image1.jpg" alt="Niña">
+            </div>
+          </div>
+          <div class="col s12 m4 l4 card container">
+            <div class="card">
+              <img class="responsive-img image" data-image="1" src="assets/images/image2.jpg" alt="Moda">
+            </div>
+          </div>
+          <div class="col s12 m4 l4 card container">
+            <div class="card">
+              <img class="responsive-img image" data-image="2" src="assets/images/image14.jpg" alt="Ciudad">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section>
+        <div class="row gallery">
+          <div class="col s12 m4 l4 card container">
+            <div class="card">
+              <img class="responsive-img image" data-image="3" src="assets/images/image5.jpg" alt="Peluche">
+            </div>
+          </div>
+          <div class="col s12 m4 l4 card container">
+            <div class="card">
+              <img class="responsive-img image" data-image="4" src="assets/images/image15.jpg" alt="Conejos">
+            </div>
+          </div>
+          <div class="col s12 m4 l4 card container">
+            <div class="card">
+              <img class="responsive-img image" data-image="5" src="assets/images/image10.jpg" alt="Adorno">
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section>
+        <div class="row gallery">
+          <div class="col s12 m4 l4 card container">
+            <div class="card">
+              <img class="responsive-img image" data-image="6" src="assets/images/image7.jpg" alt="Cumpleaños">
+            </div>
+          </div>
+          <div class="col s12 m4 l4 card container">
+            <div class="card">
+              <img class="responsive-img image" data-image="7" src="assets/images/image3.jpg" alt="Torre Eiffel">
+            </div>
+          </div>
+          <div class="col s12 m4 l4 card container">
+            <div class="card">
+              <img class="responsive-img image" data-image="8" src="assets/images/image8.jpg" alt="Desfile">
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  <!-- Footer -->
+  <section>
+    <footer class="page-footer darken-2" id="footer">
+      <div class="footer-copyright">
+        <div class="row">
+          <div class="col l12 s12 container">
+            <p class="white-text text-lighten-4">Copyright&copy; 2018.</p>
+          </div>
+      </div>
+    </footer>
+  </section>
+  <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+  <script src="vendors/materialize/js/materialize.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
